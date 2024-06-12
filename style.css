@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Paris2024-Variable';
+    src: url('/assets/font/Paris2024-Variable.ttf') format('truetype');
+}
+
+main {
+    font-family: 'Paris2024-Variable', sans-serif;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+}
