@@ -1,6 +1,20 @@
 import { MiniReact } from "../core/MiniReact.js";
 import NavBar from "./NavBar.js";
 
+const Button = (props) => {
+    return MiniReact.createElement(
+        "button",
+        {
+            type: props.type,
+            id: props.id,
+            class: props.class,
+            style: props.style,
+            events: { click: props.onClick },
+        },
+        props.title
+    );
+};
+
 const Image = ({ src, alt, style }) => {
     return MiniReact.createElement("img", { src, alt, style });
 };
@@ -85,4 +99,4 @@ const Footer = () => {
     );
 };
 
-export { Header, Footer, Carousel, Image};
+export { Header, Footer, Carousel, Image, Button};
