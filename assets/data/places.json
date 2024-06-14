@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Lieu 1",
+    "description": "LoremIP",
+    "longitude": 2.294481,
+    "latitude": 48.858370,
+    "image": "https://google.com"
+  },
+  {
+    "name": "Lieu 2",
+    "description": "LoremIP",
+    "longitude": 2.352222,
+    "latitude": 48.856613,
+    "image": "https://google.com"
+  },
+  {
+    "name": "Lieu 3",
+    "description": "LoremIP",
+    "longitude": -0.127758,
+    "latitude": 51.507351,
+    "image": "https://google.com"
+  },
+  {
+    "name": "Lieu 4",
+    "description": "LoremIP",
+    "longitude": 4.895168,
+    "latitude": 52.370216,
+    "image": "https://google.com"
+  },
+  {
+    "name": "Lieu 5",
+    "description": "LoremIP",
+    "longitude": -74.0060,
+    "latitude": 40.7128,
+    "image": "https://google.com"
+  }
+]

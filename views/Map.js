@@ -1,6 +1,7 @@
 import { MiniReact } from "../core/MiniReact.js";
 import Component from "../core/Component.js";
-import {Header, Footer, Carousel} from "../component/ReactComponent.js";
+import MapComponent from "../component/MapComponent.js";
+import { Button } from "../component/ReactComponent.js";
 
 class Map extends Component {
     constructor(props) {
@@ -30,25 +31,95 @@ class Map extends Component {
             });
     }
 
+    marqueurs = [];
+
+    AddPoint(latitude, longitude, name, description) {
+        if (!this.map) return;
+        var marker = L.marker([latitude, longitude]).addTo(this.map);
+        marker.bindPopup(name + "<br>" + description);
+        this.marqueurs.push(marker);
+        this.map.setView([latitude, longitude], 13);  // Zoom on the added point
+    }
+
+    deleteAllPoints() {
+        if (!this.map) return;
+        for (var i = 0; i < this.marqueurs.length; i++) {
+            this.map.removeLayer(this.marqueurs[i]);
+        }
+        this.marqueurs = [];
+    }
+
+    ShowPlacePointInMap = (latitude, longitude, name, description) => {
+        this.deleteAllPoints();
+        this.AddPoint(latitude, longitude, name, description);
+    };
+
     render() {
-        // Extract places from state
         const { places } = this.state;
 
-        // Create an array of <p> elements based on places data
         const placeElements = places.map(place => (
             MiniReact.createElement(
-                "p",
-                { id: place.id },
-                place.name
+                "div",
+                {
+                    class: "card",
+                    style: {
+                        width: "18rem"
+                    }
+                },
+                MiniReact.createElement(
+                    "img",
+                    {
+                        class: "card-img-top",
+                        src: "...", // Replace with your actual image source
+                        alt: "Card image cap"
+                    }
+                ),
+                MiniReact.createElement(
+                    "div",
+                    { class: "card-body" },
+                    MiniReact.createElement(
+                        "h5",
+                        { class: "card-title" },
+                        place.name
+                    ),
+                    MiniReact.createElement(
+                        "p",
+                        { class: "card-text" },
+                        place.description
+                    ),
+                    MiniReact.createElement(Button, {
+                        type: "button", // Use type "button" for non-submit buttons
+                        title: "Afficher sur la carte",
+                        class: "btn btn-primary",
+                        onClick: () => this.ShowPlacePointInMap(place.latitude, place.longitude, place.name, place.description)
+                    }),
+                )
             )
         ));
 
-        // Create a wrapping <div> to contain all <p> elements
-        const element = MiniReact.createElement(
-            "div",
-            null,
-            ...placeElements
-        );
+        const element =
+            MiniReact.createElement(
+                "div",
+                {
+                    style: { display: "flex" }
+                },
+                MiniReact.createElement(
+                    "div",
+                    {
+                        style: { overflow: "scroll", height: "602px" }
+                    },
+                    ...placeElements
+                ),
+                MiniReact.createElement(
+                    "div",
+                    { id: "map" },
+                    MiniReact.createElement(MapComponent, {
+                        key: this.childrenKey,
+                        MapStatus: "Loaded",
+                        onMapLoad: (map) => { this.map = map; }
+                    })
+                )
+            );
 
         this._dom = element;
         return element;
