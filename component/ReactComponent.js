@@ -46,8 +46,9 @@ const Carousel = ({ images }) => {
 };
 
 const Header = () => {
-    return MiniReact.createElement(NavBar);
+    return MiniReact.createElement('header', null, MiniReact.createElement(NavBar));
 };
+
 
 const Footer = () => {
     return MiniReact.createElement(
@@ -62,21 +63,21 @@ const Footer = () => {
                 MiniReact.createElement(
                     "div",
                     { class: "col-lg-6 col-md-12 mb-4 mb-md-0" },
-                    MiniReact.createElement("h5", { class: "text-uppercase" }, "Footer text"),
+                    MiniReact.createElement("h5", { class: "text-uppercase" }, "React JS From Scratch"),
                     MiniReact.createElement(
                         "p",
                         null,
-                        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!"
+                        "Projet d'école ESGI pour le second semestre. Mini Framework React intégralement développé en JavaScript from Scratch."
                     )
                 ),
                 MiniReact.createElement(
                     "div",
                     { class: "col-lg-6 col-md-12 mb-4 mb-md-0" },
-                    MiniReact.createElement("h5", { class: "text-uppercase" }, "Footer text"),
+                    MiniReact.createElement("h5", { class: "text-uppercase" }, "JO 2024"),
                     MiniReact.createElement(
                         "p",
                         null,
-                        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam voluptatem veniam, est atque cumque eum delectus sint!"
+                        "Projet portant sur les Jeux Olympiques de 2024 avec une map interactive pour les lieux et les événements."
                     )
                 )
             )

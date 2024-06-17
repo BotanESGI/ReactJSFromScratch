@@ -11,20 +11,21 @@ class Home extends Component {
 
     render() {
         const element = MiniReact.createElement(
-            "div",
-            null,
+            "div", {id:"HomePage"},
             MiniReact.createElement(Header),
             MiniReact.createElement(
-                "main",
-                {
-                    class: "",
-                },
+                "main",null,
+                MiniReact.createElement("section",
+                    {
+                        id:"carousel"
+                    },
                 MiniReact.createElement(Carousel, { images: [
                         { src: "./assets/img/carousel01.png", alt: "Paris 2024 Logo" },
                         { src: "./assets/img/carousel01.png", alt: "Paris 2024 Logo" }
                     ]}),
-                MiniReact.createElement(Footer)
+                )
             ),
+            MiniReact.createElement(Footer)
 
         );
 
