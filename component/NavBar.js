@@ -47,7 +47,7 @@ const NavBarComponent = (props) => {
                         { class: "nav-item" },
                         MiniReact.createElement(
                             "a",
-                            { class: "nav-link active", "aria-current": "page", href: "/" },
+                            { class: "nav-link" + (props.activePage === "/" ? " active" : ""), "aria-current": "page", href: "/" },
                             "Accueil"
                         )
                     ),
@@ -56,7 +56,7 @@ const NavBarComponent = (props) => {
                         { class: "nav-item" },
                         MiniReact.createElement(
                             "a",
-                            { class: "nav-link", href: "/map" },
+                            { class: "nav-link" + (props.activePage === "/map" ? " active" : ""), href: "/map" },
                             "Map"
                         )
                     ),
@@ -65,7 +65,7 @@ const NavBarComponent = (props) => {
                         { class: "nav-item" },
                         MiniReact.createElement(
                             "a",
-                            { class: "nav-link", href: "/event" },
+                            { class: "nav-link" + (props.activePage === "/event" ? " active" : ""), href: "/event" },
                             "Évènement"
                         )
                     )
@@ -81,6 +81,7 @@ class NavBar extends Component {
         this.state = {
             show: false,
         };
+        this.activePage = window.location.pathname;
     }
 
     openNavBarMobile = () => {
@@ -101,13 +102,15 @@ class NavBar extends Component {
                 NavBarComponent,
                 {
                     class: "collapse navbar-collapse",
-                    onClick: this.openNavBarMobile
+                    onClick: this.openNavBarMobile,
+                    activePage: this.activePage
                 }
             ) :
             MiniReact.createElement(
                 NavBarComponent, {
                     class: "collapse navbar-collapse show text-center",
-                    onClick: this.closeNavBarMobile
+                    onClick: this.closeNavBarMobile,
+                    activePage: this.activePage
                 }
             );
 
