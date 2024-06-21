@@ -33,3 +33,29 @@ swiper-slide img {
     width: 100%;
 }
 
+#google_translate_element { height: 37px !important; overflow: hidden !important; }
+
+.goog-te-gadget img{
+    display:none !important;
+}
+body > .skiptranslate {
+    display: none;
+}
+body {
+    top: 0px !important;
+}
+
+.goog-te-combo {
+    display: block;
+    width: 100%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
