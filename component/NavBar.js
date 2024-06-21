@@ -1,7 +1,6 @@
 import Component from "../core/Component.js";
 import { MiniReact } from "../core/MiniReact.js";
 import { Image } from "/component/ReactComponent.js";
-
 //12/06/24 Botan - navbar boutton mobile terminer RESPONSIVE :)
 const NavBarComponent = (props) => {
     return MiniReact.createElement(
@@ -68,7 +67,16 @@ const NavBarComponent = (props) => {
                             { class: "nav-link" + (props.activePage === "/event" ? " active" : ""), href: "/event" },
                             "Évènement"
                         )
-                    )
+                    ),
+                    MiniReact.createElement(
+                        "li",
+                        { class: "nav-item" },
+                        MiniReact.createElement(
+                            "a",
+                            { class: "nav-link" + (props.activePage === "/setting" ? " active" : ""), href: "/setting" },
+                            "Paramètre"
+                        )
+                    ),
                 )
             )
         )
@@ -83,6 +91,7 @@ class NavBar extends Component {
         };
         this.activePage = window.location.pathname;
     }
+
 
     openNavBarMobile = () => {
         this.setState({
@@ -116,7 +125,9 @@ class NavBar extends Component {
 
         this._dom = element;
         return element;
+
     }
+
 }
 
 export default NavBar;

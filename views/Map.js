@@ -130,16 +130,13 @@ class Map extends Component {
                             "div",
                             {
                                 id: "places",
-                                style: {overflow: "scroll", height: "602px"}
+                                style: {overflow: "auto", height: "602px", width: "18rem"}
                             },
                             ...this.state.places.map(place => (
                                 MiniReact.createElement(
                                     "div",
                                     {
-                                        class: "card",
-                                        style: {
-                                            width: "18rem"
-                                        }
+                                        class: "card"
                                     },
                                     MiniReact.createElement(
                                         "div",
@@ -157,7 +154,7 @@ class Map extends Component {
                                         MiniReact.createElement(Button, {
                                             type: "button",
                                             title: "Afficher sur la carte",
-                                            class: "btn btn-primary",
+                                            class: "btn btn-primary w-100",
                                             onClick: () => this.AddCurrentPointInMap(place.latitude, place.longitude, place.name, place.description)
                                         }),
 
@@ -172,10 +169,11 @@ class Map extends Component {
                     ),
                     MiniReact.createElement(Button, {
                         type: "button",
-                        title: "Afficher tous les points les plus proches de chez vous",
-                        class: "btn btn-secondary",
+                        title: "Afficher tous les points les plus proches de ma géolocalisation",
+                        class: "btn btn-info w-100 mt-1",
                         onClick: this.AddAllPointsClosestToYou
                     }),
+
                     MiniReact.createElement(
                         "section",
                         {
