@@ -34,13 +34,15 @@ class Map extends Component {
             placeDistance: ""
         };
         this.map = null;
-        this.getAllPlaces();
+        setTimeout(() => {
+            this.getAllPlaces();
+        }, 300);
     }
 
     componentDidMount() {
         setTimeout(() => {
             this.initializeMap();
-        }, 200);
+        }, 400);
     }
 
     getAllPlaces() {
@@ -52,7 +54,15 @@ class Map extends Component {
                 return response.json();
             })
             .then(data => {
-                this.setState({places: data});
+                // Calculer et trier les places par distance croissante
+                const placesWithDistance = data.map(place => {
+                    const distance = this.CalculeTheCurrentDistance(place.location.latitude, place.location.longitude);
+                    return { ...place, distance };
+                });
+
+                placesWithDistance.sort((a, b) => a.distance - b.distance);
+
+                this.setState({ places: placesWithDistance });
             })
             .catch(error => {
                 console.error('Error fetching places:', error);
@@ -87,7 +97,7 @@ class Map extends Component {
         });
 
         var marker = L.marker([latitude, longitude], { icon: customIcon }).addTo(this.map);
-        marker.bindPopup(name + "<br>" + description);
+        marker.bindPopup(name);
         this.marqueurs.push(marker);
         this.map.setView([latitude, longitude], zoom);
     }
@@ -114,18 +124,17 @@ class Map extends Component {
                 });
                 const name = "Votre Location";
                 const description = "Votre emplacement actuel.";
-                this.AddPoint(this.mylatitude, this.mylongitude, name, description, "../assets/img/pointer_current_location.png", [100, 100], 11);
+                this.AddPoint(this.mylatitude, this.mylongitude, name, description, "../assets/img/pointer_current_location.png", [100, 100], 20);
     };
 
 
     AddCurrentPointInMap = (latitude, longitude, name, description, image, location, sports) => {
-        this.CalculeTheCurrentDistance(latitude, longitude, distance => {
             this.setState({
                 placeTitle: name,
                 placeDescription: description,
                 placeImage: image,
                 placeLocation: location,
-                placeDistance: distance,
+                placeDistance: this.CalculeTheCurrentDistance(latitude, longitude).toFixed(2) + " km",
                 placeSportList: sports.join(', '),
             });
 
@@ -133,25 +142,22 @@ class Map extends Component {
             setTimeout(() => {
                 this.deleteAllPoints();
                 this.AddPoint(latitude, longitude, name, description, "../assets/img/pointer_default.png", [100, 100], 13);
-            }, 300);
-        });
+            }, 400);
     };
 
 
-
-    CalculeTheCurrentDistance(lat, lon, callback)
-    {
-                const R = 6371;
-                const dLat = (lat - this.mylatitude) * Math.PI / 180;
-                const dLon = (lon - this.mylongitude) * Math.PI / 180;
-                const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-                    Math.cos(this.mylatitude * Math.PI / 180) * Math.cos(lat * Math.PI / 180) *
-                    Math.sin(dLon/2) * Math.sin(dLon/2);
-                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
-                const distance = R * c;
-                const distanceString = distance.toFixed(2);
-                callback(distanceString + " km");
+    CalculeTheCurrentDistance(lat, lon) {
+        const R = 6371;
+        const dLat = (lat - this.mylatitude) * Math.PI / 180;
+        const dLon = (lon - this.mylongitude) * Math.PI / 180;
+        const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(this.mylatitude * Math.PI / 180) * Math.cos(lat * Math.PI / 180) *
+            Math.sin(dLon/2) * Math.sin(dLon/2);
+        const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+        const distance = R * c;
+        return distance;
     }
+
 
 
 
@@ -179,8 +185,15 @@ class Map extends Component {
                             "div",
                             {
                                 id: "places",
-                                style: {overflow: "auto", height: "602px", width: "18rem"}
+                                style: {overflow: "auto", height: "602px", width: "20rem"}
                             },
+                            MiniReact.createElement(
+                                "small",
+                                {
+
+                                },
+                                "Trier automatiquement par distance (km)"
+                            ),
                             ...this.state.places.map(place => (
                                 MiniReact.createElement(
                                     "div",
@@ -193,7 +206,7 @@ class Map extends Component {
                                         MiniReact.createElement(
                                             "h5",
                                             {class: "card-title"},
-                                            place.name
+                                            place.name + " (" + place.distance.toFixed(2) + " km)"
                                         ),
                                         MiniReact.createElement(Button, {
                                             type: "button",
