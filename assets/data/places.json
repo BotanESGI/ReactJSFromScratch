@@ -1,37 +1,388 @@
 [
   {
-    "name": "Lieu 1",
-    "description": "LoremIP",
-    "longitude": 2.294481,
-    "latitude": 48.858370,
-    "image": "https://google.com"
+    "name": "Arena Bercy",
+    "description": "L'Arena Bercy, icône du sport et de la culture à Paris, se distingue par sa forme pyramidale unique depuis 1984. Rénovée en 2014-2015, elle accueille des événements prestigieux comme le Rolex Paris Masters et des concerts de renommée mondiale. Avec plus de 30 millions de spectateurs depuis son ouverture, elle est une référence pour les grandes compétitions sportives et les manifestations culturelles.",
+    "location": {
+      "address": "8 Bd de Bercy",
+      "city": "Paris",
+      "postal_code": "75012",
+      "longitude": 2.385683,
+      "latitude": 48.835455
+    },
+    "image": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1920/f_auto/primary/bx20ndrnvlssfiocnw6e",
+    "sports": [
+      "Tennis",
+      "Basketball"
+    ]
   },
   {
-    "name": "Lieu 2",
-    "description": "LoremIP",
-    "longitude": 2.352222,
-    "latitude": 48.856613,
-    "image": "https://google.com"
+    "name": "Arena Champ-de-Mars",
+    "description": "Pendant les Jeux de Paris 2024, l'Arena Champ de Mars, conçue par Jean-Michel Wilmotte, remplace temporairement le Grand Palais. Ce bâtiment provisoire en bois, installé en 2021 sur le Champ de Mars, s'intègre harmonieusement dans le paysage urbain. Initialement destiné à accueillir divers événements pendant la rénovation du Grand Palais, il hébergera également des compétitions des Jeux Olympiques et Paralympiques de 2024 ainsi que des manifestations culturelles.",
+    "location": {
+      "address": "Champ-de-Mars",
+      "city": "Paris",
+      "postal_code": "75007",
+      "longitude": 2.298337,
+      "latitude": 48.855633
+    },
+    "image": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1920/f_auto/primary/i70myvzy7xdcvzix0qpt",
+    "sports": [
+      "Judo",
+      "Lutte",
+      "Boxe",
+      "Pentathlon moderne"
+    ]
   },
   {
-    "name": "Lieu 3",
-    "description": "LoremIP",
-    "longitude": -0.127758,
-    "latitude": 51.507351,
-    "image": "https://google.com"
+    "name": "Château de Versailles",
+    "description": "Le Château de Versailles, célèbre résidence royale française, est un site emblématique de l'histoire et de la culture. Situé à Versailles, ce magnifique palais abrite les épreuves de sports équestres lors des Jeux Olympiques de Paris 2024, offrant un cadre majestueux aux compétitions.",
+    "location": {
+      "address": "Place d'Armes",
+      "city": "Versailles",
+      "postal_code": "78000",
+      "longitude": 2.121403,
+      "latitude": 48.804864
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/y7xlwlk8nfvpia9jlitq",
+    "sports": [
+      "Sports Équestres"
+    ]
   },
   {
-    "name": "Lieu 4",
-    "description": "LoremIP",
-    "longitude": 4.895168,
-    "latitude": 52.370216,
-    "image": "https://google.com"
+    "name": "Grand Palais",
+    "description": "Le Grand Palais, monument emblématique de Paris, est une structure historique utilisée pour des expositions et des événements prestigieux. Situé dans le 8e arrondissement, il accueille l'escrime lors des compétitions des Jeux Olympiques de Paris 2024, offrant un cadre unique et grandiose aux athlètes et aux spectateurs.",
+    "location": {
+      "address": "3 Av. du Général Eisenhower",
+      "city": "Paris",
+      "postal_code": "75008",
+      "longitude": 2.313841,
+      "latitude": 48.866109
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/isejdmd8ox6attvfqjkg",
+    "sports": [
+      "Escrime"
+    ]
   },
   {
-    "name": "Lieu 5",
-    "description": "LoremIP",
-    "longitude": -74.0060,
-    "latitude": 40.7128,
-    "image": "https://google.com"
+    "name": "Hôtel de Ville",
+    "description": "L'Hôtel de Ville de Paris, situé sur la Place de l'Hôtel de Ville, est un édifice remarquable de style néo-renaissance. Pendant les Jeux Olympiques de Paris 2024, il sera le théâtre des épreuves d'athlétisme et de tir à l'arc, offrant un cadre historique et prestigieux aux compétitions sportives.",
+    "location": {
+      "address": "Place de l'Hôtel de Ville",
+      "city": "Paris",
+      "postal_code": "75004",
+      "longitude": 2.352222,
+      "latitude": 48.856614
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/x2gqogcosqtmh4z5ewea",
+    "sports": [
+      "Athlétisme",
+      "Tir à l'arc"
+    ]
+  },
+  {
+    "name": "Invalides",
+    "description": "Les Invalides, complexe monumental parisien, abritent le musée de l'Armée et le tombeau de Napoléon Ier. Situés dans le 7e arrondissement, ils accueillent les épreuves d'athlétisme et de tir à l'arc lors des Jeux Olympiques de Paris 2024, offrant un cadre historique et culturel unique aux compétitions sportives.",
+    "location": {
+      "address": "Esplanade des Invalides",
+      "city": "Paris",
+      "postal_code": "75007",
+      "longitude": 2.311518,
+      "latitude": 48.856647
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/vsoxjhgouhfczq9ks4av",
+    "sports": [
+      "Athlétisme",
+      "Tir à l'arc"
+    ]
+  },
+  {
+  "name": "La Concorde",
+  "description": "La Place de la Concorde, située dans le 8e arrondissement de Paris, est l'une des places les plus célèbres de la capitale française. Pendant les Jeux Olympiques de Paris 2024, elle sera le lieu des compétitions de basketball 3x3, offrant un cadre emblématique et historique aux athlètes et aux spectateurs.",
+  "location": {
+  "address": "Place de la Concorde",
+  "city": "Paris",
+  "postal_code": "75008",
+  "longitude": 2.321916,
+  "latitude": 48.865633
+},
+  "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/dkysx7e06ynhwfb3v0w9",
+  "sports": ["Basketball 3x3"]
+  },
+  {
+    "name": "Golf National",
+    "description": "Le Golf National est un parcours de golf situé à Guyancourt, dans la banlieue de Paris. Il accueille les compétitions de golf des Jeux Olympiques de Paris 2024, offrant un cadre prestigieux aux golfeurs du monde entier.",
+    "location": {
+      "address": "2 Avenue du Golf",
+      "city": "Guyancourt",
+      "postal_code": "78286",
+      "longitude": 2.046627,
+      "latitude": 48.771941
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/aq7kowcwlmh8nqp8z8zr",
+    "sports": ["Golf"]
+  },
+  {
+    "name": "Marina de Marseille",
+    "description": "La Marina de Marseille, située sur le Quai des Belges, est le lieu où se dérouleront les épreuves de voile des Jeux Olympiques de Paris 2024. Elle offre un accès direct à la Méditerranée et constitue un cadre idéal pour les compétitions nautiques.",
+    "location": {
+      "address": "Quai des Belges",
+      "city": "Marseille",
+      "postal_code": "13001",
+      "longitude": 5.370581,
+      "latitude": 43.297195
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/a3dg9k4vqcvfwltczrxn",
+    "sports": ["Voile"]
+  },
+  {
+    "name": "Parc des Princes",
+    "description": "Le Parc des Princes est un stade emblématique situé dans le 16e arrondissement de Paris. Il accueille les compétitions de football des Jeux Olympiques de Paris 2024, offrant une atmosphère vibrante aux joueurs et aux spectateurs.",
+    "location": {
+      "address": "24 Rue du Commandant Guilbaud",
+      "city": "Paris",
+      "postal_code": "75016",
+      "longitude": 2.252433,
+      "latitude": 48.841646
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/xxi7qpjhwhh1tqewooib",
+    "sports": ["Football"]
+  },
+  {
+    "name": "Paris La Défense Arena",
+    "description": "Paris La Défense Arena, située à Nanterre, est un complexe moderne qui accueille les compétitions de natation et de water-polo des Jeux Olympiques de Paris 2024. Avec sa capacité impressionnante, elle offre une expérience unique aux athlètes et aux spectateurs.",
+    "location": {
+      "address": "99 Jardins de l'Arche",
+      "city": "Nanterre",
+      "postal_code": "92000",
+      "longitude": 2.238335,
+      "latitude": 48.895651
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/v6t0hesg2db1d5gzqb3i",
+    "sports": ["Natation", "Water-Polo"]
+  },
+  {
+    "name": "Pont Alexandre III",
+    "description": "Le Pont Alexandre III est un pont emblématique de Paris, situé près des Invalides et du Grand Palais. Il est le site des épreuves de triathlon des Jeux Olympiques de Paris 2024, offrant un cadre pittoresque aux athlètes et aux spectateurs.",
+    "location": {
+      "address": "Pont Alexandre III",
+      "city": "Paris",
+      "postal_code": "75008",
+      "longitude": 2.312231,
+      "latitude": 48.863888
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/yhjrtevgfd8fac6blbau",
+    "sports": ["Triathlon"]
+  },
+  {
+    "name": "Stade BMX de Saint-Quentin-en-Yvelines",
+    "description": "Le Stade BMX de Saint-Quentin-en-Yvelines est un centre de cyclisme de BMX situé à Saint-Quentin-en-Yvelines, en région parisienne. Il accueille les épreuves de BMX racing des Jeux Olympiques de Paris 2024, offrant des parcours techniques aux athlètes.",
+    "location": {
+      "address": "7 Boulevard de l'Europe",
+      "city": "Saint-Quentin-en-Yvelines",
+      "postal_code": "78180",
+      "longitude": 2.048194,
+      "latitude": 48.786733
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/lcbrslxdtvbjf1hlr4ak",
+    "sports": ["Cycling BMX Racing"]
+  },
+  {
+    "name": "Stade de Bordeaux",
+    "description": "Le Stade de Bordeaux, situé dans la ville éponyme, est un stade moderne qui accueille les compétitions de football des Jeux Olympiques de Paris 2024. Il offre un cadre dynamique et moderne aux joueurs et aux spectateurs.",
+    "location": {
+      "address": "Cours Jules Ladoumegue",
+      "city": "Bordeaux",
+      "postal_code": "33000",
+      "longitude": -0.554247,
+      "latitude": 44.834835
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/xoz3y0xn3yocizbemr4i",
+    "sports": ["Football"]
+  },
+  {
+    "name": "Stade de France",
+    "description": "Le Stade de France, situé à Saint-Denis, est un stade iconique qui accueille les compétitions d'athlétisme et de rugby à sept des Jeux Olympiques de Paris 2024. Il offre une capacité impressionnante et une atmosphère électrique aux athlètes et aux spectateurs.",
+    "location": {
+      "address": "ZAC du Cornillon Nord",
+      "city": "Saint-Denis",
+      "postal_code": "93216",
+      "longitude": 2.359615,
+      "latitude": 48.924736
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/i1naqsyg7mz34coh7jyu",
+    "sports": ["Athlétisme", "Rugby Sevens"]
+  },
+  {
+    "name": "Stade de la Beaujoire",
+    "description": "Le Stade de la Beaujoire, situé à Nantes, est un stade moderne qui accueille les compétitions de football des Jeux Olympiques de Paris 2024. Il offre un cadre dynamique et une atmosphère enthousiaste aux joueurs et aux spectateurs.",
+    "location": {
+      "address": "5 Boulevard de la Beaujoire",
+      "city": "Nantes",
+      "postal_code": "44300",
+      "longitude": -1.522269,
+      "latitude": 47.256965
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/t4mmbub6yed1nkdy7ili",
+    "sports": [
+      "Football"
+    ]
+  },
+  {
+    "name": "Stade de la Beaujoire",
+    "description": "Le Stade de la Beaujoire, situé à Nantes, est un stade moderne qui accueille les compétitions de football des Jeux Olympiques de Paris 2024. Il offre un cadre dynamique et une atmosphère enthousiaste aux joueurs et aux spectateurs.",
+    "location": {
+      "address": "5 Boulevard de la Beaujoire",
+      "city": "Nantes",
+      "postal_code": "44300",
+      "longitude": -1.522269,
+      "latitude": 47.256965
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/t4mmbub6yed1nkdy7ili",
+    "sports": [
+      "Football"
+    ]
+  },
+  {
+    "name": "Stade de Lyon",
+    "description": "Le Stade de Lyon, situé à Décines-Charpieu, est un stade moderne qui accueille les compétitions de football des Jeux Olympiques de Paris 2024. Il offre un cadre dynamique aux joueurs et une expérience immersive aux spectateurs.",
+    "location": {
+      "address": "10 Avenue Simone Veil",
+      "city": "Décines-Charpieu",
+      "postal_code": "69150",
+      "longitude": 4.968601,
+      "latitude": 45.768055
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/beekk7tvfg9hzosbxccr",
+    "sports": ["Football"]
+  },
+  {
+    "name": "Stade de Marseille",
+    "description": "Le Stade de Marseille, situé à Marseille, est un stade emblématique qui accueille les compétitions de football des Jeux Olympiques de Paris 2024. Il offre une atmosphère passionnée et une vue magnifique sur la Méditerranée.",
+    "location": {
+      "address": "3 Boulevard Michelet",
+      "city": "Marseille",
+      "postal_code": "13008",
+      "longitude": 5.374115,
+      "latitude": 43.269248
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/ziotfeuhilbeeh6amsal",
+    "sports": ["Football"]
+  },
+  {
+    "name": "Stade de Nice",
+    "description": "Le Stade de Nice, situé à Nice, est un stade moderne qui accueille les compétitions de football des Jeux Olympiques de Paris 2024. Il offre une ambiance dynamique et une vue sur la mer Méditerranée, créant une expérience unique pour les joueurs et les spectateurs.",
+    "location": {
+      "address": "3 Avenue des Frères Roustan",
+      "city": "Nice",
+      "postal_code": "06200",
+      "longitude": 7.257753,
+      "latitude": 43.703707
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/gkdqkzamz08sdohss8uw",
+    "sports": ["Football"]
+  },
+  {
+    "name": "Stade Geoffroy-Guichard",
+    "description": "Le Stade Geoffroy-Guichard, situé à Saint-Étienne, est un stade légendaire qui accueille les compétitions de football des Jeux Olympiques de Paris 2024. Il offre une atmosphère passionnée et une expérience authentique pour les amateurs de football.",
+    "location": {
+      "address": "14 Rue Paul et Pierre Guichard",
+      "city": "Saint-Étienne",
+      "postal_code": "42028",
+      "longitude": 4.396486,
+      "latitude": 45.471889
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/hd99ljofaoyqxd4xhpjj",
+    "sports": ["Football"]
+  },
+  {
+    "name": "Stade Nautique de Vaires-sur-Marne",
+    "description": "Le Stade Nautique de Vaires-sur-Marne est un complexe aquatique situé à Vaires-sur-Marne, près de Paris. Il accueille les compétitions d'aviron, de canoë slalom et de canoë sprint des Jeux Olympiques de Paris 2024, offrant des installations de classe mondiale aux athlètes.",
+    "location": {
+      "address": "Base de loisirs de Vaires-Torcy",
+      "city": "Vaires-sur-Marne",
+      "postal_code": "77360",
+      "longitude": 2.642056,
+      "latitude": 48.876111
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/ds4on9lqxe03vrl9urbx",
+    "sports": ["Aviron", "Canoe Slalom", "Canoe Sprint"]
+  },
+  {
+    "name": "Stade Pierre Mauroy",
+    "description": "Le Stade Pierre Mauroy, situé à Villeneuve-d'Ascq, est un stade moderne qui accueille les compétitions de basketball et de handball des Jeux Olympiques de Paris 2024. Avec sa capacité impressionnante, il offre une atmosphère électrique aux spectateurs.",
+    "location": {
+      "address": "261 Boulevard de Tournai",
+      "city": "Villeneuve-d'Ascq",
+      "postal_code": "59650",
+      "longitude": 3.134797,
+      "latitude": 50.610188
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/gdipnj8m9xgxekrvnck8",
+    "sports": ["Basketball", "Handball"]
+  },
+  {
+    "name": "Stade Roland-Garros",
+    "description": "Le Stade Roland-Garros, situé dans le 16e arrondissement de Paris, est un lieu prestigieux qui accueille les compétitions de boxe et de tennis des Jeux Olympiques de Paris 2024. Il offre une expérience unique aux athlètes et aux passionnés de sports.",
+    "location": {
+      "address": "2 Avenue Gordon Bennett",
+      "city": "Paris",
+      "postal_code": "75016",
+      "longitude": 2.256392,
+      "latitude": 48.846222
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/j2gawyfdwsdxjmxjy0fy",
+    "sports": ["Boxe", "Tennis"]
+  },
+  {
+    "name": "Stade Tour Eiffel",
+    "description": "Le Stade Tour Eiffel, situé au Champ de Mars à Paris, est le site des compétitions de volleyball de plage des Jeux Olympiques de Paris 2024. Avec la Tour Eiffel en toile de fond, il offre un cadre spectaculaire aux joueurs et aux spectateurs.",
+    "location": {
+      "address": "Champ de Mars",
+      "city": "Paris",
+      "postal_code": "75007",
+      "longitude": 2.294694,
+      "latitude": 48.858370
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/zu53q5kn1qo1ijg2dupc",
+    "sports": ["Volleyball de plage"]
+  },
+  {
+    "name": "Stade Yves-du-Manoir",
+    "description": "Le Stade Yves-du-Manoir, situé à Colombes, est un stade historique qui accueille les compétitions de hockey des Jeux Olympiques de Paris 2024. Il offre une atmosphère authentique et un cadre unique pour les amateurs de ce sport.",
+    "location": {
+      "address": "12 Avenue François Mauriac",
+      "city": "Colombes",
+      "postal_code": "92700",
+      "longitude": 2.246972,
+      "latitude": 48.917434
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/tzvgxey7cbfreyala4wo",
+    "sports": ["Hockey"]
+  },
+  {
+    "name": "Trocadéro",
+    "description": "",
+    "location": {
+      "address": "Place du Trocadéro et du 11 Novembre",
+      "city": "Paris",
+      "postal_code": "75016",
+      "longitude": 2.288590,
+      "latitude": 48.862183
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/r9tenlae4f7wfb3w1xhn",
+    "sports": ["Athlétisme", "Cyclisme sur route"]
+  },
+  {
+    "name": "Vélodrome National de Saint-Quentin-en-Yvelines",
+    "description": "",
+    "location": {
+      "address": "1 Rue Laurent Fignon",
+      "city": "Montigny-le-Bretonneux",
+      "postal_code": "78180",
+      "longitude": 2.036987,
+      "latitude": 48.775774
+    },
+    "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/h95mr152jgubt6n4mlm5",
+    "sports": ["Cyclisme sur piste"]
   }
 ]
