@@ -53,7 +53,9 @@ const Header = () => {
 const Footer = () => {
     return MiniReact.createElement(
         "footer",
-        { class: "bg-body-tertiary text-center text-lg-start" },
+        { class: "bg-body-tertiary text-center text-lg-start", style: {
+                "background-color": "rgba(0, 0, 0, 0.05)",
+            },},
         MiniReact.createElement(
             "div",
             { class: "container p-4" },
@@ -85,10 +87,7 @@ const Footer = () => {
         MiniReact.createElement(
             "div",
             {
-                class: "text-center p-3",
-                style: {
-                    "background-color": "rgba(0, 0, 0, 0.05)",
-                },
+                class: "text-center p-3"
             },
             "© 2024 Copyright - ",
             MiniReact.createElement(

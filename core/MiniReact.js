@@ -1,4 +1,4 @@
-import BrowserRouter from "./BrowserRouter.js";
+import BrowserRouter from "../component/BrowserRouter.js";
 import Component from "./Component.js";
 
 const MiniReactDom = {

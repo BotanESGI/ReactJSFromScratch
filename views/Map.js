@@ -1,15 +1,37 @@
 import { MiniReact } from "../core/MiniReact.js";
 import Component from "../core/Component.js";
-import {Button, Header, Footer} from "../component/ReactComponent.js";
+import {Button, Header, Footer, Image} from "../component/ReactComponent.js";
 
 class Map extends Component {
     constructor(props) {
         super(props);
 
+        this.mylatitude = 0;
+        this.mylongitude = 0;
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                position => {
+                    const { latitude, longitude } = position.coords;
+                    this.mylatitude = latitude;
+                    this.mylongitude = longitude;
+                },
+                error => {
+                    console.error('Error getting current position:', error);
+                }
+            );
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+
         this.state = {
             places: [],
-            placeTitle: "title",
-            placeDescription: "description"
+            placeTitle: "",
+            placeDescription: "",
+            placeSportList: "",
+            placeImage: "",
+            placeLocation: "",
+            placeDistance: ""
         };
         this.map = null;
         this.getAllPlaces();
@@ -80,37 +102,64 @@ class Map extends Component {
 
     AddAllPointsClosestToYou = () => {
         this.deleteAllPoints();
-        this.state.places.forEach(place => {
-            this.AddPoint(place.latitude, place.longitude, place.name, place.description, "../assets/img/pointer_default.png", [100, 100], 13);
-        });
-        this.AddCurrentLocationPointInMap();
-    };
+                this.state.places.forEach(place => {
+                    this.AddPoint(place.location.latitude, place.location.longitude, place.name, place.description, "../assets/img/pointer_default.png", [100, 100], 13);
+                    const latlngs = [
+                        [this.mylatitude, this.mylongitude],
+                        [place.location.latitude, place.location.longitude]
+                    ];
 
-    AddCurrentPointInMap = (latitude, longitude, name, description) => {
-        this.setState({
-            placeTitle: name,
-            placeDescription: description
-        });
-        this.componentDidMount();
-        setTimeout(() => {
-            this.deleteAllPoints();
-            this.AddPoint(latitude, longitude, name, description, "../assets/img/pointer_default.png", [100, 100], 13);
-        }, 200);
-    };
-
-    AddCurrentLocationPointInMap = () => {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(position => {
-                const { latitude, longitude } = position.coords;
+                    const polyline = L.polyline(latlngs, { color: 'red' }).addTo(this.map);
+                    this.marqueurs.push(polyline);
+                });
                 const name = "Votre Location";
                 const description = "Votre emplacement actuel.";
-                this.AddPoint(latitude, longitude, name, description, "../assets/img/pointer_current_location.png", [100, 100], 11);
-            }, error => {
-                console.error('Error getting current position:', error);
+                this.AddPoint(this.mylatitude, this.mylongitude, name, description, "../assets/img/pointer_current_location.png", [100, 100], 11);
+    };
+
+
+    AddCurrentPointInMap = (latitude, longitude, name, description, image, location, sports) => {
+        this.CalculeTheCurrentDistance(latitude, longitude, distance => {
+            this.setState({
+                placeTitle: name,
+                placeDescription: description,
+                placeImage: image,
+                placeLocation: location,
+                placeDistance: distance,
+                placeSportList: sports.join(', '),
             });
-        } else {
-            alert("Geolocation is not supported by this browser.");
-        }
+
+            this.componentDidMount();
+            setTimeout(() => {
+                this.deleteAllPoints();
+                this.AddPoint(latitude, longitude, name, description, "../assets/img/pointer_default.png", [100, 100], 13);
+            }, 300);
+        });
+    };
+
+
+
+    CalculeTheCurrentDistance(lat, lon, callback)
+    {
+                const R = 6371;
+                const dLat = (lat - this.mylatitude) * Math.PI / 180;
+                const dLon = (lon - this.mylongitude) * Math.PI / 180;
+                const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                    Math.cos(this.mylatitude * Math.PI / 180) * Math.cos(lat * Math.PI / 180) *
+                    Math.sin(dLon/2) * Math.sin(dLon/2);
+                const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+                const distance = R * c;
+                const distanceString = distance.toFixed(2);
+                callback(distanceString + " km");
+    }
+
+
+
+
+    AddCurrentLocationPointInMap = () => {
+                const name = "Votre Location";
+                const description = "Votre emplacement actuel.";
+                this.AddPoint(this.mylatitude, this.mylongitude, name, description, "../assets/img/pointer_current_location.png", [100, 100], 11);
     };
 
     render() {
@@ -146,16 +195,11 @@ class Map extends Component {
                                             {class: "card-title"},
                                             place.name
                                         ),
-                                        MiniReact.createElement(
-                                            "p",
-                                            {class: "card-text"},
-                                            place.description
-                                        ),
                                         MiniReact.createElement(Button, {
                                             type: "button",
                                             title: "Afficher sur la carte",
                                             class: "btn btn-primary w-100",
-                                            onClick: () => this.AddCurrentPointInMap(place.latitude, place.longitude, place.name, place.description)
+                                            onClick: () => this.AddCurrentPointInMap(place.location.latitude, place.location.longitude, place.name, place.description, place.image, place.location, place.sports)
                                         }),
 
                                     )
@@ -177,22 +221,76 @@ class Map extends Component {
                     MiniReact.createElement(
                         "section",
                         {
-                            id: "places_info"
+                            id: "places_info",
+                            style: {background: "mintcream", padding: "5%"}
                         },
+                        MiniReact.createElement(Image, {
+                            src: this.state.placeImage,
+                            alt: "Paris 2024 Logo",
+                            style: {
+                                width: "-webkit-fill-available"
+                            }
+                        }),
                         MiniReact.createElement(
-                            "p",
+                            "h2",
                             {
-                                id: "places_title"
+                                id: "place_title",
+                                style: {"text-align": "center"}
                             },
                             this.state.placeTitle
                         ),
                         MiniReact.createElement(
+                            "a",
+                            {
+                                href: "https://www.google.com/maps/dir/" + this.mylatitude + "," + this.mylongitude + "/" + this.state.placeLocation.latitude + "," + this.state.placeLocation.longitude,
+                                target:"_blank",
+                                style: {"justify-content": "center", "display": "flex"}
+                            },
+                            "Afficher les itinéraires (Voiture, Transports, Pied, Vélo, Avion)"
+                        ),
+                        MiniReact.createElement(
+                            "ul",
+                            {
+                                id: "place_location",
+                            },
+                            MiniReact.createElement(
+                                "li",
+                                {
+                                },
+                                "Adresse : ", this.state.placeLocation.address
+                            ),
+                            MiniReact.createElement(
+                                "li",
+                                {
+                                },
+                                "Ville : ", this.state.placeLocation.city
+                            ),
+                            MiniReact.createElement(
+                                "li",
+                                {
+                                },
+                                "Code postal : ", this.state.placeLocation.postal_code
+                            ),
+                            MiniReact.createElement(
+                                "li",
+                                {
+                                },
+                                "Distance entre votre position et le lieu  ", this.state.placeDistance
+                            ),
+                            MiniReact.createElement(
+                                "li",
+                                {
+                                },
+                                "Liste des sports : ", this.state.placeSportList
+                            )
+                        ),
+                        MiniReact.createElement(
                             "p",
                             {
-                                id: ""
+                                id: "place_description",
                             },
                             this.state.placeDescription
-                        ),
+                        )
                     ),
                     MiniReact.createElement(Footer),
                 )

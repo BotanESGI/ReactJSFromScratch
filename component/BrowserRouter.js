@@ -1,4 +1,4 @@
-import { MiniReact, MiniReactDom } from "./MiniReact.js";
+import { MiniReact, MiniReactDom } from "../core/MiniReact.js";
 
 class BrowserRouter {
   constructor(routes, rootElement) {
