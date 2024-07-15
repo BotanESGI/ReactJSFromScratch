@@ -41,6 +41,8 @@ const MiniReactDom = {
                 structure.props[propName][eventName]
             );
           }
+        } else if (propName === "dangerouslySetInnerHTML") {
+          element.innerHTML = structure.props[propName].__html;
         } else {
           element.setAttribute(propName, structure.props[propName]);
         }
@@ -192,20 +194,6 @@ const MiniReact = {
       type: "TEXT_NODE",
       content: text,
     };
-  },
-
-  cleanupUnusedInstances: (domContent) => {
-    for (const [key, instance] of MiniReact.componentInstancesReference) {
-      const elementStructure = instance._dom;
-      const domElement = MiniReactDom.elementReferences.get(elementStructure);
-
-      if (domElement && domContent.contains(domElement)) {
-        return;
-      } else {
-        MiniReact.componentInstancesReference.delete(key);
-        MiniReact.componentPropsRefecence.delete(key);
-      }
-    }
   },
 };
 

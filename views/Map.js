@@ -31,7 +31,39 @@ class Map extends Component {
             placeSportList: "",
             placeImage: "",
             placeLocation: "",
-            placeDistance: ""
+            placeDistance: "",
+            placeSpotList: [
+                {
+                    "name": "",
+                    "photo": "",
+                    "description":"",
+                    "influence_hours": "",
+                    "installation":"",
+                    "address": "",
+                    "city": "",
+                    "postal_code": "",
+                    "longitude": 0,
+                    "latitude": 0
+                },
+                {
+                    "name": "Pont de exemple2",
+                    "influence_hours": "9h - 13h - 17h",
+                    "address": "8 Bd de Bercy",
+                    "city": "Paris",
+                    "postal_code": "75012",
+                    "longitude": 2.385683,
+                    "latitude": 48.835455
+                },
+                {
+                    "name": "Pont de exemple3",
+                    "influence_hours": "9h - 13h - 17h",
+                    "address": "8 Bd de Bercy",
+                    "city": "Paris",
+                    "postal_code": "75012",
+                    "longitude": 2.385683,
+                    "latitude": 48.835455
+                }
+            ],
         };
         this.map = null;
         setTimeout(() => {
@@ -112,37 +144,44 @@ class Map extends Component {
 
     AddAllPointsClosestToYou = () => {
         this.deleteAllPoints();
-                this.state.places.forEach(place => {
-                    this.AddPoint(place.location.latitude, place.location.longitude, place.name, place.description, "../assets/img/pointer_default.png", [100, 100], 13);
-                    const latlngs = [
-                        [this.mylatitude, this.mylongitude],
-                        [place.location.latitude, place.location.longitude]
-                    ];
+        this.state.places.forEach(place => {
+            this.AddPoint(place.location.latitude, place.location.longitude, place.name, place.description, "../assets/img/pointer_default.png", [100, 100], 13);
+            const latlngs = [
+                [this.mylatitude, this.mylongitude],
+                [place.location.latitude, place.location.longitude]
+            ];
 
-                    const polyline = L.polyline(latlngs, { color: 'red' }).addTo(this.map);
-                    this.marqueurs.push(polyline);
-                });
-                const name = "Votre Location";
-                const description = "Votre emplacement actuel.";
-                this.AddPoint(this.mylatitude, this.mylongitude, name, description, "../assets/img/pointer_current_location.png", [100, 100], 20);
+            const polyline = L.polyline(latlngs, { color: 'red' }).addTo(this.map);
+            this.marqueurs.push(polyline);
+        });
+        const name = "Votre Location";
+        const description = "Votre emplacement actuel.";
+        this.AddPoint(this.mylatitude, this.mylongitude, name, description, "../assets/img/pointer_current_location.png", [100, 100], 20);
     };
 
 
-    AddCurrentPointInMap = (latitude, longitude, name, description, image, location, sports) => {
-            this.setState({
-                placeTitle: name,
-                placeDescription: description,
-                placeImage: image,
-                placeLocation: location,
-                placeDistance: this.CalculeTheCurrentDistance(latitude, longitude).toFixed(2) + " km",
-                placeSportList: sports.join(', '),
-            });
+    AddCurrentPointInMap = (latitude, longitude, name, description, image, location, sports, bestspots) => {
+        const updatedBestSpots = bestspots.map(spot => ({
+            ...spot,
+            installation: spot.installation.replace(/-/g, '<br>-')
+        }));
 
-            this.componentDidMount();
-            setTimeout(() => {
-                this.deleteAllPoints();
-                this.AddPoint(latitude, longitude, name, description, "../assets/img/pointer_default.png", [100, 100], 13);
-            }, 400);
+
+        this.setState({
+            placeTitle: name,
+            placeDescription: description,
+            placeImage: image,
+            placeLocation: location,
+            placeDistance: this.CalculeTheCurrentDistance(latitude, longitude).toFixed(2) + " km",
+            placeSportList: sports.join(', '),
+            placeSpotList: updatedBestSpots
+        });
+
+        this.componentDidMount();
+        setTimeout(() => {
+            this.deleteAllPoints();
+            this.AddPoint(latitude, longitude, name, description, "../assets/img/pointer_default.png", [100, 100], 13);
+        }, 400);
     };
 
 
@@ -163,9 +202,9 @@ class Map extends Component {
 
 
     AddCurrentLocationPointInMap = () => {
-                const name = "Votre Location";
-                const description = "Votre emplacement actuel.";
-                this.AddPoint(this.mylatitude, this.mylongitude, name, description, "../assets/img/pointer_current_location.png", [100, 100], 11);
+        const name = "Votre Location";
+        const description = "Votre emplacement actuel.";
+        this.AddPoint(this.mylatitude, this.mylongitude, name, description, "../assets/img/pointer_current_location.png", [100, 100], 11);
     };
 
     render() {
@@ -185,7 +224,7 @@ class Map extends Component {
                             "div",
                             {
                                 id: "places",
-                                style: {overflow: "auto", height: "602px", width: "20rem"}
+                                style: {overflow: "auto", height: "602px", width: "18rem"}
                             },
                             MiniReact.createElement(
                                 "small",
@@ -212,7 +251,7 @@ class Map extends Component {
                                             type: "button",
                                             title: "Afficher sur la carte",
                                             class: "btn btn-primary w-100",
-                                            onClick: () => this.AddCurrentPointInMap(place.location.latitude, place.location.longitude, place.name, place.description, place.image, place.location, place.sports)
+                                            onClick: () => this.AddCurrentPointInMap(place.location.latitude, place.location.longitude, place.name, place.description, place.image, place.location, place.sports, place.bestspots)
                                         }),
 
                                     )
@@ -303,7 +342,49 @@ class Map extends Component {
                                 id: "place_description",
                             },
                             this.state.placeDescription
+                        ),
+                        MiniReact.createElement(
+                            "div",
+                            {
+                                id: "imageGallery",
+                                style: { overflowX: "auto", whiteSpace: "nowrap", padding: "10px" }
+                            },"Les meilleures spots : ",
+                            MiniReact.createElement("br", null ),
+                            ...this.state.placeSpotList.map(spot => (
+                                MiniReact.createElement(
+                                    "div",
+                                    {
+                                        style: {
+                                            display: "inline-block",
+                                            width: "300px",
+                                            height: "100%",
+                                            margin: "0 10px 10px 0",
+                                            verticalAlign: "top",
+                                            backgroundColor: "#f0f0f0",
+                                            padding: "10px",
+                                        }
+                                    },
+                                    MiniReact.createElement("img", { src: spot.photo, style: { width: "100%", marginBottom: "10px"} }),
+                                    MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Spot : " + spot.name),
+                                    MiniReact.createElement("br", null ),
+                                    MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Description : " + spot.description),
+                                    MiniReact.createElement("br", null ),
+                                    MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Adresse : " + spot.address),
+                                    MiniReact.createElement("br", null ),
+                                    MiniReact.createElement(
+                                        "div",
+                                        {
+                                            dangerouslySetInnerHTML: {
+                                                __html: "<p>Installation disponible :" + spot.installation + "</p>"
+                                            }
+                                        }
+                                    ),
+                                    MiniReact.createElement("br", null ),
+                                    MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Heures d'influence : " + spot.influence_hours)
+                                )
+                            ))
                         )
+
                     ),
                     MiniReact.createElement(Footer),
                 )

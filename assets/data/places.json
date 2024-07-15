@@ -9,6 +9,38 @@
       "longitude": 2.385683,
       "latitude": 48.835455
     },
+    "bestspots": [
+      {
+        "name": "Jardin des Tuileries",
+        "photo": "assets/img/jardin01.jpeg",
+        "description": "Le Jardin des Tuileries est un jardin public situé entre le Louvre et la Place de la Concorde, offrant des promenades agréables et des œuvres d'art en plein air.",
+        "influence_hours": "8h - 12h - 16h",
+        "installation": "-Bancs\n-Fontaines\n-Statues\n-Cafés",
+        "address": "113 Rue de Rivoli, 75001 Paris, France",
+        "longitude": 2.3266,
+        "latitude": 48.8638
+      },
+      {
+        "name": "Pont des Arts",
+        "photo": "assets/img/pont01.jpg",
+        "description": "Ce pont piéton est souvent fréquenté par les amoureux et les artistes. Il offre une vue superbe sur le Louvre et l'Institut de France.",
+        "influence_hours": "6h - 11h - 16h",
+        "installation": "-Bancs publics\n-Espaces pour les artistes de rue\n-Éclairage nocturne",
+        "address": "75001 Paris, France",
+        "longitude": 2.3377,
+        "latitude": 48.8606
+      },
+      {
+        "name": "Terrasse du Centre Pompidou",
+        "photo": "assets/img/terrase01.jpg",
+        "description": "La terrasse du Centre Pompidou offre une vue imprenable sur les toits de Paris et la Tour Eiffel, tout en étant entourée d'œuvres d'art contemporain.",
+        "influence_hours": "11h - 14h - 18h",
+        "installation": "-Café\n-Restaurant\n-Expositions",
+        "address": "Place Georges-Pompidou, 75004 Paris, France",
+        "longitude": 2.3522,
+        "latitude": 48.8606
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1920/f_auto/primary/bx20ndrnvlssfiocnw6e",
     "sports": [
       "Tennis",
@@ -25,6 +57,28 @@
       "longitude": 2.298337,
       "latitude": 48.855633
     },
+    "bestspots": [
+      {
+        "name": "Pont de l'Alma",
+        "photo": "assets/img/pont02.jpg",
+        "description": "Construit en 1854, ce pont est connu pour la statue du Zouave, utilisée comme indicateur du niveau de la Seine.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Statue du Zouave\n-Bancs publics\n-Éclairage nocturne",
+        "address": "75007 Paris, France",
+        "longitude": 2.3009,
+        "latitude": 48.8626
+      },
+      {
+        "name": "Parc des Buttes-Chaumont",
+        "photo": "assets/img/parc01.jpg",
+        "description": "Le Parc des Buttes-Chaumont est un grand espace vert vallonné avec des falaises, des cascades et une vue spectaculaire depuis le Temple de la Sybille.",
+        "influence_hours": "7h - 13h - 16h",
+        "installation": "-Bancs\n-Lacs\n-Passerelles\n-Restaurants",
+        "address": "1 Rue Botzaris, 75019 Paris, France",
+        "longitude": 2.3810,
+        "latitude": 48.8806
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_s_16_9_g_auto/t_s_w1920/f_auto/primary/i70myvzy7xdcvzix0qpt",
     "sports": [
       "Judo",
@@ -43,6 +97,58 @@
       "longitude": 2.121403,
       "latitude": 48.804864
     },
+    "bestspots": [
+      {
+        "name": "Pont Bir-Hakeim",
+        "photo": "assets/img/pont03.jpg",
+        "description": "Ce pont à double niveau offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses apparitions dans divers films.",
+        "influence_hours": "6h - 10h - 14h",
+        "installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
+        "address": "75015 Paris, France",
+        "longitude": 2.2871,
+        "latitude": 48.8554
+      },
+      {
+        "name": "Parc Monceau",
+        "photo": "assets/img/parc02.jpg",
+        "description": "Le Parc Monceau est un élégant jardin à l'anglaise, avec des statues, des ponts, et des répliques de monuments historiques.",
+        "influence_hours": "8h - 12h - 16h",
+        "installation": "-Bancs\n-Statues\n-Pelouses\n-Aires de jeux",
+        "address": "35 Boulevard de Courcelles, 75008 Paris, France",
+        "longitude": 2.3086,
+        "latitude": 48.8792
+      },
+      {
+        "name": "Pont de la Concorde",
+        "photo": "assets/img/pont04.jpg",
+        "description": "Construit en 1791, ce pont relie la Place de la Concorde à l'Assemblée Nationale. Il est réalisé en pierres de taille provenant de la démolition de la Bastille.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+        "address": "75007 Paris, France",
+        "longitude": 2.3185,
+        "latitude": 48.8630
+      },
+      {
+        "name": "Jardin du Luxembourg",
+        "photo": "assets/img/jardin01.jpeg",
+        "description": "Le Jardin du Luxembourg est un parc emblématique avec de vastes pelouses, des sculptures, des fontaines et des terrains de tennis.",
+        "influence_hours": "8h - 14h - 17h",
+        "installation": "-Bancs\n-Statues\n-Fontaines\n-Cafés",
+        "address": "6e Arrondissement, 75006 Paris, France",
+        "longitude": 2.3372,
+        "latitude": 48.8462
+      },
+      {
+        "name": "Pont de Sully",
+        "photo": "assets/img/pont05.jpg",
+        "description": "Ce pont offre une vue dégagée sur l'Île Saint-Louis et Notre-Dame. Il relie le boulevard Henri IV au boulevard Saint-Germain.",
+        "influence_hours": "6h - 11h - 15h",
+        "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+        "address": "75004 Paris, France",
+        "longitude": 2.3628,
+        "latitude": 48.8526
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/y7xlwlk8nfvpia9jlitq",
     "sports": [
       "Sports Équestres"
@@ -58,6 +164,46 @@
       "longitude": 2.313841,
       "latitude": 48.866109
     },
+    "bestspots": [    {
+      "name": "Parc André Citroën",
+      "photo": "assets/img/parc03.jpg",
+      "description": "Le Parc André Citroën est un parc moderne au bord de la Seine, connu pour ses serres, ses jardins thématiques et sa grande pelouse.",
+      "influence_hours": "8h - 13h - 17h",
+      "installation": "-Jardins thématiques\n-Serres\n-Ballons captifs",
+      "address": "2 Rue Cauchy, 75015 Paris, France",
+      "longitude": 2.2770,
+      "latitude": 48.8384
+    },
+      {
+        "name": "Pont Saint-Michel",
+        "photo": "assets/img/pont6.jpg",
+        "description": "Ce pont relie l'Île de la Cité au Quartier Latin. Construit en 1857, il porte le nom de la place Saint-Michel toute proche.",
+        "influence_hours": "7h - 11h - 16h",
+        "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+        "address": "75005 Paris, France",
+        "longitude": 2.3431,
+        "latitude": 48.8552
+      },
+      {
+        "name": "Coulée verte René-Dumont",
+        "photo": "assets/img/jardin01.jpeg",
+        "description": "Ancienne voie ferrée reconvertie en promenade, la Coulée verte René-Dumont traverse le 12ème arrondissement sur une distance de 4,7 km.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs\n-Jardins thématiques\n-Points de vue panoramiques",
+        "address": "44 Rue de Lyon, 75012 Paris, France",
+        "longitude": 2.3769,
+        "latitude": 48.8458
+      },
+      {
+        "name": "Pont Marie",
+        "photo": "assets/img/pont03.jpeg",
+        "description": "Construit en 1614, ce pont relie l'Île Saint-Louis au quai de l'Hôtel de Ville. Il est un des plus anciens ponts de Paris.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75004 Paris, France",
+        "longitude": 2.3585,
+        "latitude": 48.8535
+      }],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/isejdmd8ox6attvfqjkg",
     "sports": [
       "Escrime"
@@ -73,6 +219,77 @@
       "longitude": 2.352222,
       "latitude": 48.856614
     },
+    "bestspots": [{
+      "name": "Jardin des Plantes",
+      "photo": "assets/img/jardin01.jpg",
+      "description": "Le Jardin des Plantes est un jardin botanique historique avec des serres, des jardins thématiques et un zoo.",
+      "influence_hours": "8h - 13h - 17h",
+      "installation": "-Jardins thématiques\n-Serres\n-Zoo\n-Musées",
+      "address": "57 Rue Cuvier, 75005 Paris, France",
+      "longitude": 2.3602,
+      "latitude": 48.8430
+    },
+      {
+        "name": "Pont de Grenelle",
+        "photo": "assets/img/pont03.jpg",
+        "description": "Construit en 1966, ce pont relie le 15ème et le 16ème arrondissement en passant par l'Île aux Cygnes.",
+        "influence_hours": "6h - 11h - 15h",
+        "installation": "-Statue de la Liberté\n-Bancs publics\n-Piste cyclable",
+        "address": "75015 Paris, France",
+        "longitude": 2.2777,
+        "latitude": 48.8506
+      },
+      {
+        "name": "Square du Vert-Galant",
+        "photo": "https://img.com/vert_galant",
+        "description": "Le Square du Vert-Galant est un petit parc paisible à la pointe de l'Île de la Cité, offrant une vue imprenable sur la Seine.",
+        "influence_hours": "8h - 12h - 16h",
+        "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
+        "address": "1 Square du Vert-Galant, 75001 Paris, France",
+        "longitude": 2.3399,
+        "latitude": 48.8565
+      },
+      {
+        "name": "Pont de l'Archevêché",
+        "photo": "assets/img/pont07.jpg",
+        "description": "Ce pont, construit en 1828, relie l'Île de la Cité au quai de la Tournelle. Il est surtout connu pour les milliers de cadenas d'amour accrochés à ses grilles.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75004 Paris, France",
+        "longitude": 2.3517,
+        "latitude": 48.8522
+      },
+      {
+        "name": "Les Berges de Seine",
+        "photo": "assets/img/pont08.jpg",
+        "description": "Les Berges de Seine sont un espace piétonnier le long de la Seine, offrant des activités de loisirs, des promenades et des événements culturels.",
+        "influence_hours": "9h - 14h - 18h",
+        "installation": "-Bancs\n-Activités de loisirs\n-Cafés\n-Événements",
+        "address": "Port de Solférino, 75007 Paris, France",
+        "longitude": 2.3234,
+        "latitude": 48.8602
+      },
+      {
+        "name": "Pont de Bercy",
+        "photo": "assets/img/pont07.jpg",
+        "description": "Ce pont relie le 12ème arrondissement au quartier de Bercy. Il est doté de deux niveaux : un pour la circulation automobile et un pour le métro.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Piste cyclable\n-Passerelle pour piétons\n-Éclairage nocturne",
+        "address": "75012 Paris, France",
+        "longitude": 2.3750,
+        "latitude": 48.8375
+      },
+      {
+        "name": "Jardin d'Acclimatation",
+        "photo": "assets/img/jardin02.jpg",
+        "description": "Le Jardin d'Acclimatation est un parc d'attractions pour enfants avec des manèges, des ateliers et des aires de jeux.",
+        "influence_hours": "10h - 13h - 17h",
+        "installation": "-Manèges\n-Aires de jeux\n-Restaurants\n-Jardins",
+        "address": "Bois de Boulogne, 75116 Paris, France",
+        "longitude": 2.2749,
+        "latitude": 48.8784
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/x2gqogcosqtmh4z5ewea",
     "sports": [
       "Athlétisme",
@@ -89,6 +306,17 @@
       "longitude": 2.311518,
       "latitude": 48.856647
     },
+    "bestspots": [{
+      "name": "Pont d'Iéna",
+      "photo": "https://img.com/pont_d_iena",
+      "description": "Ce pont relie la Tour Eiffel au Trocadéro. Construit en 1814, il offre une vue spectaculaire sur la Tour Eiffel et la Seine.",
+      "influence_hours": "6h - 10h - 14h",
+      "installation": "-Bancs publics\n-Éclairage nocturne\n-Piste cyclable",
+      "address": "75016 Paris, France",
+      "longitude": 2.2920,
+      "latitude": 48.8577
+    }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/vsoxjhgouhfczq9ks4av",
     "sports": [
       "Athlétisme",
@@ -105,6 +333,27 @@
   "longitude": 2.321916,
   "latitude": 48.865633
 },
+    "bestspots": [{
+      "name": "Parc Montsouris",
+      "photo": "assets/img/parc03.jpg",
+      "description": "Le Parc Montsouris est un grand parc paysager du 14ème arrondissement, idéal pour les promenades et les pique-niques.",
+      "influence_hours": "8h - 13h - 17h",
+      "installation": "-Bancs\n-Pelouses\n-Lacs\n-Restaurants",
+      "address": "2 Rue Gazan, 75014 Paris, France",
+      "longitude": 2.3370,
+      "latitude": 48.8220
+    },
+      {
+        "name": "Pont d'Austerlitz",
+        "photo": "assets/img/pont06.jpg",
+        "description": "Construit en 1807, ce pont relie le Jardin des Plantes au quartier de la Gare. Il porte le nom de la victoire de Napoléon à Austerlitz.",
+        "influence_hours": "7h - 11h - 15h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75005 Paris, France",
+        "longitude": 2.3675,
+        "latitude": 48.8420
+      }
+    ],
   "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/dkysx7e06ynhwfb3v0w9",
   "sports": ["Basketball 3x3"]
   },
@@ -118,6 +367,37 @@
       "longitude": 2.046627,
       "latitude": 48.771941
     },
+    "bestspots": [{
+      "name": "Jardin du Ranelagh",
+      "photo": "assets/img/jardin02.jpg",
+      "description": "Le Jardin du Ranelagh est un parc du 16ème arrondissement, avec des aires de jeux, des sculptures et de grands espaces verts.",
+      "influence_hours": "9h - 13h - 18h",
+      "installation": "-Bancs\n-Statues\n-Aires de jeux\n-Pelouses",
+      "address": "1 Avenue Prudhon, 75016 Paris, France",
+      "longitude": 2.2730,
+      "latitude": 48.8584
+    },
+      {
+        "name": "Pont de Tolbiac",
+        "photo": "assets/img/pont01.jpg",
+        "description": "Ce pont relie le quartier de Bercy à la Bibliothèque François Mitterrand. Construit en 1876, il offre une vue sur les quais de Seine.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs publics\n-Éclairage nocturne\n-Piste cyclable",
+        "address": "75013 Paris, France",
+        "longitude": 2.3800,
+        "latitude": 48.8314
+      },
+      {
+        "name": "Bois de Vincennes",
+        "photo": "https://img.com/bois_de_vincennes",
+        "description": "Le Bois de Vincennes est un grand parc public à l'est de Paris, offrant des activités de plein air, des jardins botaniques et un zoo.",
+        "influence_hours": "8h - 13h - 17h",
+        "installation": "-Bancs\n-Jardins thématiques\n-Zoo\n-Lacs",
+        "address": "Route de la Pyramide, 75012 Paris, France",
+        "longitude": 2.4400,
+        "latitude": 48.8284
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/aq7kowcwlmh8nqp8z8zr",
     "sports": ["Golf"]
   },
@@ -131,6 +411,57 @@
       "longitude": 5.370581,
       "latitude": 43.297195
     },
+    "bestspots": [{
+      "name": "Pont Garigliano",
+      "photo": "assets/img/pont07.jpg",
+      "description": "Ce pont, construit en 1966, est le plus grand pont de Paris. Il relie le 15ème et le 16ème arrondissement.",
+      "influence_hours": "7h - 11h - 15h",
+      "installation": "-Piste cyclable\n-Éclairage nocturne\n-Passerelle piétonne",
+      "address": "75015 Paris, France",
+      "longitude": 2.2660,
+      "latitude": 48.8380
+    },
+      {
+        "name": "Jardin des Serres d'Auteuil",
+        "photo": "assets/img/jardin03.jpg",
+        "description": "Le Jardin des Serres d'Auteuil est un jardin botanique avec de magnifiques serres historiques et des collections de plantes rares.",
+        "influence_hours": "9h - 13h - 17h",
+        "installation": "-Serres\n-Bancs\n-Jardins thématiques\n-Fontaines",
+        "address": "3 Avenue de la Porte d'Auteuil, 75016 Paris, France",
+        "longitude": 2.2531,
+        "latitude": 48.8475
+      },
+      {
+        "name": "Pont de Bir-Hakeim",
+        "photo": "https://img.com/pont_bir_hakeim",
+        "description": "Ce pont à deux niveaux offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses sculptures et son architecture unique.",
+        "influence_hours": "6h - 10h - 14h",
+        "installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
+        "address": "75015 Paris, France",
+        "longitude": 2.2871,
+        "latitude": 48.8554
+      },
+      {
+        "name": "Parc de Bercy",
+        "photo": "https://img.com/parc_de_bercy",
+        "description": "Le Parc de Bercy est un grand parc moderne avec des jardins thématiques, des bassins et des aires de jeux.",
+        "influence_hours": "8h - 12h - 17h",
+        "installation": "-Jardins thématiques\n-Bassins\n-Aires de jeux\n-Restaurants",
+        "address": "128 Quai de Bercy, 75012 Paris, France",
+        "longitude": 2.3842,
+        "latitude": 48.8347
+      },
+      {
+        "name": "Pont de Tolbiac",
+        "photo": "assets/img/pont01.jpg",
+        "description": "Ce pont relie le quartier de Bercy à la Bibliothèque François Mitterrand. Construit en 1876, il offre une vue sur les quais de Seine.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs publics\n-Éclairage nocturne\n-Piste cyclable",
+        "address": "75013 Paris, France",
+        "longitude": 2.3800,
+        "latitude": 48.8314
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/a3dg9k4vqcvfwltczrxn",
     "sports": ["Voile"]
   },
@@ -144,6 +475,27 @@
       "longitude": 2.252433,
       "latitude": 48.841646
     },
+    "bestspots": [ {
+      "name": "Bois de Vincennes",
+      "photo": "https://img.com/bois_de_vincennes",
+      "description": "Le Bois de Vincennes est un grand parc public à l'est de Paris, offrant des activités de plein air, des jardins botaniques et un zoo.",
+      "influence_hours": "8h - 13h - 17h",
+      "installation": "-Bancs\n-Jardins thématiques\n-Zoo\n-Lacs",
+      "address": "Route de la Pyramide, 75012 Paris, France",
+      "longitude": 2.4400,
+      "latitude": 48.8284
+    },
+      {
+        "name": "Pont Garigliano",
+        "photo": "assets/img/pont07.jpg",
+        "description": "Ce pont, construit en 1966, est le plus grand pont de Paris. Il relie le 15ème et le 16ème arrondissement.",
+        "influence_hours": "7h - 11h - 15h",
+        "installation": "-Piste cyclable\n-Éclairage nocturne\n-Passerelle piétonne",
+        "address": "75015 Paris, France",
+        "longitude": 2.2660,
+        "latitude": 48.8380
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/xxi7qpjhwhh1tqewooib",
     "sports": ["Football"]
   },
@@ -157,6 +509,16 @@
       "longitude": 2.238335,
       "latitude": 48.895651
     },
+    "bestspots": [ {
+      "name": "Jardin des Serres d'Auteuil",
+      "photo": "assets/img/jardin03.jpg",
+      "description": "Le Jardin des Serres d'Auteuil est un jardin botanique avec de magnifiques serres historiques et des collections de plantes rares.",
+      "influence_hours": "9h - 13h - 17h",
+      "installation": "-Serres\n-Bancs\n-Jardins thématiques\n-Fontaines",
+      "address": "3 Avenue de la Porte d'Auteuil, 75016 Paris, France",
+      "longitude": 2.2531,
+      "latitude": 48.8475
+    }],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/v6t0hesg2db1d5gzqb3i",
     "sports": ["Natation", "Water-Polo"]
   },
@@ -170,6 +532,47 @@
       "longitude": 2.312231,
       "latitude": 48.863888
     },
+    "bestspots": [ {
+      "name": "Pont Neuf",
+      "photo": "https://img.com/pont_neuf",
+      "description": "Construit entre 1578 et 1607, le Pont Neuf est le plus ancien pont de Paris encore existant. Il traverse la Seine au niveau de l'Île de la Cité.",
+      "influence_hours": "6h - 10h - 14h",
+      "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+      "address": "75001 Paris, France",
+      "longitude": 2.3400,
+      "latitude": 48.8566
+    },
+      {
+        "name": "Balcon du Printemps Haussmann",
+        "photo": "https://img.com/printemps_haussmann",
+        "description": "Le balcon du Printemps Haussmann offre une vue panoramique sur les toits de Paris et des monuments emblématiques.",
+        "influence_hours": "10h - 14h - 17h",
+        "installation": "-Café\n-Restaurant\n-Accès libre",
+        "address": "64 Boulevard Haussmann, 75009 Paris, France",
+        "longitude": 2.3285,
+        "latitude": 48.8721
+      },
+      {
+        "name": "Pont Alexandre III",
+        "photo": "https://img.com/pont_alexandre_iii",
+        "description": "Inauguré en 1900, ce pont est célèbre pour ses sculptures ornées et ses vues magnifiques sur les Invalides et la Tour Eiffel.",
+        "influence_hours": "7h - 11h - 15h",
+        "installation": "-Éclairage artistique\n-Bancs publics\n-Points de vue panoramiques",
+        "address": "75008 Paris, France",
+        "longitude": 2.3130,
+        "latitude": 48.8637
+      },
+      {
+        "name": "Jardin des Tuileries",
+        "photo": "assets/img/jardin01.jpeg",
+        "description": "Le Jardin des Tuileries est un jardin public situé entre le Louvre et la Place de la Concorde, offrant des promenades agréables et des œuvres d'art en plein air.",
+        "influence_hours": "8h - 12h - 16h",
+        "installation": "-Bancs\n-Fontaines\n-Statues\n-Cafés",
+        "address": "113 Rue de Rivoli, 75001 Paris, France",
+        "longitude": 2.3266,
+        "latitude": 48.8638
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/yhjrtevgfd8fac6blbau",
     "sports": ["Triathlon"]
   },
@@ -183,6 +586,87 @@
       "longitude": 2.048194,
       "latitude": 48.786733
     },
+    "bestspots": [{
+      "name": "Pont des Arts",
+      "photo": "assets/img/pont01.jpg",
+      "description": "Ce pont piéton est souvent fréquenté par les amoureux et les artistes. Il offre une vue superbe sur le Louvre et l'Institut de France.",
+      "influence_hours": "6h - 11h - 16h",
+      "installation": "-Bancs publics\n-Espaces pour les artistes de rue\n-Éclairage nocturne",
+      "address": "75001 Paris, France",
+      "longitude": 2.3377,
+      "latitude": 48.8606
+    },
+      {
+        "name": "Terrasse du Centre Pompidou",
+        "photo": "assets/img/terrase02.jpg",
+        "description": "La terrasse du Centre Pompidou offre une vue imprenable sur les toits de Paris et la Tour Eiffel, tout en étant entourée d'œuvres d'art contemporain.",
+        "influence_hours": "11h - 14h - 18h",
+        "installation": "-Café\n-Restaurant\n-Expositions",
+        "address": "Place Georges-Pompidou, 75004 Paris, France",
+        "longitude": 2.3522,
+        "latitude": 48.8606
+      },
+      {
+        "name": "Pont de l'Alma",
+        "photo": "assets/img/pont01.jpg",
+        "description": "Construit en 1854, ce pont est connu pour la statue du Zouave, utilisée comme indicateur du niveau de la Seine.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Statue du Zouave\n-Bancs publics\n-Éclairage nocturne",
+        "address": "75007 Paris, France",
+        "longitude": 2.3009,
+        "latitude": 48.8626
+      },
+      {
+        "name": "Parc des Buttes-Chaumont",
+        "photo": "assets/img/parc01.jpg",
+        "description": "Le Parc des Buttes-Chaumont est un grand espace vert vallonné avec des falaises, des cascades et une vue spectaculaire depuis le Temple de la Sybille.",
+        "influence_hours": "7h - 13h - 16h",
+        "installation": "-Bancs\n-Lacs\n-Passerelles\n-Restaurants",
+        "address": "1 Rue Botzaris, 75019 Paris, France",
+        "longitude": 2.3810,
+        "latitude": 48.8806
+      },
+      {
+        "name": "Pont Bir-Hakeim",
+        "photo": "assets/img/pont03.jpg",
+        "description": "Ce pont à double niveau offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses apparitions dans divers films.",
+        "influence_hours": "6h - 10h - 14h",
+        "installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
+        "address": "75015 Paris, France",
+        "longitude": 2.2871,
+        "latitude": 48.8554
+      },
+      {
+        "name": "Parc Monceau",
+        "photo": "assets/img/parc02.jpg",
+        "description": "Le Parc Monceau est un élégant jardin à l'anglaise, avec des statues, des ponts, et des répliques de monuments historiques.",
+        "influence_hours": "8h - 12h - 16h",
+        "installation": "-Bancs\n-Statues\n-Pelouses\n-Aires de jeux",
+        "address": "35 Boulevard de Courcelles, 75008 Paris, France",
+        "longitude": 2.3086,
+        "latitude": 48.8792
+      },
+      {
+        "name": "Pont de la Concorde",
+        "photo": "assets/img/pont04.jpg",
+        "description": "Construit en 1791, ce pont relie la Place de la Concorde à l'Assemblée Nationale. Il est réalisé en pierres de taille provenant de la démolition de la Bastille.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+        "address": "75007 Paris, France",
+        "longitude": 2.3185,
+        "latitude": 48.8630
+      },
+      {
+        "name": "Jardin du Luxembourg",
+        "photo": "assets/img/jardin01.jpeg",
+        "description": "Le Jardin du Luxembourg est un parc emblématique avec de vastes pelouses, des sculptures, des fontaines et des terrains de tennis.",
+        "influence_hours": "8h - 14h - 17h",
+        "installation": "-Bancs\n-Statues\n-Fontaines\n-Cafés",
+        "address": "6e Arrondissement, 75006 Paris, France",
+        "longitude": 2.3372,
+        "latitude": 48.8462
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/lcbrslxdtvbjf1hlr4ak",
     "sports": ["Cycling BMX Racing"]
   },
@@ -196,6 +680,67 @@
       "longitude": -0.554247,
       "latitude": 44.834835
     },
+    "bestspots": [{
+      "name": "Pont de Sully",
+      "photo": "assets/img/pont05.jpg",
+      "description": "Ce pont offre une vue dégagée sur l'Île Saint-Louis et Notre-Dame. Il relie le boulevard Henri IV au boulevard Saint-Germain.",
+      "influence_hours": "6h - 11h - 15h",
+      "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+      "address": "75004 Paris, France",
+      "longitude": 2.3628,
+      "latitude": 48.8526
+    },
+      {
+        "name": "Parc de la Villette",
+        "photo": "https://img.com/parc_de_la_villette",
+        "description": "Le Parc de la Villette est un vaste parc culturel avec des installations modernes, des espaces verts et des salles de concert.",
+        "influence_hours": "9h - 13h - 18h",
+        "installation": "-Jardins thématiques\n-Scènes de concert\n-Cafés\n-Musiques en plein air",
+        "address": "211 Avenue Jean Jaurès, 75019 Paris, France",
+        "longitude": 2.3933,
+        "latitude": 48.8964
+      },
+      {
+        "name": "Pont de la Tournelle",
+        "photo": "https://img.com/pont_de_la_tournelle",
+        "description": "Ce pont relie le Quartier Latin à l'Île Saint-Louis. Il est surmonté d'une statue de Sainte Geneviève, patronne de Paris.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+        "address": "75005 Paris, France",
+        "longitude": 2.3540,
+        "latitude": 48.8507
+      },
+      {
+        "name": "Promenade Plantée",
+        "photo": "https://img.com/promenade_plantee",
+        "description": "La Promenade Plantée est une ancienne voie ferrée transformée en jardin suspendu, offrant une promenade tranquille au-dessus des rues de Paris.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
+        "address": "Avenue Daumesnil, 75012 Paris, France",
+        "longitude": 2.3851,
+        "latitude": 48.8425
+      },
+      {
+        "name": "Pont au Change",
+        "photo": "https://img.com/pont_au_change",
+        "description": "Situé près du Palais de Justice, ce pont relie l'Île de la Cité au quartier du Châtelet.",
+        "influence_hours": "6h - 11h - 15h",
+        "installation": "-Bancs publics\n-Éclairage nocturne\n-Vues sur les monuments historiques",
+        "address": "75001 Paris, France",
+        "longitude": 2.3458,
+        "latitude": 48.8563
+      },
+      {
+        "name": "Parc André Citroën",
+        "photo": "assets/img/parc03.jpg",
+        "description": "Le Parc André Citroën est un parc moderne au bord de la Seine, connu pour ses serres, ses jardins thématiques et sa grande pelouse.",
+        "influence_hours": "8h - 13h - 17h",
+        "installation": "-Jardins thématiques\n-Serres\n-Ballons captifs",
+        "address": "2 Rue Cauchy, 75015 Paris, France",
+        "longitude": 2.2770,
+        "latitude": 48.8384
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/xoz3y0xn3yocizbemr4i",
     "sports": ["Football"]
   },
@@ -209,6 +754,77 @@
       "longitude": 2.359615,
       "latitude": 48.924736
     },
+    "bestspots": [{
+      "name": "Coulée verte René-Dumont",
+      "photo": "https://img.com/coulee_verte",
+      "description": "Ancienne voie ferrée reconvertie en promenade, la Coulée verte René-Dumont traverse le 12ème arrondissement sur une distance de 4,7 km.",
+      "influence_hours": "7h - 12h - 16h",
+      "installation": "-Bancs\n-Jardins thématiques\n-Points de vue panoramiques",
+      "address": "44 Rue de Lyon, 75012 Paris, France",
+      "longitude": 2.3769,
+      "latitude": 48.8458
+    },
+      {
+        "name": "Pont Marie",
+        "photo": "https://img.com/pont_marie",
+        "description": "Construit en 1614, ce pont relie l'Île Saint-Louis au quai de l'Hôtel de Ville. Il est un des plus anciens ponts de Paris.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75004 Paris, France",
+        "longitude": 2.3585,
+        "latitude": 48.8535
+      },
+      {
+        "name": "Jardin des Plantes",
+         "photo": "assets/img/jardin01.jpg",
+        "description": "Le Jardin des Plantes est un jardin botanique historique avec des serres, des jardins thématiques et un zoo.",
+        "influence_hours": "8h - 13h - 17h",
+        "installation": "-Jardins thématiques\n-Serres\n-Zoo\n-Musées",
+        "address": "57 Rue Cuvier, 75005 Paris, France",
+        "longitude": 2.3602,
+        "latitude": 48.8430
+      },
+      {
+        "name": "Pont de Grenelle",
+        "photo": "assets/img/pont01.jpg",
+        "description": "Construit en 1966, ce pont relie le 15ème et le 16ème arrondissement en passant par l'Île aux Cygnes.",
+        "influence_hours": "6h - 11h - 15h",
+        "installation": "-Statue de la Liberté\n-Bancs publics\n-Piste cyclable",
+        "address": "75015 Paris, France",
+        "longitude": 2.2777,
+        "latitude": 48.8506
+      },
+      {
+        "name": "Square du Vert-Galant",
+        "photo": "https://img.com/vert_galant",
+        "description": "Le Square du Vert-Galant est un petit parc paisible à la pointe de l'Île de la Cité, offrant une vue imprenable sur la Seine.",
+        "influence_hours": "8h - 12h - 16h",
+        "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
+        "address": "1 Square du Vert-Galant, 75001 Paris, France",
+        "longitude": 2.3399,
+        "latitude": 48.8565
+      },
+      {
+        "name": "Pont de l'Archevêché",
+        "photo": "assets/img/pont07.jpg",
+        "description": "Ce pont, construit en 1828, relie l'Île de la Cité au quai de la Tournelle. Il est surtout connu pour les milliers de cadenas d'amour accrochés à ses grilles.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75004 Paris, France",
+        "longitude": 2.3517,
+        "latitude": 48.8522
+      },
+      {
+        "name": "Les Berges de Seine",
+        "photo": "assets/img/pont08.jpg",
+        "description": "Les Berges de Seine sont un espace piétonnier le long de la Seine, offrant des activités de loisirs, des promenades et des événements culturels.",
+        "influence_hours": "9h - 14h - 18h",
+        "installation": "-Bancs\n-Activités de loisirs\n-Cafés\n-Événements",
+        "address": "Port de Solférino, 75007 Paris, France",
+        "longitude": 2.3234,
+        "latitude": 48.8602
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/i1naqsyg7mz34coh7jyu",
     "sports": ["Athlétisme", "Rugby Sevens"]
   },
@@ -222,6 +838,17 @@
       "longitude": -1.522269,
       "latitude": 47.256965
     },
+    "bestspots": [ {
+      "name": "Pont de Bercy",
+      "photo": "assets/img/pont03.jpg",
+      "description": "Ce pont relie le 12ème arrondissement au quartier de Bercy. Il est doté de deux niveaux : un pour la circulation automobile et un pour le métro.",
+      "influence_hours": "7h - 12h - 17h",
+      "installation": "-Piste cyclable\n-Passerelle pour piétons\n-Éclairage nocturne",
+      "address": "75012 Paris, France",
+      "longitude": 2.3750,
+      "latitude": 48.8375
+    }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/t4mmbub6yed1nkdy7ili",
     "sports": [
       "Football"
@@ -237,6 +864,17 @@
       "longitude": -1.522269,
       "latitude": 47.256965
     },
+    "bestspots": [ {
+      "name": "Jardin d'Acclimatation",
+      "photo": "assets/img/jardin02.jpg",
+      "description": "Le Jardin d'Acclimatation est un parc d'attractions pour enfants avec des manèges, des ateliers et des aires de jeux.",
+      "influence_hours": "10h - 13h - 17h",
+      "installation": "-Manèges\n-Aires de jeux\n-Restaurants\n-Jardins",
+      "address": "Bois de Boulogne, 75116 Paris, France",
+      "longitude": 2.2749,
+      "latitude": 48.8784
+    }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/t4mmbub6yed1nkdy7ili",
     "sports": [
       "Football"
@@ -252,6 +890,47 @@
       "longitude": 4.968601,
       "latitude": 45.768055
     },
+    "bestspots": [{
+      "name": "Pont d'Austerlitz",
+      "photo": "assets/img/pont06.jpg",
+      "description": "Construit en 1807, ce pont relie le Jardin des Plantes au quartier de la Gare. Il porte le nom de la victoire de Napoléon à Austerlitz.",
+      "influence_hours": "7h - 11h - 15h",
+      "installation": "-Bancs publics\n-Éclairage nocturne",
+      "address": "75005 Paris, France",
+      "longitude": 2.3675,
+      "latitude": 48.8420
+    },
+      {
+        "name": "Jardin du Ranelagh",
+        "photo": "assets/img/jardin02.jpg",
+        "description": "Le Jardin du Ranelagh est un parc du 16ème arrondissement, avec des aires de jeux, des sculptures et de grands espaces verts.",
+        "influence_hours": "9h - 13h - 18h",
+        "installation": "-Bancs\n-Statues\n-Aires de jeux\n-Pelouses",
+        "address": "1 Avenue Prudhon, 75016 Paris, France",
+        "longitude": 2.2730,
+        "latitude": 48.8584
+      },
+      {
+        "name": "Pont de Tolbiac",
+        "photo": "assets/img/pont01.jpg",
+        "description": "Ce pont relie le quartier de Bercy à la Bibliothèque François Mitterrand. Construit en 1876, il offre une vue sur les quais de Seine.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs publics\n-Éclairage nocturne\n-Piste cyclable",
+        "address": "75013 Paris, France",
+        "longitude": 2.3800,
+        "latitude": 48.8314
+      },
+      {
+        "name": "Bois de Vincennes",
+        "photo": "https://img.com/bois_de_vincennes",
+        "description": "Le Bois de Vincennes est un grand parc public à l'est de Paris, offrant des activités de plein air, des jardins botaniques et un zoo.",
+        "influence_hours": "8h - 13h - 17h",
+        "installation": "-Bancs\n-Jardins thématiques\n-Zoo\n-Lacs",
+        "address": "Route de la Pyramide, 75012 Paris, France",
+        "longitude": 2.4400,
+        "latitude": 48.8284
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/beekk7tvfg9hzosbxccr",
     "sports": ["Football"]
   },
@@ -265,6 +944,26 @@
       "longitude": 5.374115,
       "latitude": 43.269248
     },
+    "bestspots": [{
+      "name": "Pont Garigliano",
+      "photo": "assets/img/pont07.jpg",
+      "description": "Ce pont, construit en 1966, est le plus grand pont de Paris. Il relie le 15ème et le 16ème arrondissement.",
+      "influence_hours": "7h - 11h - 15h",
+      "installation": "-Piste cyclable\n-Éclairage nocturne\n-Passerelle piétonne",
+      "address": "75015 Paris, France",
+      "longitude": 2.2660,
+      "latitude": 48.8380
+    },
+      {
+        "name": "Jardin des Serres d'Auteuil",
+        "photo": "assets/img/jardin03.jpg",
+        "description": "Le Jardin des Serres d'Auteuil est un jardin botanique avec de magnifiques serres historiques et des collections de plantes rares.",
+        "influence_hours": "9h - 13h - 17h",
+        "installation": "-Serres\n-Bancs\n-Jardins thématiques\n-Fontaines",
+        "address": "3 Avenue de la Porte d'Auteuil, 75016 Paris, France",
+        "longitude": 2.2531,
+        "latitude": 48.8475
+      }],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/ziotfeuhilbeeh6amsal",
     "sports": ["Football"]
   },
@@ -278,6 +977,26 @@
       "longitude": 7.257753,
       "latitude": 43.703707
     },
+    "bestspots": [{
+      "name": "Pont Garigliano",
+      "photo": "assets/img/pont07.jpg",
+      "description": "Ce pont, construit en 1966, est le plus grand pont de Paris. Il relie le 15ème et le 16ème arrondissement.",
+      "influence_hours": "7h - 11h - 15h",
+      "installation": "-Piste cyclable\n-Éclairage nocturne\n-Passerelle piétonne",
+      "address": "75015 Paris, France",
+      "longitude": 2.2660,
+      "latitude": 48.8380
+    },
+      {
+        "name": "Jardin des Serres d'Auteuil",
+        "photo": "assets/img/jardin03.jpg",
+        "description": "Le Jardin des Serres d'Auteuil est un jardin botanique avec de magnifiques serres historiques et des collections de plantes rares.",
+        "influence_hours": "9h - 13h - 17h",
+        "installation": "-Serres\n-Bancs\n-Jardins thématiques\n-Fontaines",
+        "address": "3 Avenue de la Porte d'Auteuil, 75016 Paris, France",
+        "longitude": 2.2531,
+        "latitude": 48.8475
+      }],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/gkdqkzamz08sdohss8uw",
     "sports": ["Football"]
   },
@@ -291,6 +1010,26 @@
       "longitude": 4.396486,
       "latitude": 45.471889
     },
+    "bestspots": [{
+      "name": "Pont Garigliano",
+      "photo": "assets/img/pont07.jpg",
+      "description": "Ce pont, construit en 1966, est le plus grand pont de Paris. Il relie le 15ème et le 16ème arrondissement.",
+      "influence_hours": "7h - 11h - 15h",
+      "installation": "-Piste cyclable\n-Éclairage nocturne\n-Passerelle piétonne",
+      "address": "75015 Paris, France",
+      "longitude": 2.2660,
+      "latitude": 48.8380
+    },
+      {
+        "name": "Jardin des Serres d'Auteuil",
+        "photo": "assets/img/jardin03.jpg",
+        "description": "Le Jardin des Serres d'Auteuil est un jardin botanique avec de magnifiques serres historiques et des collections de plantes rares.",
+        "influence_hours": "9h - 13h - 17h",
+        "installation": "-Serres\n-Bancs\n-Jardins thématiques\n-Fontaines",
+        "address": "3 Avenue de la Porte d'Auteuil, 75016 Paris, France",
+        "longitude": 2.2531,
+        "latitude": 48.8475
+      }],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/hd99ljofaoyqxd4xhpjj",
     "sports": ["Football"]
   },
@@ -304,6 +1043,87 @@
       "longitude": 2.642056,
       "latitude": 48.876111
     },
+    "bestspots": [{
+      "name": "Square du Vert-Galant",
+      "photo": "https://img.com/vert_galant",
+      "description": "Le Square du Vert-Galant est un petit parc paisible à la pointe de l'Île de la Cité, offrant une vue imprenable sur la Seine.",
+      "influence_hours": "8h - 12h - 16h",
+      "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
+      "address": "1 Square du Vert-Galant, 75001 Paris, France",
+      "longitude": 2.3399,
+      "latitude": 48.8565
+    },
+      {
+        "name": "Pont de l'Archevêché",
+        "photo": "assets/img/pont07.jpg",
+        "description": "Ce pont, construit en 1828, relie l'Île de la Cité au quai de la Tournelle. Il est surtout connu pour les milliers de cadenas d'amour accrochés à ses grilles.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75004 Paris, France",
+        "longitude": 2.3517,
+        "latitude": 48.8522
+      },
+      {
+        "name": "Les Berges de Seine",
+        "photo": "assets/img/pont08.jpg",
+        "description": "Les Berges de Seine sont un espace piétonnier le long de la Seine, offrant des activités de loisirs, des promenades et des événements culturels.",
+        "influence_hours": "9h - 14h - 18h",
+        "installation": "-Bancs\n-Activités de loisirs\n-Cafés\n-Événements",
+        "address": "Port de Solférino, 75007 Paris, France",
+        "longitude": 2.3234,
+        "latitude": 48.8602
+      },
+      {
+        "name": "Pont de Bercy",
+        "photo": "assets/img/pont03.jpg",
+        "description": "Ce pont relie le 12ème arrondissement au quartier de Bercy. Il est doté de deux niveaux : un pour la circulation automobile et un pour le métro.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Piste cyclable\n-Passerelle pour piétons\n-Éclairage nocturne",
+        "address": "75012 Paris, France",
+        "longitude": 2.3750,
+        "latitude": 48.8375
+      },
+      {
+        "name": "Jardin d'Acclimatation",
+        "photo": "assets/img/jardin02.jpg",
+        "description": "Le Jardin d'Acclimatation est un parc d'attractions pour enfants avec des manèges, des ateliers et des aires de jeux.",
+        "influence_hours": "10h - 13h - 17h",
+        "installation": "-Manèges\n-Aires de jeux\n-Restaurants\n-Jardins",
+        "address": "Bois de Boulogne, 75116 Paris, France",
+        "longitude": 2.2749,
+        "latitude": 48.8784
+      },
+      {
+        "name": "Pont d'Iéna",
+        "photo": "https://img.com/pont_d_iena",
+        "description": "Ce pont relie la Tour Eiffel au Trocadéro. Construit en 1814, il offre une vue spectaculaire sur la Tour Eiffel et la Seine.",
+        "influence_hours": "6h - 10h - 14h",
+        "installation": "-Bancs publics\n-Éclairage nocturne\n-Piste cyclable",
+        "address": "75016 Paris, France",
+        "longitude": 2.2920,
+        "latitude": 48.8577
+      },
+      {
+        "name": "Parc Montsouris",
+        "photo": "assets/img/parc03.jpg",
+        "description": "Le Parc Montsouris est un grand parc paysager du 14ème arrondissement, idéal pour les promenades et les pique-niques.",
+        "influence_hours": "8h - 13h - 17h",
+        "installation": "-Bancs\n-Pelouses\n-Lacs\n-Restaurants",
+        "address": "2 Rue Gazan, 75014 Paris, France",
+        "longitude": 2.3370,
+        "latitude": 48.8220
+      },
+      {
+        "name": "Pont d'Austerlitz",
+        "photo": "assets/img/pont06.jpg",
+        "description": "Construit en 1807, ce pont relie le Jardin des Plantes au quartier de la Gare. Il porte le nom de la victoire de Napoléon à Austerlitz.",
+        "influence_hours": "7h - 11h - 15h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75005 Paris, France",
+        "longitude": 2.3675,
+        "latitude": 48.8420
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/ds4on9lqxe03vrl9urbx",
     "sports": ["Aviron", "Canoe Slalom", "Canoe Sprint"]
   },
@@ -317,6 +1137,77 @@
       "longitude": 3.134797,
       "latitude": 50.610188
     },
+    "bestspots": [    {
+      "name": "Promenade Plantée",
+      "photo": "https://img.com/promenade_plantee",
+      "description": "La Promenade Plantée est une ancienne voie ferrée transformée en jardin suspendu, offrant une promenade tranquille au-dessus des rues de Paris.",
+      "influence_hours": "7h - 12h - 17h",
+      "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
+      "address": "Avenue Daumesnil, 75012 Paris, France",
+      "longitude": 2.3851,
+      "latitude": 48.8425
+    },
+      {
+        "name": "Pont au Change",
+        "photo": "https://img.com/pont_au_change",
+        "description": "Situé près du Palais de Justice, ce pont relie l'Île de la Cité au quartier du Châtelet.",
+        "influence_hours": "6h - 11h - 15h",
+        "installation": "-Bancs publics\n-Éclairage nocturne\n-Vues sur les monuments historiques",
+        "address": "75001 Paris, France",
+        "longitude": 2.3458,
+        "latitude": 48.8563
+      },
+      {
+        "name": "Parc André Citroën",
+        "photo": "assets/img/parc03.jpg",
+        "description": "Le Parc André Citroën est un parc moderne au bord de la Seine, connu pour ses serres, ses jardins thématiques et sa grande pelouse.",
+        "influence_hours": "8h - 13h - 17h",
+        "installation": "-Jardins thématiques\n-Serres\n-Ballons captifs",
+        "address": "2 Rue Cauchy, 75015 Paris, France",
+        "longitude": 2.2770,
+        "latitude": 48.8384
+      },
+      {
+        "name": "Pont Saint-Michel",
+        "photo": "assets/img/pont6.jpg",
+        "description": "Ce pont relie l'Île de la Cité au Quartier Latin. Construit en 1857, il porte le nom de la place Saint-Michel toute proche.",
+        "influence_hours": "7h - 11h - 16h",
+        "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+        "address": "75005 Paris, France",
+        "longitude": 2.3431,
+        "latitude": 48.8552
+      },
+      {
+        "name": "Coulée verte René-Dumont",
+        "photo": "https://img.com/coulee_verte",
+        "description": "Ancienne voie ferrée reconvertie en promenade, la Coulée verte René-Dumont traverse le 12ème arrondissement sur une distance de 4,7 km.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs\n-Jardins thématiques\n-Points de vue panoramiques",
+        "address": "44 Rue de Lyon, 75012 Paris, France",
+        "longitude": 2.3769,
+        "latitude": 48.8458
+      },
+      {
+        "name": "Pont Marie",
+        "photo": "https://img.com/pont_marie",
+        "description": "Construit en 1614, ce pont relie l'Île Saint-Louis au quai de l'Hôtel de Ville. Il est un des plus anciens ponts de Paris.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75004 Paris, France",
+        "longitude": 2.3585,
+        "latitude": 48.8535
+      },
+      {
+        "name": "Jardin des Plantes",
+         "photo": "assets/img/jardin01.jpg",
+        "description": "Le Jardin des Plantes est un jardin botanique historique avec des serres, des jardins thématiques et un zoo.",
+        "influence_hours": "8h - 13h - 17h",
+        "installation": "-Jardins thématiques\n-Serres\n-Zoo\n-Musées",
+        "address": "57 Rue Cuvier, 75005 Paris, France",
+        "longitude": 2.3602,
+        "latitude": 48.8430
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/gdipnj8m9xgxekrvnck8",
     "sports": ["Basketball", "Handball"]
   },
@@ -330,6 +1221,47 @@
       "longitude": 2.256392,
       "latitude": 48.846222
     },
+    "bestspots": [{
+      "name": "Pont Bir-Hakeim",
+      "photo": "assets/img/pont03.jpg",
+      "description": "Ce pont à double niveau offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses apparitions dans divers films.",
+      "influence_hours": "6h - 10h - 14h",
+      "installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
+      "address": "75015 Paris, France",
+      "longitude": 2.2871,
+      "latitude": 48.8554
+    },
+      {
+        "name": "Parc Monceau",
+        "photo": "assets/img/parc02.jpg",
+        "description": "Le Parc Monceau est un élégant jardin à l'anglaise, avec des statues, des ponts, et des répliques de monuments historiques.",
+        "influence_hours": "8h - 12h - 16h",
+        "installation": "-Bancs\n-Statues\n-Pelouses\n-Aires de jeux",
+        "address": "35 Boulevard de Courcelles, 75008 Paris, France",
+        "longitude": 2.3086,
+        "latitude": 48.8792
+      },
+      {
+        "name": "Pont de la Concorde",
+        "photo": "assets/img/pont04.jpg",
+        "description": "Construit en 1791, ce pont relie la Place de la Concorde à l'Assemblée Nationale. Il est réalisé en pierres de taille provenant de la démolition de la Bastille.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+        "address": "75007 Paris, France",
+        "longitude": 2.3185,
+        "latitude": 48.8630
+      },
+      {
+        "name": "Jardin du Luxembourg",
+        "photo": "assets/img/jardin01.jpg",
+        "description": "Le Jardin du Luxembourg est un parc emblématique avec de vastes pelouses, des sculptures, des fontaines et des terrains de tennis.",
+        "influence_hours": "8h - 14h - 17h",
+        "installation": "-Bancs\n-Statues\n-Fontaines\n-Cafés",
+        "address": "6e Arrondissement, 75006 Paris, France",
+        "longitude": 2.3372,
+        "latitude": 48.8462
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/j2gawyfdwsdxjmxjy0fy",
     "sports": ["Boxe", "Tennis"]
   },
@@ -343,6 +1275,77 @@
       "longitude": 2.294694,
       "latitude": 48.858370
     },
+    "bestspots": [{
+      "name": "Coulée verte René-Dumont",
+      "photo": "https://img.com/coulee_verte",
+      "description": "Ancienne voie ferrée reconvertie en promenade, la Coulée verte René-Dumont traverse le 12ème arrondissement sur une distance de 4,7 km.",
+      "influence_hours": "7h - 12h - 16h",
+      "installation": "-Bancs\n-Jardins thématiques\n-Points de vue panoramiques",
+      "address": "44 Rue de Lyon, 75012 Paris, France",
+      "longitude": 2.3769,
+      "latitude": 48.8458
+    },
+      {
+        "name": "Pont Marie",
+        "photo": "https://img.com/pont_marie",
+        "description": "Construit en 1614, ce pont relie l'Île Saint-Louis au quai de l'Hôtel de Ville. Il est un des plus anciens ponts de Paris.",
+        "influence_hours": "7h - 12h - 17h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75004 Paris, France",
+        "longitude": 2.3585,
+        "latitude": 48.8535
+      },
+      {
+        "name": "Jardin des Plantes",
+         "photo": "assets/img/jardin01.jpg",
+        "description": "Le Jardin des Plantes est un jardin botanique historique avec des serres, des jardins thématiques et un zoo.",
+        "influence_hours": "8h - 13h - 17h",
+        "installation": "-Jardins thématiques\n-Serres\n-Zoo\n-Musées",
+        "address": "57 Rue Cuvier, 75005 Paris, France",
+        "longitude": 2.3602,
+        "latitude": 48.8430
+      },
+      {
+        "name": "Pont de Grenelle",
+        "photo": "assets/img/pont04.jpg",
+        "description": "Construit en 1966, ce pont relie le 15ème et le 16ème arrondissement en passant par l'Île aux Cygnes.",
+        "influence_hours": "6h - 11h - 15h",
+        "installation": "-Statue de la Liberté\n-Bancs publics\n-Piste cyclable",
+        "address": "75015 Paris, France",
+        "longitude": 2.2777,
+        "latitude": 48.8506
+      },
+      {
+        "name": "Square du Vert-Galant",
+        "photo": "https://img.com/vert_galant",
+        "description": "Le Square du Vert-Galant est un petit parc paisible à la pointe de l'Île de la Cité, offrant une vue imprenable sur la Seine.",
+        "influence_hours": "8h - 12h - 16h",
+        "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
+        "address": "1 Square du Vert-Galant, 75001 Paris, France",
+        "longitude": 2.3399,
+        "latitude": 48.8565
+      },
+      {
+        "name": "Pont de l'Archevêché",
+        "photo": "assets/img/pont07.jpg",
+        "description": "Ce pont, construit en 1828, relie l'Île de la Cité au quai de la Tournelle. Il est surtout connu pour les milliers de cadenas d'amour accrochés à ses grilles.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75004 Paris, France",
+        "longitude": 2.3517,
+        "latitude": 48.8522
+      },
+      {
+        "name": "Les Berges de Seine",
+        "photo": "assets/img/pont08.jpg",
+        "description": "Les Berges de Seine sont un espace piétonnier le long de la Seine, offrant des activités de loisirs, des promenades et des événements culturels.",
+        "influence_hours": "9h - 14h - 18h",
+        "installation": "-Bancs\n-Activités de loisirs\n-Cafés\n-Événements",
+        "address": "Port de Solférino, 75007 Paris, France",
+        "longitude": 2.3234,
+        "latitude": 48.8602
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/zu53q5kn1qo1ijg2dupc",
     "sports": ["Volleyball de plage"]
   },
@@ -356,6 +1359,57 @@
       "longitude": 2.246972,
       "latitude": 48.917434
     },
+    "bestspots": [ {
+      "name": "Parc Montsouris",
+      "photo": "assets/img/parc04.jpg",
+      "description": "Le Parc Montsouris est un grand parc paysager du 14ème arrondissement, idéal pour les promenades et les pique-niques.",
+      "influence_hours": "8h - 13h - 17h",
+      "installation": "-Bancs\n-Pelouses\n-Lacs\n-Restaurants",
+      "address": "2 Rue Gazan, 75014 Paris, France",
+      "longitude": 2.3370,
+      "latitude": 48.8220
+    },
+      {
+        "name": "Pont d'Austerlitz",
+        "photo": "assets/img/pont06.jpg",
+        "description": "Construit en 1807, ce pont relie le Jardin des Plantes au quartier de la Gare. Il porte le nom de la victoire de Napoléon à Austerlitz.",
+        "influence_hours": "7h - 11h - 15h",
+        "installation": "-Bancs publics\n-Éclairage nocturne",
+        "address": "75005 Paris, France",
+        "longitude": 2.3675,
+        "latitude": 48.8420
+      },
+      {
+        "name": "Jardin du Ranelagh",
+        "photo": "assets/img/jardin02.jpg",
+        "description": "Le Jardin du Ranelagh est un parc du 16ème arrondissement, avec des aires de jeux, des sculptures et de grands espaces verts.",
+        "influence_hours": "9h - 13h - 18h",
+        "installation": "-Bancs\n-Statues\n-Aires de jeux\n-Pelouses",
+        "address": "1 Avenue Prudhon, 75016 Paris, France",
+        "longitude": 2.2730,
+        "latitude": 48.8584
+      },
+      {
+        "name": "Pont de Tolbiac",
+        "photo": "assets/img/pont01.jpg",
+        "description": "Ce pont relie le quartier de Bercy à la Bibliothèque François Mitterrand. Construit en 1876, il offre une vue sur les quais de Seine.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs publics\n-Éclairage nocturne\n-Piste cyclable",
+        "address": "75013 Paris, France",
+        "longitude": 2.3800,
+        "latitude": 48.8314
+      },
+      {
+        "name": "Bois de Vincennes",
+        "photo": "https://img.com/bois_de_vincennes",
+        "description": "Le Bois de Vincennes est un grand parc public à l'est de Paris, offrant des activités de plein air, des jardins botaniques et un zoo.",
+        "influence_hours": "8h - 13h - 17h",
+        "installation": "-Bancs\n-Jardins thématiques\n-Zoo\n-Lacs",
+        "address": "Route de la Pyramide, 75012 Paris, France",
+        "longitude": 2.4400,
+        "latitude": 48.8284
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/tzvgxey7cbfreyala4wo",
     "sports": ["Hockey"]
   },
@@ -369,6 +1423,86 @@
       "longitude": 2.288590,
       "latitude": 48.862183
     },
+    "bestspots": [    {
+      "name": "Pont Garigliano",
+      "photo": "assets/img/pont07.jpg",
+      "description": "Ce pont, construit en 1966, est le plus grand pont de Paris. Il relie le 15ème et le 16ème arrondissement.",
+      "influence_hours": "7h - 11h - 15h",
+      "installation": "-Piste cyclable\n-Éclairage nocturne\n-Passerelle piétonne",
+      "address": "75015 Paris, France",
+      "longitude": 2.2660,
+      "latitude": 48.8380
+    },
+      {
+        "name": "Jardin des Serres d'Auteuil",
+        "photo": "assets/img/jardin03.jpg",
+        "description": "Le Jardin des Serres d'Auteuil est un jardin botanique avec de magnifiques serres historiques et des collections de plantes rares.",
+        "influence_hours": "9h - 13h - 17h",
+        "installation": "-Serres\n-Bancs\n-Jardins thématiques\n-Fontaines",
+        "address": "3 Avenue de la Porte d'Auteuil, 75016 Paris, France",
+        "longitude": 2.2531,
+        "latitude": 48.8475
+      },
+      {
+        "name": "Pont de Bir-Hakeim",
+        "photo": "https://img.com/pont_bir_hakeim",
+        "description": "Ce pont à deux niveaux offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses sculptures et son architecture unique.",
+        "influence_hours": "6h - 10h - 14h",
+        "installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
+        "address": "75015 Paris, France",
+        "longitude": 2.2871,
+        "latitude": 48.8554
+      },
+      {
+        "name": "Parc de Bercy",
+        "photo": "https://img.com/parc_de_bercy",
+        "description": "Le Parc de Bercy est un grand parc moderne avec des jardins thématiques, des bassins et des aires de jeux.",
+        "influence_hours": "8h - 12h - 17h",
+        "installation": "-Jardins thématiques\n-Bassins\n-Aires de jeux\n-Restaurants",
+        "address": "128 Quai de Bercy, 75012 Paris, France",
+        "longitude": 2.3842,
+        "latitude": 48.8347
+      },
+      {
+        "name": "Pont de Tolbiac",
+        "photo": "assets/img/pont01.jpg",
+        "description": "Ce pont relie le quartier de Bercy à la Bibliothèque François Mitterrand. Construit en 1876, il offre une vue sur les quais de Seine.",
+        "influence_hours": "7h - 12h - 16h",
+        "installation": "-Bancs publics\n-Éclairage nocturne\n-Piste cyclable",
+        "address": "75013 Paris, France",
+        "longitude": 2.3800,
+        "latitude": 48.8314
+      },
+      {
+        "name": "Bois de Vincennes",
+        "photo": "https://img.com/bois_de_vincennes",
+        "description": "Le Bois de Vincennes est un grand parc public à l'est de Paris, offrant des activités de plein air, des jardins botaniques et un zoo.",
+        "influence_hours": "8h - 13h - 17h",
+        "installation": "-Bancs\n-Jardins thématiques\n-Zoo\n-Lacs",
+        "address": "Route de la Pyramide, 75012 Paris, France",
+        "longitude": 2.4400,
+        "latitude": 48.8284
+      },
+      {
+        "name": "Pont Garigliano",
+        "photo": "assets/img/pont07.jpg",
+        "description": "Ce pont, construit en 1966, est le plus grand pont de Paris. Il relie le 15ème et le 16ème arrondissement.",
+        "influence_hours": "7h - 11h - 15h",
+        "installation": "-Piste cyclable\n-Éclairage nocturne\n-Passerelle piétonne",
+        "address": "75015 Paris, France",
+        "longitude": 2.2660,
+        "latitude": 48.8380
+      },
+      {
+        "name": "Jardin des Serres d'Auteuil",
+        "photo": "assets/img/jardin03.jpg",
+        "description": "Le Jardin des Serres d'Auteuil est un jardin botanique avec de magnifiques serres historiques et des collections de plantes rares.",
+        "influence_hours": "9h - 13h - 17h",
+        "installation": "-Serres\n-Bancs\n-Jardins thématiques\n-Fontaines",
+        "address": "3 Avenue de la Porte d'Auteuil, 75016 Paris, France",
+        "longitude": 2.2531,
+        "latitude": 48.8475
+      }],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/r9tenlae4f7wfb3w1xhn",
     "sports": ["Athlétisme", "Cyclisme sur route"]
   },
@@ -382,6 +1516,67 @@
       "longitude": 2.036987,
       "latitude": 48.775774
     },
+    "bestspots": [{
+      "name": "Pont Neuf",
+      "photo": "https://img.com/pont_neuf",
+      "description": "Construit entre 1578 et 1607, le Pont Neuf est le plus ancien pont de Paris encore existant. Il traverse la Seine au niveau de l'Île de la Cité.",
+      "influence_hours": "6h - 10h - 14h",
+      "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+      "address": "75001 Paris, France",
+      "longitude": 2.3400,
+      "latitude": 48.8566
+    },
+      {
+        "name": "Balcon du Printemps Haussmann",
+        "photo": "https://img.com/printemps_haussmann",
+        "description": "Le balcon du Printemps Haussmann offre une vue panoramique sur les toits de Paris et des monuments emblématiques.",
+        "influence_hours": "10h - 14h - 17h",
+        "installation": "-Café\n-Restaurant\n-Accès libre",
+        "address": "64 Boulevard Haussmann, 75009 Paris, France",
+        "longitude": 2.3285,
+        "latitude": 48.8721
+      },
+      {
+        "name": "Pont Alexandre III",
+        "photo": "https://img.com/pont_alexandre_iii",
+        "description": "Inauguré en 1900, ce pont est célèbre pour ses sculptures ornées et ses vues magnifiques sur les Invalides et la Tour Eiffel.",
+        "influence_hours": "7h - 11h - 15h",
+        "installation": "-Éclairage artistique\n-Bancs publics\n-Points de vue panoramiques",
+        "address": "75008 Paris, France",
+        "longitude": 2.3130,
+        "latitude": 48.8637
+      },
+      {
+        "name": "Jardin des Tuileries",
+        "photo": "assets/img/jardin01.jpeg",
+        "description": "Le Jardin des Tuileries est un jardin public situé entre le Louvre et la Place de la Concorde, offrant des promenades agréables et des œuvres d'art en plein air.",
+        "influence_hours": "8h - 12h - 16h",
+        "installation": "-Bancs\n-Fontaines\n-Statues\n-Cafés",
+        "address": "113 Rue de Rivoli, 75001 Paris, France",
+        "longitude": 2.3266,
+        "latitude": 48.8638
+      },
+      {
+        "name": "Pont des Arts",
+        "photo": "assets/img/pont01.jpg",
+        "description": "Ce pont piéton est souvent fréquenté par les amoureux et les artistes. Il offre une vue superbe sur le Louvre et l'Institut de France.",
+        "influence_hours": "6h - 11h - 16h",
+        "installation": "-Bancs publics\n-Espaces pour les artistes de rue\n-Éclairage nocturne",
+        "address": "75001 Paris, France",
+        "longitude": 2.3377,
+        "latitude": 48.8606
+      },
+      {
+        "name": "Terrasse du Centre Pompidou",
+        "photo": "assets/img/terrase02.jpg",
+        "description": "La terrasse du Centre Pompidou offre une vue imprenable sur les toits de Paris et la Tour Eiffel, tout en étant entourée d'œuvres d'art contemporain.",
+        "influence_hours": "11h - 14h - 18h",
+        "installation": "-Café\n-Restaurant\n-Expositions",
+        "address": "Place Georges-Pompidou, 75004 Paris, France",
+        "longitude": 2.3522,
+        "latitude": 48.8606
+      }
+    ],
     "image": "https://img.olympics.com/images/image/private/t_16-9_640/f_auto/primary/h95mr152jgubt6n4mlm5",
     "sports": ["Cyclisme sur piste"]
   }
