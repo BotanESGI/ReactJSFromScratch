@@ -10,10 +10,7 @@ export default class Component {
     this.render = this.render.bind(this);
   }
 
-  /**
-   *
-   * @returns A unique identifier that is used to track instances
-   */
+
   generateUniqueKey() {
     const currentTime = Date.now();
     return Symbol.for(
@@ -22,19 +19,13 @@ export default class Component {
     );
   }
 
-  /**
-   * This method is called to set the new state of the component
-   *
-   * @param {Object} newState - the new state
-   */
+
   setState(newState) {
     this._pendingState = { ...this.state, ...newState };
     MiniReactDom.scheduleUpdate(this);
   }
 
-  /**
-   * This method is called to apply the updates to the component
-   */
+
   _update() {
     const oldElement = this._dom;
 
@@ -44,10 +35,6 @@ export default class Component {
     let newElement = this.render();
 
     MiniReactDom.updateElement(oldElement, newElement);
-  }
-
-  _domRef() {
-    return MiniReactDom.elementReferences.get(this._dom);
   }
 
   componentDidMount() {}

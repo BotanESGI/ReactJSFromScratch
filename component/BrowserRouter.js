@@ -37,7 +37,6 @@ class BrowserRouter {
     );
     this.rootElement.innerHTML = "";
     this.rootElement.appendChild(domContent);
-    MiniReact.cleanupUnusedInstances(domContent);
   }
 
   findRoute(path) {
