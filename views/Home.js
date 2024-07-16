@@ -105,7 +105,7 @@ class Home extends Component {
                             width: "3%"
                         }
                     }),
-                    MiniReact.createElement("span", {  id:"legende01_span"}, "Événement de médaille"),
+                    MiniReact.createElement("span", {  id:"legende01_span"}, "Événement de médaille | "),
                     MiniReact.createElement("span", {  id:"legende02_span"}, "Événement régulier"),
                     MiniReact.createElement(Image, {
                         src: "/assets/img/legende02.png",
@@ -114,7 +114,7 @@ class Home extends Component {
                             width: "3%"
                         }
                     }),
-                    MiniReact.createElement("span", {  id:"legende03_span"}, "Date provisoire"),
+                    MiniReact.createElement("span", {  id:"legende03_span"}, " | Date provisoire"),
                     MiniReact.createElement(Image, {
                         src: "/assets/img/legende03.png",
                         alt: "Legende 03",

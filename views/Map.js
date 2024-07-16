@@ -29,40 +29,16 @@ class Map extends Component {
             placeTitle: "",
             placeDescription: "",
             placeSportList: "",
-            placeImage: "",
-            placeLocation: "",
+            placeImage: "https://i0.wp.com/motiongraphicsphoebe.wordpress.com/wp-content/uploads/2018/10/8ee212dac057d412972e0c8cc164deee.gif?w=545&h=409&ssl=1",
+            placeLocation: {
+                "address": "",
+                "city": "",
+                "postal_code": "",
+                "longitude": 0,
+                "latitude": 0
+            },
             placeDistance: "",
             placeSpotList: [
-                {
-                    "name": "",
-                    "photo": "",
-                    "description":"",
-                    "influence_hours": "",
-                    "installation":"",
-                    "address": "",
-                    "city": "",
-                    "postal_code": "",
-                    "longitude": 0,
-                    "latitude": 0
-                },
-                {
-                    "name": "Pont de exemple2",
-                    "influence_hours": "9h - 13h - 17h",
-                    "address": "8 Bd de Bercy",
-                    "city": "Paris",
-                    "postal_code": "75012",
-                    "longitude": 2.385683,
-                    "latitude": 48.835455
-                },
-                {
-                    "name": "Pont de exemple3",
-                    "influence_hours": "9h - 13h - 17h",
-                    "address": "8 Bd de Bercy",
-                    "city": "Paris",
-                    "postal_code": "75012",
-                    "longitude": 2.385683,
-                    "latitude": 48.835455
-                }
             ],
         };
         this.map = null;
@@ -74,7 +50,7 @@ class Map extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.initializeMap();
-        }, 400);
+        }, 600);
     }
 
     getAllPlaces() {
@@ -181,7 +157,7 @@ class Map extends Component {
         setTimeout(() => {
             this.deleteAllPoints();
             this.AddPoint(latitude, longitude, name, description, "../assets/img/pointer_default.png", [100, 100], 13);
-        }, 400);
+        }, 600);
     };
 
 
@@ -224,7 +200,7 @@ class Map extends Component {
                             "div",
                             {
                                 id: "places",
-                                style: {overflow: "auto", height: "602px", width: "18rem"}
+                                style: {overflow: "auto", height: "602px", width: "20rem"}
                             },
                             MiniReact.createElement(
                                 "small",
@@ -265,7 +241,7 @@ class Map extends Component {
                     ),
                     MiniReact.createElement(Button, {
                         type: "button",
-                        title: "Afficher tous les points les plus proches de ma géolocalisation",
+                        title: "Afficher tous les lieux et spots les plus proches de ma géolocalisation",
                         class: "btn btn-info w-100 mt-1",
                         onClick: this.AddAllPointsClosestToYou
                     }),
@@ -327,7 +303,7 @@ class Map extends Component {
                                 "li",
                                 {
                                 },
-                                "Distance entre votre position et le lieu  ", this.state.placeDistance
+                                "Distance entre votre position et le lieu : ", this.state.placeDistance
                             ),
                             MiniReact.createElement(
                                 "li",
