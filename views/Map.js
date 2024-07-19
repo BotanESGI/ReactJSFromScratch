@@ -54,7 +54,7 @@ class Map extends Component {
     }
 
     getAllPlaces() {
-        fetch('http://localhost:8080/assets/data/places.json')
+        fetch('../assets/data/places.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');

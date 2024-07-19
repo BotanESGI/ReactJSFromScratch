@@ -15,13 +15,54 @@ class Home extends Component {
     }
 
     async fetchTableContent() {
+        // try {
+           // const response = await fetch('https://olympics.com/fr/paris-2024/calendrier');
+            //const htmlString = await response.text();
+            //const parser = new DOMParser();
+            //const doc = parser.parseFromString(htmlString, 'text/html');
+
+           // const articleElement = doc.querySelector('article#p2024-main-content');
+            //if (!articleElement) {
+             //   throw new Error('Article element not found');
+           // }
+
+            //const footerDiv = articleElement.querySelector('.StaticScheduleGrid-styles__TableFooter-sc-475a97fb-8.kMXSEH');
+           // if (footerDiv) {
+              //  footerDiv.remove();
+            //}
+
+            //const tables = articleElement.querySelectorAll('table');
+            //if (tables.length < 2) {
+            //    throw new Error('Second table not found');
+            //}
+            //tables[1].classList.add('table');
+
+            //const firstClassElement = articleElement.querySelector('.renderitemutils__StyledSection-sc-10yg7pe-0.gcmkQJ');
+
+            //if (firstClassElement) {
+               // const links = firstClassElement.querySelectorAll('a');
+               // links.forEach(link => {
+                    //const textNode = document.createTextNode(link.textContent);
+                   // link.parentNode.replaceChild(textNode, link);
+                //});
+                //const classContent = firstClassElement.innerHTML;
+                //this.setState({ TableContent: classContent });
+            //} else {
+            //    this.setState({ TableContent: '<p>Content not found</p>' });
+            //}
+        //} catch (error) {
+           // console.error('Error fetching the page:', error);
+           // this.setState({ TableContent: 'Error loading content.' });
+        //}
+
+// Site des JO à changer la page du calandrier du coup mon scrapping ne marcher plus :(, je l'ai refait et garder l'ancienne version en haut au cas ou
         try {
-            const response = await fetch('https://olympics.com/fr/paris-2024/calendrier');
+            const response = await fetch('https://olympics.com/fr/paris-2024/calendrier/epreuve');
             const htmlString = await response.text();
             const parser = new DOMParser();
             const doc = parser.parseFromString(htmlString, 'text/html');
 
-            const articleElement = doc.querySelector('article#p2024-main-content');
+            const articleElement = doc.querySelector('div#p2024-main-content');
             if (!articleElement) {
                 throw new Error('Article element not found');
             }
@@ -31,29 +72,21 @@ class Home extends Component {
                 footerDiv.remove();
             }
 
-            const tables = articleElement.querySelectorAll('table');
-            if (tables.length < 2) {
-                throw new Error('Second table not found');
+            const scheduleGridDiv = articleElement.querySelector('div[data-testid="scheduleGrid"]');
+            if (!scheduleGridDiv) {
+                throw new Error('Schedule grid not found');
             }
-            tables[1].classList.add('table');
+            scheduleGridDiv.classList.add('table');
 
-            const firstClassElement = articleElement.querySelector('.renderitemutils__StyledSection-sc-10yg7pe-0.gcmkQJ');
+            // Directly set the content of the scheduleGridDiv
+            const classContent = scheduleGridDiv.innerHTML;
+            this.setState({ TableContent: classContent });
 
-            if (firstClassElement) {
-                const links = firstClassElement.querySelectorAll('a');
-                links.forEach(link => {
-                    const textNode = document.createTextNode(link.textContent);
-                    link.parentNode.replaceChild(textNode, link);
-                });
-                const classContent = firstClassElement.innerHTML;
-                this.setState({ TableContent: classContent });
-            } else {
-                this.setState({ TableContent: '<p>Content not found</p>' });
-            }
         } catch (error) {
             console.error('Error fetching the page:', error);
             this.setState({ TableContent: 'Error loading content.' });
         }
+
     }
 
 
@@ -94,36 +127,6 @@ class Home extends Component {
                                 "text-align": "center", "margin":"2% 0%", "text-decoration":"underline"
                             }}, "CALENDRIER OLYMPIQUE (SCRAPING)"),
                     MiniReact.createElement("div", { dangerouslySetInnerHTML: { __html: this.state.TableContent } }),
-                    MiniReact.createElement(
-                        "section", { id: "TableLegende", style: {
-                                "background-color": "rgba(var(--bs-tertiary-bg-rgb))", "text-align":"center"
-                            } },
-                    MiniReact.createElement(Image, {
-                        src: "/assets/img/legende01.png",
-                        alt: "Legende 01",
-                        style: {
-                            width: "3%"
-                        }
-                    }),
-                    MiniReact.createElement("span", {  id:"legende01_span"}, "Événement de médaille | "),
-                    MiniReact.createElement("span", {  id:"legende02_span"}, "Événement régulier"),
-                    MiniReact.createElement(Image, {
-                        src: "/assets/img/legende02.png",
-                        alt: "Legende 02",
-                        style: {
-                            width: "3%"
-                        }
-                    }),
-                    MiniReact.createElement("span", {  id:"legende03_span"}, " | Date provisoire"),
-                    MiniReact.createElement(Image, {
-                        src: "/assets/img/legende03.png",
-                        alt: "Legende 03",
-                        style: {
-                            width: "3%"
-                        }
-                    }),
-                )
-
 
                 )
             ),
