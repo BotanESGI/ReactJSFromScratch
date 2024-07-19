@@ -58,37 +58,6 @@ class Setting extends Component {
                         )
                     )
                 ),
-                MiniReact.createElement(
-                    "div",
-                    { class: "row justify-content-center", style: "" },
-                    MiniReact.createElement(
-                        "div",
-                        { class: "col-md-6", style: { margin: "43px 43px 30px 43px", padding: "20px", border: "3px solid", backgroundColor: "aliceblue" } },
-                        MiniReact.createElement(
-                            "div",
-                            { class: "form-row" },
-                            MiniReact.createElement(
-                                "span",
-                                { style: { margin: "0 10px 0 0" } },
-                                "Changer le theme du site : "
-                            ),
-                        ),
-
-                        MiniReact.createElement(Button, {
-                            type: "button",
-                            title: "Mode Sombre",
-                            class: "btn btn-dark w-100 mt-1 mb-2",
-                            onClick: () => this.ChangeThemeToDark()
-                        }),
-                        MiniReact.createElement(Button, {
-                            type: "button",
-                            title: "Mode Claire",
-                            class: "btn btn-secondary w-100",
-                            onClick: () => this.ChangeThemeToLight()
-                        }),
-
-                    )
-                )
             ),
             MiniReact.createElement(Footer)
         );

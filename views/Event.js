@@ -89,7 +89,7 @@ class Event extends Component {
                         MiniReact.createElement(
                             "label",
                             { for: "sport-select", style: { "margin-right": "10px" } },
-                            "Filtre : "
+                            "Sport : "
                         ),
                         MiniReact.createElement(
                             "select",
@@ -104,13 +104,17 @@ class Event extends Component {
                             },
                             MiniReact.createElement(
                                 "option",
-                                { value: "" },
+                                this.state.selectedSport === ""
+                                    ? { value: "", selected: true }
+                                    : { value: "" },
                                 "Tous"
                             ),
                             ...uniqueSports.map(sport => (
                                 MiniReact.createElement(
                                     "option",
-                                    { value: sport },
+                                    this.state.selectedSport === sport
+                                        ? { value: sport, selected: true }
+                                        : { value: sport },
                                     sport
                                 )
                             ))
@@ -133,20 +137,30 @@ class Event extends Component {
                             },
                             MiniReact.createElement(
                                 "option",
-                                { value: "" },
+                                this.state.selectedSpotType === ""
+                                    ? { value: "", selected: true }
+                                    : { value: "" },
                                 "Tous"
                             ),
                             ...uniqueSpotTypes.map(spotType => (
                                 MiniReact.createElement(
                                     "option",
-                                    { value: spotType },
+                                    this.state.selectedSpotType === spotType
+                                        ? { value: spotType, selected: true }
+                                        : { value: spotType },
                                     spotType
                                 )
                             ))
                         ),
                         MiniReact.createElement(
+                            "label",
+                            { for: "date-select", style: { "margin-left": "10px", "margin-right": "3px" } },
+                            "Date : "
+                        ),
+                        MiniReact.createElement(
                             "input",
                             {
+                                id:"date-select",
                                 type: "date",
                                 value: this.state.selectedDate,
                                 events: {
@@ -184,7 +198,7 @@ class Event extends Component {
                                         MiniReact.createElement(
                                             "h5",
                                             { class: "card-title" },
-                                            event.name
+                                            event.name, " - ", event.heure
                                         ),
                                         MiniReact.createElement(
                                             "p",
@@ -193,13 +207,18 @@ class Event extends Component {
                                         ),
                                         MiniReact.createElement(
                                             "p",
-                                            { class: "card-text" },
+                                            { class: "card-text" , style: { "margin": "0px"}},
                                             "Date: " + event.date
                                         ),
                                         MiniReact.createElement(
-                                            "span",
-                                            { class: "card-text" },
-                                            "Lieu: " + event.lieu.name + ", " + event.lieu.city
+                                            "p",
+                                            { class: "card-text" , style: { "margin-bottom": "5px"}},
+                                            "Adresse : " + event.address
+                                        ),
+                                        MiniReact.createElement(
+                                            "p",
+                                            { class: "card-text" , style: { "margin-bottom": "1px"}},
+                                            "Sport : " + event.type_de_sport
                                         )
                                     )
                                 )
