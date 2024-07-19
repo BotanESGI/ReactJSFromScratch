@@ -176,7 +176,7 @@
     },
       {
         "name": "Pont Saint-Michel",
-        "photo": "assets/img/pont6.jpg",
+        "photo": "assets/img/pont06.jpg",
         "description": "Ce pont relie l'Île de la Cité au Quartier Latin. Construit en 1857, il porte le nom de la place Saint-Michel toute proche.",
         "influence_hours": "7h - 11h - 16h",
         "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
@@ -196,7 +196,7 @@
       },
       {
         "name": "Pont Marie",
-        "photo": "assets/img/pont03.jpeg",
+        "photo": "assets/img/pont03.jpg",
         "description": "Construit en 1614, ce pont relie l'Île Saint-Louis au quai de l'Hôtel de Ville. Il est un des plus anciens ponts de Paris.",
         "influence_hours": "7h - 12h - 17h",
         "installation": "-Bancs publics\n-Éclairage nocturne",
@@ -221,7 +221,7 @@
     },
     "bestspots": [{
       "name": "Jardin des Plantes",
-      "photo": "assets/img/jardin01.jpg",
+      "photo": "assets/img/jardin05.jpg",
       "description": "Le Jardin des Plantes est un jardin botanique historique avec des serres, des jardins thématiques et un zoo.",
       "influence_hours": "8h - 13h - 17h",
       "installation": "-Jardins thématiques\n-Serres\n-Zoo\n-Musées",
@@ -241,7 +241,7 @@
       },
       {
         "name": "Square du Vert-Galant",
-        "photo": "https://img.com/vert_galant",
+       "photo": "assets/img/Square01.jpg",
         "description": "Le Square du Vert-Galant est un petit parc paisible à la pointe de l'Île de la Cité, offrant une vue imprenable sur la Seine.",
         "influence_hours": "8h - 12h - 16h",
         "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
@@ -308,7 +308,7 @@
     },
     "bestspots": [{
       "name": "Pont d'Iéna",
-      "photo": "https://img.com/pont_d_iena",
+      "photo": "assets/img/Pont03.jpg",
       "description": "Ce pont relie la Tour Eiffel au Trocadéro. Construit en 1814, il offre une vue spectaculaire sur la Tour Eiffel et la Seine.",
       "influence_hours": "6h - 10h - 14h",
       "installation": "-Bancs publics\n-Éclairage nocturne\n-Piste cyclable",
@@ -389,7 +389,7 @@
       },
       {
         "name": "Bois de Vincennes",
-        "photo": "https://img.com/bois_de_vincennes",
+        "photo": "assets/img/jardin05.jpg",
         "description": "Le Bois de Vincennes est un grand parc public à l'est de Paris, offrant des activités de plein air, des jardins botaniques et un zoo.",
         "influence_hours": "8h - 13h - 17h",
         "installation": "-Bancs\n-Jardins thématiques\n-Zoo\n-Lacs",
@@ -433,7 +433,7 @@
       },
       {
         "name": "Pont de Bir-Hakeim",
-        "photo": "https://img.com/pont_bir_hakeim",
+        "photo": "assets/img/pont03.jpg",
         "description": "Ce pont à deux niveaux offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses sculptures et son architecture unique.",
         "influence_hours": "6h - 10h - 14h",
         "installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
@@ -443,7 +443,7 @@
       },
       {
         "name": "Parc de Bercy",
-        "photo": "https://img.com/parc_de_bercy",
+        "photo": "assets/img/parc02.jpg",
         "description": "Le Parc de Bercy est un grand parc moderne avec des jardins thématiques, des bassins et des aires de jeux.",
         "influence_hours": "8h - 12h - 17h",
         "installation": "-Jardins thématiques\n-Bassins\n-Aires de jeux\n-Restaurants",
@@ -477,7 +477,7 @@
     },
     "bestspots": [ {
       "name": "Bois de Vincennes",
-      "photo": "https://img.com/bois_de_vincennes",
+      "photo": "assets/img/jardin05.jpg",
       "description": "Le Bois de Vincennes est un grand parc public à l'est de Paris, offrant des activités de plein air, des jardins botaniques et un zoo.",
       "influence_hours": "8h - 13h - 17h",
       "installation": "-Bancs\n-Jardins thématiques\n-Zoo\n-Lacs",
@@ -534,7 +534,7 @@
     },
     "bestspots": [ {
       "name": "Pont Neuf",
-      "photo": "https://img.com/pont_neuf",
+      "photo": "assets/img/pont04.jpg",
       "description": "Construit entre 1578 et 1607, le Pont Neuf est le plus ancien pont de Paris encore existant. Il traverse la Seine au niveau de l'Île de la Cité.",
       "influence_hours": "6h - 10h - 14h",
       "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
@@ -544,7 +544,7 @@
     },
       {
         "name": "Balcon du Printemps Haussmann",
-        "photo": "https://img.com/printemps_haussmann",
+        "photo": "assets/img/terrase01.jpg",
         "description": "Le balcon du Printemps Haussmann offre une vue panoramique sur les toits de Paris et des monuments emblématiques.",
         "influence_hours": "10h - 14h - 17h",
         "installation": "-Café\n-Restaurant\n-Accès libre",
@@ -554,7 +554,7 @@
       },
       {
         "name": "Pont Alexandre III",
-        "photo": "https://img.com/pont_alexandre_iii",
+       "photo": "assets/img/pont05.jpg",
         "description": "Inauguré en 1900, ce pont est célèbre pour ses sculptures ornées et ses vues magnifiques sur les Invalides et la Tour Eiffel.",
         "influence_hours": "7h - 11h - 15h",
         "installation": "-Éclairage artistique\n-Bancs publics\n-Points de vue panoramiques",
@@ -692,7 +692,7 @@
     },
       {
         "name": "Parc de la Villette",
-        "photo": "https://img.com/parc_de_la_villette",
+       "photo": "assets/img/parc05.jpg",
         "description": "Le Parc de la Villette est un vaste parc culturel avec des installations modernes, des espaces verts et des salles de concert.",
         "influence_hours": "9h - 13h - 18h",
         "installation": "-Jardins thématiques\n-Scènes de concert\n-Cafés\n-Musiques en plein air",
@@ -702,7 +702,7 @@
       },
       {
         "name": "Pont de la Tournelle",
-        "photo": "https://img.com/pont_de_la_tournelle",
+       "photo": "assets/img/pont02.jpg",
         "description": "Ce pont relie le Quartier Latin à l'Île Saint-Louis. Il est surmonté d'une statue de Sainte Geneviève, patronne de Paris.",
         "influence_hours": "7h - 12h - 16h",
         "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
@@ -712,7 +712,7 @@
       },
       {
         "name": "Promenade Plantée",
-        "photo": "https://img.com/promenade_plantee",
+        "photo": "assets/img/jardin05.jpg",
         "description": "La Promenade Plantée est une ancienne voie ferrée transformée en jardin suspendu, offrant une promenade tranquille au-dessus des rues de Paris.",
         "influence_hours": "7h - 12h - 17h",
         "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
@@ -722,7 +722,7 @@
       },
       {
         "name": "Pont au Change",
-        "photo": "https://img.com/pont_au_change",
+        "photo": "assets/img/pont04.jpg",
         "description": "Situé près du Palais de Justice, ce pont relie l'Île de la Cité au quartier du Châtelet.",
         "influence_hours": "6h - 11h - 15h",
         "installation": "-Bancs publics\n-Éclairage nocturne\n-Vues sur les monuments historiques",
@@ -756,7 +756,7 @@
     },
     "bestspots": [{
       "name": "Coulée verte René-Dumont",
-      "photo": "https://img.com/coulee_verte",
+     "photo": "assets/img/jardin05.jpg",
       "description": "Ancienne voie ferrée reconvertie en promenade, la Coulée verte René-Dumont traverse le 12ème arrondissement sur une distance de 4,7 km.",
       "influence_hours": "7h - 12h - 16h",
       "installation": "-Bancs\n-Jardins thématiques\n-Points de vue panoramiques",
@@ -766,7 +766,7 @@
     },
       {
         "name": "Pont Marie",
-        "photo": "https://img.com/pont_marie",
+        "photo": "assets/img/pont03.jpg",
         "description": "Construit en 1614, ce pont relie l'Île Saint-Louis au quai de l'Hôtel de Ville. Il est un des plus anciens ponts de Paris.",
         "influence_hours": "7h - 12h - 17h",
         "installation": "-Bancs publics\n-Éclairage nocturne",
@@ -776,7 +776,7 @@
       },
       {
         "name": "Jardin des Plantes",
-         "photo": "assets/img/jardin01.jpg",
+         "photo": "assets/img/jardin05.jpg",
         "description": "Le Jardin des Plantes est un jardin botanique historique avec des serres, des jardins thématiques et un zoo.",
         "influence_hours": "8h - 13h - 17h",
         "installation": "-Jardins thématiques\n-Serres\n-Zoo\n-Musées",
@@ -796,7 +796,7 @@
       },
       {
         "name": "Square du Vert-Galant",
-        "photo": "https://img.com/vert_galant",
+       "photo": "assets/img/Square01.jpg",
         "description": "Le Square du Vert-Galant est un petit parc paisible à la pointe de l'Île de la Cité, offrant une vue imprenable sur la Seine.",
         "influence_hours": "8h - 12h - 16h",
         "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
@@ -922,7 +922,7 @@
       },
       {
         "name": "Bois de Vincennes",
-        "photo": "https://img.com/bois_de_vincennes",
+        "photo": "assets/img/jardin05.jpg",
         "description": "Le Bois de Vincennes est un grand parc public à l'est de Paris, offrant des activités de plein air, des jardins botaniques et un zoo.",
         "influence_hours": "8h - 13h - 17h",
         "installation": "-Bancs\n-Jardins thématiques\n-Zoo\n-Lacs",
@@ -1045,7 +1045,7 @@
     },
     "bestspots": [{
       "name": "Square du Vert-Galant",
-      "photo": "https://img.com/vert_galant",
+     "photo": "assets/img/Square01.jpg",
       "description": "Le Square du Vert-Galant est un petit parc paisible à la pointe de l'Île de la Cité, offrant une vue imprenable sur la Seine.",
       "influence_hours": "8h - 12h - 16h",
       "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
@@ -1095,7 +1095,7 @@
       },
       {
         "name": "Pont d'Iéna",
-        "photo": "https://img.com/pont_d_iena",
+        "photo": "assets/img/Pont03.jpg",
         "description": "Ce pont relie la Tour Eiffel au Trocadéro. Construit en 1814, il offre une vue spectaculaire sur la Tour Eiffel et la Seine.",
         "influence_hours": "6h - 10h - 14h",
         "installation": "-Bancs publics\n-Éclairage nocturne\n-Piste cyclable",
@@ -1139,7 +1139,7 @@
     },
     "bestspots": [    {
       "name": "Promenade Plantée",
-      "photo": "https://img.com/promenade_plantee",
+      "photo": "assets/img/jardin05.jpg",
       "description": "La Promenade Plantée est une ancienne voie ferrée transformée en jardin suspendu, offrant une promenade tranquille au-dessus des rues de Paris.",
       "influence_hours": "7h - 12h - 17h",
       "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
@@ -1149,7 +1149,7 @@
     },
       {
         "name": "Pont au Change",
-        "photo": "https://img.com/pont_au_change",
+        "photo": "assets/img/pont04.jpg",
         "description": "Situé près du Palais de Justice, ce pont relie l'Île de la Cité au quartier du Châtelet.",
         "influence_hours": "6h - 11h - 15h",
         "installation": "-Bancs publics\n-Éclairage nocturne\n-Vues sur les monuments historiques",
@@ -1169,7 +1169,7 @@
       },
       {
         "name": "Pont Saint-Michel",
-        "photo": "assets/img/pont6.jpg",
+        "photo": "assets/img/pont06.jpg",
         "description": "Ce pont relie l'Île de la Cité au Quartier Latin. Construit en 1857, il porte le nom de la place Saint-Michel toute proche.",
         "influence_hours": "7h - 11h - 16h",
         "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
@@ -1179,7 +1179,7 @@
       },
       {
         "name": "Coulée verte René-Dumont",
-        "photo": "https://img.com/coulee_verte",
+       "photo": "assets/img/jardin05.jpg",
         "description": "Ancienne voie ferrée reconvertie en promenade, la Coulée verte René-Dumont traverse le 12ème arrondissement sur une distance de 4,7 km.",
         "influence_hours": "7h - 12h - 16h",
         "installation": "-Bancs\n-Jardins thématiques\n-Points de vue panoramiques",
@@ -1189,7 +1189,7 @@
       },
       {
         "name": "Pont Marie",
-        "photo": "https://img.com/pont_marie",
+        "photo": "assets/img/pont03.jpg",
         "description": "Construit en 1614, ce pont relie l'Île Saint-Louis au quai de l'Hôtel de Ville. Il est un des plus anciens ponts de Paris.",
         "influence_hours": "7h - 12h - 17h",
         "installation": "-Bancs publics\n-Éclairage nocturne",
@@ -1199,7 +1199,7 @@
       },
       {
         "name": "Jardin des Plantes",
-         "photo": "assets/img/jardin01.jpg",
+         "photo": "assets/img/jardin05.jpg",
         "description": "Le Jardin des Plantes est un jardin botanique historique avec des serres, des jardins thématiques et un zoo.",
         "influence_hours": "8h - 13h - 17h",
         "installation": "-Jardins thématiques\n-Serres\n-Zoo\n-Musées",
@@ -1253,7 +1253,7 @@
       },
       {
         "name": "Jardin du Luxembourg",
-        "photo": "assets/img/jardin01.jpg",
+        "photo": "assets/img/jardin05.jpg",
         "description": "Le Jardin du Luxembourg est un parc emblématique avec de vastes pelouses, des sculptures, des fontaines et des terrains de tennis.",
         "influence_hours": "8h - 14h - 17h",
         "installation": "-Bancs\n-Statues\n-Fontaines\n-Cafés",
@@ -1277,7 +1277,7 @@
     },
     "bestspots": [{
       "name": "Coulée verte René-Dumont",
-      "photo": "https://img.com/coulee_verte",
+     "photo": "assets/img/jardin05.jpg",
       "description": "Ancienne voie ferrée reconvertie en promenade, la Coulée verte René-Dumont traverse le 12ème arrondissement sur une distance de 4,7 km.",
       "influence_hours": "7h - 12h - 16h",
       "installation": "-Bancs\n-Jardins thématiques\n-Points de vue panoramiques",
@@ -1287,7 +1287,7 @@
     },
       {
         "name": "Pont Marie",
-        "photo": "https://img.com/pont_marie",
+        "photo": "assets/img/pont03.jpg",
         "description": "Construit en 1614, ce pont relie l'Île Saint-Louis au quai de l'Hôtel de Ville. Il est un des plus anciens ponts de Paris.",
         "influence_hours": "7h - 12h - 17h",
         "installation": "-Bancs publics\n-Éclairage nocturne",
@@ -1297,7 +1297,7 @@
       },
       {
         "name": "Jardin des Plantes",
-         "photo": "assets/img/jardin01.jpg",
+         "photo": "assets/img/jardin05.jpg",
         "description": "Le Jardin des Plantes est un jardin botanique historique avec des serres, des jardins thématiques et un zoo.",
         "influence_hours": "8h - 13h - 17h",
         "installation": "-Jardins thématiques\n-Serres\n-Zoo\n-Musées",
@@ -1317,7 +1317,7 @@
       },
       {
         "name": "Square du Vert-Galant",
-        "photo": "https://img.com/vert_galant",
+        "photo": "assets/img/Square01.jpg",
         "description": "Le Square du Vert-Galant est un petit parc paisible à la pointe de l'Île de la Cité, offrant une vue imprenable sur la Seine.",
         "influence_hours": "8h - 12h - 16h",
         "installation": "-Bancs\n-Jardins\n-Points de vue panoramiques",
@@ -1401,7 +1401,7 @@
       },
       {
         "name": "Bois de Vincennes",
-        "photo": "https://img.com/bois_de_vincennes",
+        "photo": "assets/img/jardin05.jpg",
         "description": "Le Bois de Vincennes est un grand parc public à l'est de Paris, offrant des activités de plein air, des jardins botaniques et un zoo.",
         "influence_hours": "8h - 13h - 17h",
         "installation": "-Bancs\n-Jardins thématiques\n-Zoo\n-Lacs",
@@ -1445,7 +1445,7 @@
       },
       {
         "name": "Pont de Bir-Hakeim",
-        "photo": "https://img.com/pont_bir_hakeim",
+        "photo": "assets/img/pont03.jpg",
         "description": "Ce pont à deux niveaux offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses sculptures et son architecture unique.",
         "influence_hours": "6h - 10h - 14h",
         "installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
@@ -1455,7 +1455,7 @@
       },
       {
         "name": "Parc de Bercy",
-        "photo": "https://img.com/parc_de_bercy",
+        "photo": "assets/img/parc02.jpg",
         "description": "Le Parc de Bercy est un grand parc moderne avec des jardins thématiques, des bassins et des aires de jeux.",
         "influence_hours": "8h - 12h - 17h",
         "installation": "-Jardins thématiques\n-Bassins\n-Aires de jeux\n-Restaurants",
@@ -1475,7 +1475,7 @@
       },
       {
         "name": "Bois de Vincennes",
-        "photo": "https://img.com/bois_de_vincennes",
+        "photo": "assets/img/jardin05.jpg",
         "description": "Le Bois de Vincennes est un grand parc public à l'est de Paris, offrant des activités de plein air, des jardins botaniques et un zoo.",
         "influence_hours": "8h - 13h - 17h",
         "installation": "-Bancs\n-Jardins thématiques\n-Zoo\n-Lacs",
@@ -1518,7 +1518,7 @@
     },
     "bestspots": [{
       "name": "Pont Neuf",
-      "photo": "https://img.com/pont_neuf",
+      "photo": "assets/img/pont04.jpg",
       "description": "Construit entre 1578 et 1607, le Pont Neuf est le plus ancien pont de Paris encore existant. Il traverse la Seine au niveau de l'Île de la Cité.",
       "influence_hours": "6h - 10h - 14h",
       "installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
@@ -1528,7 +1528,7 @@
     },
       {
         "name": "Balcon du Printemps Haussmann",
-        "photo": "https://img.com/printemps_haussmann",
+        "photo": "assets/img/terrase01.jpg",
         "description": "Le balcon du Printemps Haussmann offre une vue panoramique sur les toits de Paris et des monuments emblématiques.",
         "influence_hours": "10h - 14h - 17h",
         "installation": "-Café\n-Restaurant\n-Accès libre",
@@ -1538,7 +1538,7 @@
       },
       {
         "name": "Pont Alexandre III",
-        "photo": "https://img.com/pont_alexandre_iii",
+       "photo": "assets/img/pont05.jpg",
         "description": "Inauguré en 1900, ce pont est célèbre pour ses sculptures ornées et ses vues magnifiques sur les Invalides et la Tour Eiffel.",
         "influence_hours": "7h - 11h - 15h",
         "installation": "-Éclairage artistique\n-Bancs publics\n-Points de vue panoramiques",

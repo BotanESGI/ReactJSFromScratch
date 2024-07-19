@@ -137,10 +137,20 @@ class Map extends Component {
 
 
     AddCurrentPointInMap = (latitude, longitude, name, description, image, location, sports, bestspots) => {
-        const updatedBestSpots = bestspots.map(spot => ({
-            ...spot,
-            installation: spot.installation.replace(/-/g, '<br>-')
-        }));
+        const colorMap = ['green', 'orange', 'red'];
+
+        const updatedBestSpots = bestspots.map(spot => {
+            let hourIndex = 0;
+            return {
+                ...spot,
+                influence_hours: spot.influence_hours.replace(/(\d{1,2}h)/g, (match) => {
+                    const color = colorMap[hourIndex % colorMap.length];
+                    hourIndex++;
+                    return `<span style='color:${color}'>${match}</span>`;
+                }),
+                installation: spot.installation.replace(/-/g, '<br>-')
+            };
+        });
 
 
         this.setState({
@@ -159,6 +169,7 @@ class Map extends Component {
             this.AddPoint(latitude, longitude, name, description, "../assets/img/pointer_default.png", [100, 100], 13);
         }, 600);
     };
+
 
 
     CalculeTheCurrentDistance(lat, lon) {
@@ -356,7 +367,29 @@ class Map extends Component {
                                         }
                                     ),
                                     MiniReact.createElement("br", null ),
-                                    MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Heures d'influence : " + spot.influence_hours)
+                                    MiniReact.createElement(
+                                        "span",
+                                        {
+                                            dangerouslySetInnerHTML: {
+                                                __html: "<p>Heures d'influence : " + spot.influence_hours + "</p>"
+                                            }
+                                        }
+                                    ),
+                                    MiniReact.createElement(Button, {
+                                        type: "button",
+                                        title: "Afficher le spot la carte",
+                                        class: "btn btn-primary w-100",
+                                        onClick: () => this.AddPoint(spot.latitude, spot.longitude, spot.name, "Spots : " + spot.description, "../assets/img/pointer_spot.png", [100, 100], 13)
+                                    }),
+                                    MiniReact.createElement(
+                                        "a",
+                                        {
+                                            href: "https://www.google.com/maps/dir/" + this.mylatitude + "," + this.mylongitude + "/" + spot.latitude + "," + spot.longitude,
+                                            target:"_blank",
+                                            style: {"display": "flex"}
+                                        },
+                                        "Afficher les itinéraires du spot"
+                                    ),
                                 )
                             ))
                         )

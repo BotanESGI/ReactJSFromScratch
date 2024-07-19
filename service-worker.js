@@ -55,9 +55,9 @@ function showNotification() {
 
 }
 
-// 1 heure pr l'exemple mais 24h ça suffit
+// 7 minutes pr l'exemple (presentation) mais 24h ça suffit
 function scheduleNotifications() {
     setInterval(function() {
         showNotification();
-    }, 60 * 60 * 1000); // 1 heure en millisecondes
+    }, 7 * 60 * 1000);
 }

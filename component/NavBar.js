@@ -74,7 +74,7 @@ const NavBarComponent = (props) => {
                         MiniReact.createElement(
                             "a",
                             { class: "nav-link" + (props.activePage === "/setting" ? " active" : ""), href: "/setting" },
-                            "Paramètre"
+                            "Langue"
                         )
                     ),
                 )
