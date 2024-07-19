@@ -1,12 +1,647 @@
 [
-  {
-  "name": "event 1",
-  "description": "DESCRI",
-  "date": "11/07/2024"
+{
+"name": "France - Espagne",
+"type_de_sport": "Football",
+"description": "18h : Match de football entre les équipes nationales de France et d'Espagne.",
+"date": "11/07/2024",
+"image": "assets/img/Football.jpg",
+"lieu": "Stade A, Ville X",
+"spots": [
+{
+"name": "Parc Montsouris",
+"type": "Parc",
+"photo": "assets/img/parc04.jpg",
+"description": "Le Parc Montsouris est un grand parc paysager du 14ème arrondissement, idéal pour les promenades et les pique-niques.",
+"influence_hours": "8h - 13h - 17h",
+"installation": "-Bancs\n-Pelouses\n-Lacs\n-Restaurants",
+"address": "2 Rue Gazan, 75014 Paris, France",
+"longitude": 2.3370,
+"latitude": 48.8220
 },
 {
-  "name": "event 2",
-  "description": "DESCRI",
-  "date": "12/07/2024"
+"name": "Pont d'Austerlitz",
+"type": "Pont",
+"photo": "assets/img/pont06.jpg",
+"description": "Construit en 1807, ce pont relie le Jardin des Plantes au quartier de la Gare. Il porte le nom de la victoire de Napoléon à Austerlitz.",
+"influence_hours": "7h - 11h - 15h",
+"installation": "-Bancs publics\n-Éclairage nocturne",
+"address": "75005 Paris, France",
+"longitude": 2.3675,
+"latitude": 48.8420
+},
+{
+"name": "Jardin du Ranelagh",
+"type": "Jardin",
+"photo": "assets/img/jardin02.jpg",
+"description": "Le Jardin du Ranelagh est un parc du 16ème arrondissement, avec des aires de jeux, des sculptures et de grands espaces verts.",
+"influence_hours": "9h - 13h - 18h",
+"installation": "-Bancs\n-Statues\n-Aires de jeux\n-Pelouses",
+"address": "1 Avenue Prudhon, 75016 Paris, France",
+"longitude": 2.2730,
+"latitude": 48.8584
+}
+]
+},
+{
+"name": "USA - Canada",
+"type_de_sport": "Basketball",
+"description": "18h : Tournoi de basketball avec les équipes nationales des USA et du Canada.",
+"date": "12/07/2024",
+"image": "assets/img/BasketBall.jpg",
+"lieu": "Arène B, Ville Y",
+"spots": [
+{
+"name": "Parc des Buttes-Chaumont",
+"type": "Parc",
+"photo": "assets/img/parc01.jpg",
+"description": "Le Parc des Buttes-Chaumont est un grand espace vert vallonné avec des falaises, des cascades et une vue spectaculaire depuis le Temple de la Sybille.",
+"influence_hours": "7h - 13h - 16h",
+"installation": "-Bancs\n-Lacs\n-Passerelles\n-Restaurants",
+"address": "1 Rue Botzaris, 75019 Paris, France",
+"longitude": 2.3810,
+"latitude": 48.8806
+},
+{
+"name": "Pont des Arts",
+"type": "Pont",
+"photo": "assets/img/pont01.jpg",
+"description": "Ce pont piéton est souvent fréquenté par les amoureux et les artistes. Il offre une vue superbe sur le Louvre et l'Institut de France.",
+"influence_hours": "6h - 11h - 16h",
+"installation": "-Bancs publics\n-Espaces pour les artistes de rue\n-Éclairage nocturne",
+"address": "75001 Paris, France",
+"longitude": 2.3377,
+"latitude": 48.8606
+}
+]
+},
+{
+"name": "Open de Tennis",
+"type_de_sport": "Tennis",
+"description": "10h : Open de tennis avec les meilleurs joueurs internationaux.",
+"date": "13/07/2024",
+"image": "assets/img/Tennis.jpg",
+"lieu": "Court de Tennis C, Ville Z",
+"spots": [
+{
+"name": "Pont Bir-Hakeim",
+"type": "Pont",
+"photo": "assets/img/pont03.jpg",
+"description": "Ce pont à double niveau offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses apparitions dans divers films.",
+"influence_hours": "6h - 10h - 14h",
+"installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
+"address": "75015 Paris, France",
+"longitude": 2.2871,
+"latitude": 48.8554
+},
+{
+"name": "Parc Monceau",
+"type": "Parc",
+"photo": "assets/img/parc02.jpg",
+"description": "Le Parc Monceau est un élégant jardin à l'anglaise, avec des statues, des ponts, et des répliques de monuments historiques.",
+"influence_hours": "8h - 12h - 16h",
+"installation": "-Bancs\n-Statues\n-Pelouses\n-Aires de jeux",
+"address": "35 Boulevard de Courcelles, 75008 Paris, France",
+"longitude": 2.3086,
+"latitude": 48.8792
+}
+]
+},
+{
+"name": "Championnat de Natation",
+"type_de_sport": "Natation",
+"description": "14h : Championnat international de natation avec des nageurs du monde entier.",
+"date": "14/07/2024",
+"image": "assets/img/Natation.jpg",
+"lieu": "Centre Aquatique D, Ville W",
+"spots": [
+{
+"name": "Pont de la Concorde",
+"type": "Pont",
+"photo": "assets/img/pont04.jpg",
+"description": "Construit en 1791, ce pont relie la Place de la Concorde à l'Assemblée Nationale. Il est réalisé en pierres de taille provenant de la démolition de la Bastille.",
+"influence_hours": "7h - 12h - 17h",
+"installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+"address": "75007 Paris, France",
+"longitude": 2.3185,
+"latitude": 48.8630
+},
+{
+"name": "Jardin du Luxembourg",
+"type": "Jardin",
+"photo": "assets/img/jardin01.jpg",
+"description": "Le Jardin du Luxembourg est un parc emblématique avec de vastes pelouses, des sculptures, des fontaines et des terrains de tennis.",
+"influence_hours": "8h - 14h - 17h",
+"installation": "-Bancs\n-Statues\n-Fontaines\n-Cafés",
+"address": "6e Arrondissement, 75006 Paris, France",
+"longitude": 2.3372,
+"latitude": 48.8462
+}
+]
+},
+{
+"name": "Marathon Olympique",
+"type_de_sport": "Course à pied",
+"description": "8h : Marathon urbain avec des milliers de participants courant à travers des itinéraires pittoresques.",
+"date": "15/07/2024",
+"image": "sandbox:/mnt/data/A_city_marathon_with_thousands_of_participants_run.png",
+"lieu": "Rues de la Ville, Ville V",
+"spots": [
+{
+"name": "Pont de Bercy",
+"type": "Pont",
+"photo": "assets/img/pont03.jpg",
+"description": "Ce pont relie le 12ème arrondissement au quartier de Bercy. Il est doté de deux niveaux : un pour la circulation automobile et un pour le métro.",
+"influence_hours": "7h - 12h - 17h",
+"installation": "-Piste cyclable\n-Passerelle pour piétons\n-Éclairage nocturne",
+"address": "75012 Paris, France",
+"longitude": 2.3750,
+"latitude": 48.8375
+},
+{
+"name": "Jardin d'Acclimatation",
+"type": "Jardin",
+"photo": "assets/img/jardin02.jpg",
+"description": "Le Jardin d'Acclimatation est un parc d'attractions pour enfants avec des manèges, des ateliers et des aires de jeux.",
+"influence_hours": "10h - 13h - 17h",
+"installation": "-Manèges\n-Aires de jeux\n-Restaurants\n-Jardins",
+"address": "Bois de Boulogne,75116 Paris, France",
+"longitude": 2.2749,
+"latitude": 48.8784
+}
+]
+},
+{
+"name": "Course de Cyclisme",
+"type_de_sport": "Cyclisme",
+"description": "9h : Course de cyclisme à travers des terrains difficiles.",
+"date": "16/07/2024",
+"image": "sandbox:/mnt/data/A_competitive_cycling_race_through_challenging_ter.png",
+"lieu": "Col de Montagne E, Ville U",
+"spots": [
+{
+"name": "Pont des Arts",
+"type": "Pont",
+"photo": "assets/img/pont01.jpg",
+"description": "Ce pont piéton est souvent fréquenté par les amoureux et les artistes. Il offre une vue superbe sur le Louvre et l'Institut de France.",
+"influence_hours": "6h - 11h - 16h",
+"installation": "-Bancs publics\n-Espaces pour les artistes de rue\n-Éclairage nocturne",
+"address": "75001 Paris, France",
+"longitude": 2.3377,
+"latitude": 48.8606
+},
+{
+"name": "Terrasse du Centre Pompidou",
+"type": "Terrasse",
+"photo": "assets/img/terrase02.jpg",
+"description": "La terrasse du Centre Pompidou offre une vue imprenable sur les toits de Paris et la Tour Eiffel, tout en étant entourée d'œuvres d'art contemporain.",
+"influence_hours": "11h - 14h - 18h",
+"installation": "-Café\n-Restaurant\n-Expositions",
+"address": "Place Georges-Pompidou, 75004 Paris, France",
+"longitude": 2.3522,
+"latitude": 48.8606
+}
+]
+},
+{
+"name": "Boxe - Finale Poids Lourds",
+"type_de_sport": "Boxe",
+"description": "20h : Match de boxe intense entre deux grands prétendants pour la finale poids lourds.",
+"date": "17/07/2024",
+"image": "sandbox:/mnt/data/An_intense_boxing_match_between_two_top_contenders.png",
+"lieu": "Arène de Boxe F, Ville T",
+"spots": [
+{
+"name": "Pont de l'Alma",
+"type": "Pont",
+"photo": "assets/img/pont01.jpg",
+"description": "Construit en 1854, ce pont est connu pour la statue du Zouave, utilisée comme indicateur du niveau de la Seine.",
+"influence_hours": "7h - 12h - 17h",
+"installation": "-Statue du Zouave\n-Bancs publics\n-Éclairage nocturne",
+"address": "75007 Paris, France",
+"longitude": 2.3009,
+"latitude": 48.8626
+},
+{
+"name": "Parc des Buttes-Chaumont",
+"type": "Parc",
+"photo": "assets/img/parc01.jpg",
+"description": "Le Parc des Buttes-Chaumont est un grand espace vert vallonné avec des falaises, des cascades et une vue spectaculaire depuis le Temple de la Sybille.",
+"influence_hours": "7h - 13h - 16h",
+"installation": "-Bancs\n-Lacs\n-Passerelles\n-Restaurants",
+"address": "1 Rue Botzaris, 75019 Paris, France",
+"longitude": 2.3810,
+"latitude": 48.8806
+}
+]
+},
+{
+"name": "Tournoi de Golf Olympique",
+"type_de_sport": "Golf",
+"description": "10h : Prestigieux tournoi de golf avec les meilleurs golfeurs en compétition pour le titre olympique.",
+"date": "18/07/2024",
+"image": "url_to_golf_image",
+"lieu": "Parcours de Golf G, Ville S",
+"spots": [
+{
+"name": "Pont Bir-Hakeim",
+"type": "Pont",
+"photo": "assets/img/pont03.jpg",
+"description": "Ce pont à double niveau offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses apparitions dans divers films.",
+"influence_hours": "6h - 10h - 14h",
+"installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
+"address": "75015 Paris, France",
+"longitude": 2.2871,
+"latitude": 48.8554
+},
+{
+"name": "Parc Monceau",
+"type": "Parc",
+"photo": "assets/img/parc02.jpg",
+"description": "Le Parc Monceau est un élégant jardin à l'anglaise, avec des statues, des ponts, et des répliques de monuments historiques.",
+"influence_hours": "8h - 12h - 16h",
+"installation": "-Bancs\n-Statues\n-Pelouses\n-Aires de jeux",
+"address": "35 Boulevard de Courcelles, 75008 Paris, France",
+"longitude": 2.3086,
+"latitude": 48.8792
+}
+]
+},
+{
+"name": "France - Nouvelle-Zélande",
+"type_de_sport": "Rugby",
+"description": "15h : Match de rugby énergique entre les équipes nationales de France et de Nouvelle-Zélande.",
+"date": "19/07/2024",
+"image": "url_to_rugby_image",
+"lieu": "Stade de Rugby H, Ville R",
+"spots": [
+{
+"name": "Pont de la Concorde",
+"type": "Pont",
+"photo": "assets/img/pont04.jpg",
+"description": "Construit en 1791, ce pont relie la Place de la Concorde à l'Assemblée Nationale. Il est réalisé en pierres de taille provenant de la démolition de la Bastille.",
+"influence_hours": "7h - 12h - 17h",
+"installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+"address": "75007 Paris, France",
+"longitude": 2.3185,
+"latitude": 48.8630
+},
+{
+"name": "Jardin du Luxembourg",
+"type": "Jardin",
+"photo": "assets/img/jardin01.jpg",
+"description": "Le Jardin du Luxembourg est un parc emblématique avec de vastes pelouses, des sculptures, des fontaines et des terrains de tennis.",
+"influence_hours": "8h - 14h - 17h",
+"installation": "-Bancs\n-Statues\n-Fontaines\n-Cafés",
+"address": "6e Arrondissement, 75006 Paris, France",
+"longitude": 2.3372,
+"latitude": 48.8462
+}
+]
+},
+{
+"name": "Angleterre - Inde",
+"type_de_sport": "Cricket",
+"description": "16h : Match de cricket palpitant entre les équipes nationales d'Angleterre et d'Inde.",
+"date": "20/07/2024",
+"image": "url_to_cricket_image",
+"lieu": "Terrain de Cricket I, Ville Q",
+"spots": [
+{
+"name": "Pont de Bercy",
+"type": "Pont",
+"photo": "assets/img/pont03.jpg",
+"description": "Ce pont relie le 12ème arrondissement au quartier de Bercy. Il est doté de deux niveaux : un pour la circulation automobile et un pour le métro.",
+"influence_hours": "7h - 12h - 17h",
+"installation": "-Piste cyclable\n-Passerelle pour piétons\n-Éclairage nocturne",
+"address": "75012 Paris, France",
+"longitude": 2.3750,
+"latitude": 48.8375
+},
+{
+"name": "Jardin d'Acclimatation",
+"type": "Jardin",
+"photo": "assets/img/jardin02.jpg",
+"description": "Le Jardin d'Acclimatation est un parc d'attractions pour enfants avec des manèges, des ateliers et des aires de jeux.",
+"influence_hours": "10h - 13h - 17h",
+"installation": "-Manèges\n-Aires de jeux\n-Restaurants\n-Jardins",
+"address": "Bois de Boulogne, 75116 Paris, France",
+"longitude": 2.2749,
+"latitude": 48.8784
+}
+]
+},
+{
+"name": "Match de Hockey",
+"type_de_sport": "Hockey",
+"description": "18h : Match de hockey excitant avec une action rapide.",
+
+
+"date": "21/07/2024",
+"image": "url_to_hockey_image",
+"lieu": "Patinoire J, Ville P",
+"spots": [
+{
+"name": "Pont des Arts",
+"type": "Pont",
+"photo": "assets/img/pont01.jpg",
+"description": "Ce pont piéton est souvent fréquenté par les amoureux et les artistes. Il offre une vue superbe sur le Louvre et l'Institut de France.",
+"influence_hours": "6h - 11h - 16h",
+"installation": "-Bancs publics\n-Espaces pour les artistes de rue\n-Éclairage nocturne",
+"address": "75001 Paris, France",
+"longitude": 2.3377,
+"latitude": 48.8606
+},
+{
+"name": "Terrasse du Centre Pompidou",
+"type": "Terrasse",
+"photo": "assets/img/terrase02.jpg",
+"description": "La terrasse du Centre Pompidou offre une vue imprenable sur les toits de Paris et la Tour Eiffel, tout en étant entourée d'œuvres d'art contemporain.",
+"influence_hours": "11h - 14h - 18h",
+"installation": "-Café\n-Restaurant\n-Expositions",
+"address": "Place Georges-Pompidou, 75004 Paris, France",
+"longitude": 2.3522,
+"latitude": 48.8606
+}
+]
+},
+{
+"name": "Meeting d'Athlétisme",
+"type_de_sport": "Athlétisme",
+"description": "9h : Meeting d'athlétisme compétitif avec divers événements de piste et de terrain.",
+"date": "22/07/2024",
+"image": "url_to_athletics_image",
+"lieu": "Stade K, Ville O",
+"spots": [
+{
+"name": "Pont de la Concorde",
+"type": "Pont",
+"photo": "assets/img/pont04.jpg",
+"description": "Construit en 1791, ce pont relie la Place de la Concorde à l'Assemblée Nationale. Il est réalisé en pierres de taille provenant de la démolition de la Bastille.",
+"influence_hours": "7h - 12h - 17h",
+"installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+"address": "75007 Paris, France",
+"longitude": 2.3185,
+"latitude": 48.8630
+},
+{
+"name": "Jardin du Luxembourg",
+"type": "Jardin",
+"photo": "assets/img/jardin01.jpg",
+"description": "Le Jardin du Luxembourg est un parc emblématique avec de vastes pelouses, des sculptures, des fontaines et des terrains de tennis.",
+"influence_hours": "8h - 14h - 17h",
+"installation": "-Bancs\n-Statues\n-Fontaines\n-Cafés",
+"address": "6e Arrondissement, 75006 Paris, France",
+"longitude": 2.3372,
+"latitude": 48.8462
+}
+]
+},
+{
+"name": "Tournoi de Volleyball",
+"type_de_sport": "Volleyball",
+"description": "14h : Tournoi de volleyball avec les meilleures équipes en quête de victoire.",
+"date": "23/07/2024",
+"image": "assets/img/Volleyball.jpg",
+"lieu": "Arène L, Ville N",
+"spots": [
+{
+"name": "Pont Bir-Hakeim",
+"type": "Pont",
+"photo": "assets/img/pont03.jpg",
+"description": "Ce pont à double niveau offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses apparitions dans divers films.",
+"influence_hours": "6h - 10h - 14h",
+"installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
+"address": "75015 Paris, France",
+"longitude": 2.2871,
+"latitude": 48.8554
+},
+{
+"name": "Parc Monceau",
+"type": "Parc",
+"photo": "assets/img/parc02.jpg",
+"description": "Le Parc Monceau est un élégant jardin à l'anglaise, avec des statues, des ponts, et des répliques de monuments historiques.",
+"influence_hours": "8h - 12h - 16h",
+"installation": "-Bancs\n-Statues\n-Pelouses\n-Aires de jeux",
+"address": "35 Boulevard de Courcelles, 75008 Paris, France",
+"longitude": 2.3086,
+"latitude": 48.8792
+}
+]
+},
+{
+"name": "Open de Badminton",
+"type_de_sport": "Badminton",
+"description": "10h : Open de badminton avec les meilleurs joueurs en compétition.",
+"date": "25/07/2024",
+"image": "assets/img/Badminton.jpg",
+"lieu": "Arène N, Ville L",
+"spots": [
+{
+"name": "Pont de l'Alma",
+"type": "Pont",
+"photo": "assets/img/pont01.jpg",
+"description": "Construit en 1854, ce pont est connu pour la statue du Zouave, utilisée comme indicateur du niveau de la Seine.",
+"influence_hours": "7h - 12h - 17h",
+"installation": "-Statue du Zouave\n-Bancs publics\n-Éclairage nocturne",
+"address": "75007 Paris, France",
+"longitude": 2.3009,
+"latitude": 48.8626
+},
+{
+"name": "Parc des Buttes-Chaumont",
+"type": "Parc",
+"photo": "assets/img/parc01.jpg",
+"description": "Le Parc des Buttes-Chaumont est un grand espace vert vallonné avec des falaises, des cascades et une vue spectaculaire depuis le Temple de la Sybille.",
+"influence_hours": "7h - 13h - 16h",
+"installation": "-Bancs\n-Lacs\n-Passerelles\n-Restaurants",
+"address": "1 Rue Botzaris, 75019 Paris, France",
+"longitude": 2.3810,
+"latitude": 48.8806
+}
+]
+},
+{
+"name": "Match de Lutte",
+"type_de_sport": "Lutte",
+"description": "13h : Match de lutte énergique avec des lutteurs qualifiés.",
+"date": "26/07/2024",
+"image": "assets/img/Lutte.jpg",
+"lieu": "Ring O, Ville K",
+"spots": [
+{
+"name": "Pont de la Concorde",
+"type": "Pont",
+"photo": "assets/img/pont04.jpg",
+"description": "Construit en 1791, ce pont relie la Place de la Concorde à l'Assemblée Nationale. Il est réalisé en pierres de taille provenant de la démolition de la Bastille.",
+"influence_hours": "7h - 12h - 17h",
+"installation": "-Bancs publics\n-Points de vue panoramiques\n-Éclairage nocturne",
+"address": "75007 Paris, France",
+"longitude": 2.3185,
+"latitude": 48.8630
+},
+{
+"name": "Jardin du Luxembourg",
+"type": "Jardin",
+"photo": "assets/img/jardin01.jpg",
+"description": "Le Jardin du Luxembourg est un parc emblématique avec de vastes pelouses, des sculptures, des fontaines et des terrains de tennis.",
+"influence_hours": "8h - 14h - 17h",
+"installation": "-Bancs\n-Statues\n-Fontaines\n-Cafés",
+"address": "6e Arrondissement, 75006 Paris, France",
+"longitude": 2.3372,
+"latitude": 48.8462
+}
+]
+},
+{
+"name": "Championnat d'Escrime",
+"type_de_sport": "Escrime",
+"description": "10h : Championnat d'escrime prestigieux avec les meilleurs escrimeurs.",
+"date": "27/07/2024",
+"image": "assets/img/Escrime.jpg",
+"lieu": "Salle P, Ville J",
+"spots": [
+{
+"name": "Jardin des Tuileries",
+"type": "Jardin",
+"photo": "assets/img/jardin01.jpeg",
+"description": "Le Jardin des Tuileries est un jardin public situé entre le Louvre et la Place de la Concorde, offrant des promenades agréables et des œuvres d'art en plein air.",
+"influence_hours": "8h - 12h - 16h",
+
+
+"installation": "-Bancs\n-Fontaines\n-Statues\n-Cafés",
+"address": "113 Rue de Rivoli, 75001 Paris, France",
+"longitude": 2.3266,
+"latitude": 48.8638
+},
+{
+"name": "Pont des Arts",
+"type": "Pont",
+"photo": "assets/img/pont01.jpg",
+"description": "Ce pont piéton est souvent fréquenté par les amoureux et les artistes. Il offre une vue superbe sur le Louvre et l'Institut de France.",
+"influence_hours": "6h - 11h - 16h",
+"installation": "-Bancs publics\n-Espaces pour les artistes de rue\n-Éclairage nocturne",
+"address": "75001 Paris, France",
+"longitude": 2.3377,
+"latitude": 48.8606
+},
+{
+"name": "Terrasse du Centre Pompidou",
+"type": "Terrasse",
+"photo": "assets/img/terrase01.jpg",
+"description": "La terrasse du Centre Pompidou offre une vue imprenable sur les toits de Paris et la Tour Eiffel, tout en étant entourée d'œuvres d'art contemporain.",
+"influence_hours": "11h - 14h - 18h",
+"installation": "-Café\n-Restaurant\n-Expositions",
+"address": "Place Georges-Pompidou, 75004 Paris, France",
+"longitude": 2.3522,
+"latitude": 48.8606
+}
+]
+},
+{
+"name": "Tournoi de Judo",
+"type_de_sport": "Judo",
+"description": "14h : Tournoi de judo intense avec des judokas qualifiés.",
+"date": "28/07/2024",
+"image": "assets/img/Judo.jpg",
+"lieu": "Dojo Q, Ville I",
+"spots": [
+{
+"name": "Pont de l'Alma",
+"type": "Pont",
+"photo": "assets/img/pont02.jpg",
+"description": "Construit en 1854, ce pont est connu pour la statue du Zouave, utilisée comme indicateur du niveau de la Seine.",
+"influence_hours": "7h - 12h - 17h",
+"installation": "-Statue du Zouave\n-Bancs publics\n-Éclairage nocturne",
+"address": "75007 Paris, France",
+"longitude": 2.3009,
+"latitude": 48.8626
+},
+{
+"name": "Parc des Buttes-Chaumont",
+"type": "Parc",
+"photo": "assets/img/parc01.jpg",
+"description": "Le Parc des Buttes-Chaumont est un grand espace vert vallonné avec des falaises, des cascades et une vue spectaculaire depuis le Temple de la Sybille.",
+"influence_hours": "7h - 13h - 16h",
+"installation": "-Bancs\n-Lacs\n-Passerelles\n-Restaurants",
+"address": "1 Rue Botzaris, 75019 Paris, France",
+"longitude": 2.3810,
+"latitude": 48.8806
+}
+]
+},
+{
+"name": "Championnat de Karaté",
+"type_de_sport": "Karaté",
+"description": "16h : Championnat de karaté avec les meilleurs artistes martiaux.",
+"date": "29/07/2024",
+"image": "assets/img/Karaté.jpg",
+"lieu": "Dojo R, Ville H",
+"spots": [
+{
+"name": "Pont Bir-Hakeim",
+"type": "Pont",
+"photo": "assets/img/pont03.jpg",
+"description": "Ce pont à double niveau offre une vue spectaculaire sur la Tour Eiffel. Il est également célèbre pour ses apparitions dans divers films.",
+"influence_hours": "6h - 10h - 14h",
+"installation": "-Piste cyclable\n-Espaces piétons\n-Éclairage nocturne",
+"address": "75015 Paris, France",
+"longitude": 2.2871,
+"latitude": 48.8554
+},
+{
+"name": "Parc Monceau",
+"type": "Parc",
+"photo": "assets/img/parc02.jpg",
+"description": "Le Parc Monceau est un élégant jardin à l'anglaise, avec des statues, des ponts, et des répliques de monuments historiques.",
+"influence_hours": "8h - 12h - 16h",
+"installation": "-Bancs\n-Statues\n-Pelouses\n-Aires de jeux",
+"address": "35 Boulevard de Courcelles, 75008 Paris, France",
+"longitude": 2.3086,
+"latitude": 48.8792
+}
+]
+},
+{
+"name": "Tournoi de Taekwondo",
+"type_de_sport": "Taekwondo",
+"description": "12h : Tournoi de taekwondo avec des combattants qualifiés.",
+"date": "30/07/2024",
+"image": "assets/img/Taekwondo.jpg",
+"lieu": "Arène S, Ville G",
+"spots": [
+{
+"name": "Jardin des Tuileries",
+"type": "Jardin",
+"photo": "assets/img/jardin01.jpeg",
+"description": "Le Jardin des Tuileries est un jardin public situé entre le Louvre et la Place de la Concorde, offrant des promenades agréables et des œuvres d'art en plein air.",
+"influence_hours": "8h - 12h - 16h",
+"installation": "-Bancs\n-Fontaines\n-Statues\n-Cafés",
+"address": "113 Rue de Rivoli, 75001 Paris, France",
+"longitude": 2.3266,
+"latitude": 48.8638
+},
+{
+"name": "Pont des Arts",
+"type": "Pont",
+"photo": "assets/img/pont01.jpg",
+"description": "Ce pont piéton est souvent fréquenté par les amoureux et les artistes. Il offre une vue superbe sur le Louvre et l'Institut de France.",
+"influence_hours": "6h - 11h - 16h",
+"installation": "-Bancs publics\n-Espaces pour les artistes de rue\n-Éclairage nocturne",
+"address": "75001 Paris, France",
+"longitude": 2.3377,
+"latitude": 48.8606
+},
+{
+"name": "Terrasse du Centre Pompidou",
+"type": "Terrasse",
+"photo": "assets/img/terrase01.jpg",
+"description": "La terrasse du Centre Pompidou offre une vue imprenable sur les toits de Paris et la Tour Eiffel, tout en étant entourée d'œuvres d'art contemporain.",
+"influence_hours": "11h - 14h - 18h",
+"installation": "-Café\n-Restaurant\n-Expositions",
+"address": "Place Georges-Pompidou, 75004 Paris, France",
+"longitude": 2.3522,
+"latitude": 48.8606
+}
+]
 }
 ]
