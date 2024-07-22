@@ -274,7 +274,7 @@ class Map extends Component {
                             "h2",
                             {
                                 id: "place_title",
-                                style: {"text-align": "center"}
+                                style: {"text-align": "center", "margin-top": "3%"}
                             },
                             this.state.placeTitle
                         ),

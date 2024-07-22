@@ -1,6 +1,6 @@
 import { MiniReact } from "../core/MiniReact.js";
 import Component from "../core/Component.js";
-import { Header, Footer, Image } from "../component/ReactComponent.js";
+import { Header, Footer, Image, Button } from "../component/ReactComponent.js";
 
 class Event extends Component {
     constructor(props) {
@@ -12,6 +12,7 @@ class Event extends Component {
             selectedSpotType: ""
         };
         this.getAllEvents();
+        this.ShowEvent = this.ShowEvent.bind(this);
     }
 
     getAllEvents() {
@@ -47,11 +48,20 @@ class Event extends Component {
         return `${year}-${month}-${day}`;
     }
 
+    ShowEvent(event) {
+        const eventWithGeo = {
+            ...event,
+            latitude: event.latitude,
+            longitude: event.longitude
+        };
+        sessionStorage.setItem('selectedEvent', JSON.stringify(eventWithGeo));
+        window.location.href = '/event-detail';
+    }
+
     render() {
         const uniqueSports = [...new Set(this.state.events.map(event => event.type_de_sport))];
         const uniqueSpotTypes = [...new Set(this.state.events.flatMap(event => event.spots.map(spot => spot.type)))];
 
-        // Filter events by selected sport, selected date, and selected spot type
         const filteredEvents = this.state.events.filter(event => {
             const spotMatch = this.state.selectedSpotType
                 ? event.spots.some(spot => spot.type === this.state.selectedSpotType)
@@ -61,7 +71,6 @@ class Event extends Component {
                 spotMatch;
         });
 
-        // Group events by pairs
         const eventPairs = [];
         for (let i = 0; i < filteredEvents.length; i += 2) {
             eventPairs.push(filteredEvents.slice(i, i + 2));
@@ -219,7 +228,13 @@ class Event extends Component {
                                             "p",
                                             { class: "card-text" , style: { "margin-bottom": "1px"}},
                                             "Sport : " + event.type_de_sport
-                                        )
+                                        ),
+                                        MiniReact.createElement(Button, {
+                                            type: "button",
+                                            title: "Afficher plus de détail",
+                                            class: "btn btn-primary w-100",
+                                            onClick: () => this.ShowEvent(event)
+                                        }),
                                     )
                                 )
                             ))

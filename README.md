@@ -11,25 +11,26 @@
 - **Docker** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
 - **Routes** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
 - **Component (BrowserRouter.js, NavBar.js, ReactComponent.js)** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
-- **Core (Minireact.js et Component.js)** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
+- **Core (Minireact.js et Component.js)** - Réalisée par <span style="color: green;">YILMAZ Botan</span> et <span style="color: blue;">SEBIAN Abane</span>
 - **Views (404.js, Home.js, Map.js, Setting.js)** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
-- **Views (Event.js)** - Réalisée par <span style="color: blue;">SEBIAN Abane</span>
+- **Views (Event.js)** - Réalisée par <span style="color: green;">YILMAZ Botan</span> et <span style="color: blue;">SEBIAN Abane</span>
 
 ## Fonctionnalités
 - **Carte interactive** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
 - **Meilleurs spots** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
-- **Listing des événements sportifs** - Réalisée par <span style="color: blue;">SEBIAN Abane</span>
+- **Listing des événements sportifs** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
 - **Détail d'un spot** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
-- **Recherche filtrée** - Réalisée par <span style="color: blue;">SEBIAN Abane</span>
+- **Recherche filtrée** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
 
 ## Fonctionnalités bonus
 - **Scraping live de données** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
 - **Géolocalisation de l'utilisateur** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
-- **Interaction avec des APIs externes (ggogle trad)** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
+- **Interaction avec des APIs externes (google traduction)** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
 - **Service Worker pour des notifications bonus** - Réalisée par <span style="color: green;">YILMAZ Botan</span>
 
 ## Fonctionnalités bonus non réalisées
 - **Synchronisation du scroll et des frames**
+
 
 ## Installation
 
