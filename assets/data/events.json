@@ -11,7 +11,7 @@
       {
         "name": "Parc Montsouris",
         "type": "Parc",
-        "photo": "assets/img/parc04.jpg",
+        "photo": "assets/img/parc01.jpg",
         "description": "Le Parc Montsouris est un grand parc paysager du 14ème arrondissement, idéal pour les promenades et les pique-niques.",
         "influence_hours": "8h - 13h - 17h",
         "installation": "-Bancs\n-Pelouses\n-Lacs\n-Restaurants",
@@ -41,7 +41,9 @@
         "longitude": 2.2730,
         "latitude": 48.8584
       }
-    ]
+    ],
+    "longitude": 2.3800,
+    "latitude": 48.8314
   },
   {
     "name": "USA - Canada",
@@ -74,7 +76,9 @@
         "longitude": 2.3377,
         "latitude": 48.8606
       }
-    ]
+    ],
+    "longitude": 2.2531,
+    "latitude": 48.8475
   },
   {
     "name": "Open de Tennis",
@@ -107,7 +111,9 @@
         "longitude": 2.3086,
         "latitude": 48.8792
       }
-    ]
+    ],
+    "longitude": 2.2531,
+    "latitude": 48.8475
   },
   {
     "name": "Championnat de Natation",
@@ -140,7 +146,9 @@
         "longitude": 2.3372,
         "latitude": 48.8462
       }
-    ]
+    ],
+    "longitude": 2.3517,
+    "latitude": 48.8522
   },
   {
     "name": "Marathon Olympique",
@@ -173,7 +181,9 @@
         "longitude": 2.2749,
         "latitude": 48.8784
       }
-    ]
+    ],
+    "longitude": 2.3234,
+    "latitude": 48.8602
   },
   {
     "name": "Course de Cyclisme",
@@ -206,7 +216,9 @@
         "longitude": 2.3522,
         "latitude": 48.8606
       }
-    ]
+    ],
+    "longitude": 2.3370,
+    "latitude": 48.8220
   },
   {
     "name": "Boxe - Finale Poids Lourds",
@@ -239,7 +251,9 @@
         "longitude": 2.3810,
         "latitude": 48.8806
       }
-    ]
+    ],
+    "longitude": 2.3851,
+    "latitude": 48.8425
   },
   {
     "name": "Tournoi de Golf Olympique",
@@ -272,7 +286,9 @@
         "longitude": 2.3086,
         "latitude": 48.8792
       }
-    ]
+    ],
+    "longitude": 2.3602,
+    "latitude": 48.8430
   },
   {
     "name": "France - Nouvelle-Zélande",
@@ -305,7 +321,9 @@
         "longitude": 2.3372,
         "latitude": 48.8462
       }
-    ]
+    ],
+    "longitude": 2.3372,
+    "latitude": 48.8462
   },
   {
     "name": "Angleterre - Inde",
@@ -338,7 +356,9 @@
         "longitude": 2.2749,
         "latitude": 48.8784
       }
-    ]
+    ],
+    "longitude": 2.2777,
+    "latitude": 48.8506
   },
   {
     "name": "Match de Hockey",
@@ -371,7 +391,9 @@
         "longitude": 2.3522,
         "latitude": 48.8606
       }
-    ]
+    ],
+    "longitude": 2.3234,
+    "latitude": 48.8602
   },
   {
     "name": "Meeting d'Athlétisme",
@@ -404,7 +426,9 @@
         "longitude": 2.3372,
         "latitude": 48.8462
       }
-    ]
+    ],
+    "longitude": 2.3675,
+    "latitude": 48.8420
   },
   {
     "name": "Tournoi de Volleyball",
@@ -437,7 +461,9 @@
         "longitude": 2.3086,
         "latitude": 48.8792
       }
-    ]
+    ],
+    "longitude": 2.2730,
+    "latitude": 48.8584
   },
   {
     "name": "Open de Badminton",
@@ -470,7 +496,9 @@
         "longitude": 2.3810,
         "latitude": 48.8806
       }
-    ]
+    ],
+    "longitude": 2.288590,
+    "latitude": 48.862183
   },
   {
     "name": "Match de Lutte",
@@ -503,7 +531,9 @@
         "longitude": 2.3372,
         "latitude": 48.8462
       }
-    ]
+    ],
+    "longitude": 2.2660,
+    "latitude": 48.8380
   },
   {
     "name": "Championnat d'Escrime",
@@ -547,7 +577,9 @@
         "longitude": 2.3522,
         "latitude": 48.8606
       }
-    ]
+    ],
+    "longitude": 2.2531,
+    "latitude": 48.8475
   },
   {
     "name": "Tournoi de Judo",
@@ -580,7 +612,9 @@
         "longitude": 2.3810,
         "latitude": 48.8806
       }
-    ]
+    ],
+    "longitude": 2.2871,
+    "latitude": 48.8554
   },
   {
     "name": "Championnat de Karaté",
@@ -613,7 +647,9 @@
         "longitude": 2.3086,
         "latitude": 48.8792
       }
-    ]
+    ],
+    "longitude": 2.3800,
+    "latitude": 48.8314
   },
   {
     "name": "Tournoi de Taekwondo",
@@ -657,6 +693,8 @@
         "longitude": 2.3522,
         "latitude": 48.8606
       }
-    ]
+    ],
+    "longitude": 2.2660,
+    "latitude": 48.8380
   }
 ]
