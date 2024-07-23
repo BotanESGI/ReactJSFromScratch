@@ -5,7 +5,7 @@ import { Image } from "/component/ReactComponent.js";
 const NavBarComponent = (props) => {
     return MiniReact.createElement(
         "nav",
-        { class: "navbar navbar-expand-lg navbar-light bg-ligh  t" },
+        { class: "navbar navbar-expand-lg navbar-light bg-light"},
         MiniReact.createElement(
             "div",
             {
@@ -84,29 +84,21 @@ class NavBar extends Component {
         this.activePage = window.location.pathname;
     }
 
-    document.getElementById('menu-icon').addEventListener('click', function() {
-        var navLinks = document.getElementById('nav-links');
-        var mainContent = document.getElementById('main-content');
-        
-        if (navLinks.classList.contains('active')) {
-        navLinks.classList.remove('active');
-        mainContent.style.paddingTop = '80px';
-        } else {
-        navLinks.classList.add('active');
-        mainContent.style.paddingTop = (80 + navLinks.offsetHeight) + 'px';
-        }
-    });
 
     openNavBarMobile = () => {
         this.setState({
             show: true
         });
+        var mainContent = document.querySelector('main');
+        mainContent.style.paddingTop = '16rem';
     };
 
     closeNavBarMobile = () => {
         this.setState({
             show: false
         });
+         var mainContent = document.querySelector('main');
+        mainContent.style.paddingTop = '8rem';  
     };
 
     render() {

@@ -137,13 +137,14 @@ body {
     top: 0px !important;
 }
 
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: #fff; /* Couleur de fond pour le header */
-  z-index: 1000; /* Assurez-vous que le header reste au-dessus des autres éléments */
+  z-index: 9999;/* Assurez-vous que le header reste au-dessus des autres éléments */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre pour un effet visuel */
 }
 
@@ -939,8 +940,12 @@ header {
 #places{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 0rem 2rem;
+    gap: 1rem;
+    padding: 0rem .5rem;
+}
+
+#map{
+    margin-top: -2rem;
 }
 
 @media (max-width: 700px) {
