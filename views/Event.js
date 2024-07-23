@@ -208,6 +208,7 @@ class Event extends Component {
                                         title: event.name,
                                         class: event.type_de_sport,
                                         category: event.type_de_sport,
+                                        date: event.date,
                                         buttonTxt: "En savoir plus",
                                         buttonClass: "event-button",
                                         buttonOnClick: () => this.ShowEvent(event)

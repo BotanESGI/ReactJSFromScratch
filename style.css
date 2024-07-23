@@ -823,10 +823,16 @@ header {
   border-radius: .5rem;
 }
 
-.eventCard h3 {
-  margin-top: 12px;
-  font-size: 1.2em;
+.detail-container{
+  margin-top: .5rem;
   margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.eventCard h3 {
+  font-size: 1.2em;
   margin-right: 1rem;
   text-align: left;
   font-size: 25px;
@@ -842,7 +848,6 @@ header {
   border-radius: 2rem;
   text-transform: uppercase;
   align-self: flex-start;
-  margin-left: 1rem;
   text-align: left;
 }
 
@@ -857,8 +862,6 @@ header {
   display: inline-block;
   align-items: flex-start;
   text-align: left;
-  margin-left: 1rem;
-  margin-top: 1rem;
 }
 
 .event-button:hover {
@@ -880,7 +883,24 @@ header {
     border-radius: 4px;
 }
 
+.date-button-event{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem .75rem;
+    margin-top: auto;
+}
+
+.date-button-event span{
+    font-family: "OlympicSans";
+    font-size: .75rem;
+    padding-top: .25rem;
+}
+
 .filter-container{
+    position: relative;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -926,6 +946,8 @@ header {
     align-self: flex-start; /* Aligne l'élément p à gauche */
     text-align: left;
 }
+
+
 
 #place_location{
     margin-top: 3rem;

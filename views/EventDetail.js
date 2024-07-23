@@ -106,7 +106,7 @@ class EventDetail extends Component {
             "div", { id: "EventDetailPage" },
             MiniReact.createElement(Header),
             MiniReact.createElement(
-                "main", {style: {paddingTop: '8rem'}},
+                "main", { id : "EventDetail", style: {paddingTop: '6rem'}},
                 MiniReact.createElement(
                     "div",
                     {

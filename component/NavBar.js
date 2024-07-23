@@ -90,7 +90,9 @@ class NavBar extends Component {
             show: true
         });
         var mainContent = document.querySelector('main');
+        var eventMain = document.getElementById('EventDetail');
         mainContent.style.paddingTop = '16rem';
+        eventMain.style.paddingTop = "14rem";
     };
 
     closeNavBarMobile = () => {
@@ -98,7 +100,7 @@ class NavBar extends Component {
             show: false
         });
          var mainContent = document.querySelector('main');
-        mainContent.style.paddingTop = '8rem';  
+        mainContent.style.paddingTop = '6rem';  
     };
 
     render() {

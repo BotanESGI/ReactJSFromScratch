@@ -54,24 +54,42 @@ const Card = (props) => {
       "div",
         { class: `card eventCard rouded-lg` },
         MiniReact.createElement(Image,
-            {
-                src: `/../assets/img/${props.category}.jpg`,
-                alt: "sport_img",
-                class: "cardImage",
-            }),
-        MiniReact.createElement("p", null, props.category),
-        MiniReact.createElement("h3", null, props.title),
+        {
+            src: `/../assets/img/${props.category}.jpg`,
+            alt: "sport_img",
+            class: "cardImage",
+        }),
         MiniReact.createElement(
-        "button",
-          {
-            events: { click: props.buttonOnClick },
-            class: props.buttonClass
-          },
-            props.buttonTxt,
-        
-      )
+            "div",
+            { class: "detail-container" },
+            MiniReact.createElement("p", null, props.category),
+            MiniReact.createElement("h3", null, props.title),
+            
+        ),
+        MiniReact.createElement(
+                "div",
+                { class: "date-button-event" },
+                MiniReact.createElement(
+                    "button",
+                    {
+                        events: { click: props.buttonOnClick },
+                        class: props.buttonClass
+                    },
+                        props.buttonTxt,
+                    
+                ),
+                MiniReact.createElement(
+                    "span",
+                    {},
+                    props.date
+                )
+            )
+
     );
 }
+
+
+
 
 
 const Footer = () => {
