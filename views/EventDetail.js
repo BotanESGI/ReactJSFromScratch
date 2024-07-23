@@ -81,6 +81,24 @@ class EventDetail extends Component {
             .bindPopup(this.state.event.name)
             .openPopup();
     }
+    
+    dateTranslate(date) {
+        const dateString = date;
+        const [day, month, year] = dateString.split('/');
+
+        // Créer un nouvel objet Date avec les parties de la date
+        const newDate = new Date(year, month - 1, day); // Notez que les mois commencent à 0 (janvier) en JavaScript
+
+        // Tableau des noms de mois en français
+        const monthNames = [
+        "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+        "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
+        ];
+
+        // Construire la chaîne formatée
+        return `${day} ${monthNames[newDate.getMonth()]} ${year}`;
+
+    }
 
     render() {
         const { event } = this.state;
@@ -88,7 +106,7 @@ class EventDetail extends Component {
             "div", { id: "EventDetailPage" },
             MiniReact.createElement(Header),
             MiniReact.createElement(
-                "main", null,
+                "main", {style: {paddingTop: '8rem'}},
                 MiniReact.createElement(
                     "div",
                     {
@@ -102,6 +120,31 @@ class EventDetail extends Component {
                         id: "events_info",
                         style: {background: "mintcream", padding: "5%"}
                     },
+                    MiniReact.createElement(
+                        'div',
+                        { class: "title-details" },
+                        MiniReact.createElement(
+                            "li",
+                            { class: "category" },
+                            event.type_de_sport
+                        ),
+                        MiniReact.createElement(
+                            "li",
+                            
+                            {  style: {listStyleType: "none"}},
+                            this.dateTranslate(event.date)
+                        ),
+                    ),
+                    MiniReact.createElement(
+                        "h2",
+                        {
+                            id: "event_title",
+                            class: "title_event",
+                            style: {},
+                            
+                        },
+                        event.name
+                    ),
                     MiniReact.createElement(Image, {
                         src: event.image,
                         alt: "Event 2024 Logo",
@@ -109,23 +152,6 @@ class EventDetail extends Component {
                             width: "-webkit-fill-available"
                         }
                     }),
-                    MiniReact.createElement(
-                        "h2",
-                        {
-                            id: "event_title",
-                            style: {"text-align": "center", "margin-top": "3%"}
-                        },
-                        event.name
-                    ),
-                    MiniReact.createElement(
-                        "a",
-                        {
-                            href: "https://www.google.com/maps/dir/" + this.mylatitude + "," + this.mylongitude + "/" + event.latitude + "," + event.longitude,
-                            target:"_blank",
-                            style: {"justify-content": "center", "display": "flex"}
-                        },
-                        "Afficher les itinéraires (Voiture, Transports, Pied, Vélo, Avion)"
-                    ),
                     MiniReact.createElement(
                         "ul",
                         {
@@ -157,82 +183,93 @@ class EventDetail extends Component {
                         ),
                         MiniReact.createElement(
                             "li",
-                            {
-                            },
+                            {},
                             "Type de sport : ", event.type_de_sport
-                        )
-                    ),
-                    MiniReact.createElement(
-                        "p",
-                        {
-                            id: "place_description",
-                        },
-                        event.description
+                        ),
+                        MiniReact.createElement(
+                            "p",
+                            {
+                                id: "place_description",
+                            },
+                            event.description
+                        ),
+                
                     ),
                     MiniReact.createElement(
                         "div",
-                        {
-                            id: "imageGallery",
-                            style: { overflowX: "auto", whiteSpace: "nowrap", padding: "10px" }
-                        },"Les spots : ",
-                        MiniReact.createElement("br", null ),
-                        ...event.spots.map(spot => (
-                            MiniReact.createElement(
+                        { class: "",  style : {marginTop: "2rem"}}
+                        ,
+                        MiniReact.createElement(
+                            "h2",
+                            {},
+                            "Les spots",
+                        ),
+                        MiniReact.createElement(
                                 "div",
                                 {
-                                    style: {
-                                        display: "inline-block",
-                                        width: "300px",
-                                        height: "100%",
-                                        margin: "0 10px 10px 0",
-                                        verticalAlign: "top",
-                                        backgroundColor: "#f0f0f0",
-                                        padding: "10px",
-                                    }
+                                    id: "imageGallery",
+                                    style: { overflowX: "auto", whiteSpace: "nowrap", padding: "10px" }
                                 },
-                                MiniReact.createElement("img", { src: spot.photo, style: { width: "100%", marginBottom: "10px"} }),
-                                MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Spot : " + spot.name),
                                 MiniReact.createElement("br", null ),
-                                MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Description : " + spot.description),
-                                MiniReact.createElement("br", null ),
-                                MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Adresse : " + spot.address),
-                                MiniReact.createElement("br", null ),
-                                MiniReact.createElement(
-                                    "div",
-                                    {
-                                        dangerouslySetInnerHTML: {
-                                            __html: "<p>Installation disponible :" + this.formatInstallation(spot.installation) + "</p>"
-                                        }
-                                    }
-                                ),
-                                MiniReact.createElement("br", null ),
-                                MiniReact.createElement(
-                                    "span",
-                                    {
-                                        dangerouslySetInnerHTML: {
-                                            __html: "<p>Heures d'influence : " + this.formatHeure(spot.influence_hours) + "</p>"
-                                        }
-                                    }
-                                ),
-                                MiniReact.createElement(Button, {
-                                    type: "button",
-                                    title: "Afficher le spot la carte",
-                                    class: "btn btn-primary w-100",
-                                    onClick: () => this.AddPoint(spot.latitude, spot.longitude, spot.name, "Spots : " + spot.description, "../assets/img/pointer_spot.png", [100, 100], 13)
-                                }),
-                                MiniReact.createElement(
-                                    "a",
-                                    {
-                                        href: "https://www.google.com/maps/dir/" + this.mylatitude + "," + this.mylongitude + "/" + spot.latitude + "," + spot.longitude,
-                                        target:"_blank",
-                                        style: {"display": "flex"}
-                                    },
-                                    "Afficher les itinéraires du spot"
-                                ),
-                            )
-                        ))
-                    )
-                )
+                                ...event.spots.map(spot => (
+                                    MiniReact.createElement(
+                                        "div",
+                                        {
+                                            style: {
+                                                display: "inline-block",
+                                                width: "300px",
+                                                height: "100%",
+                                                margin: "0 10px 10px 0",
+                                                verticalAlign: "top",
+                                                backgroundColor: "#f0f0f0",
+                                                padding: "10px",
+                                            }
+                                        },
+                                        MiniReact.createElement("img", { src: spot.photo, style: { width: "100%", marginBottom: "10px"} }),
+                                        MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Spot : " + spot.name),
+                                        MiniReact.createElement("br", null ),
+                                        MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Description : " + spot.description),
+                                        MiniReact.createElement("br", null ),
+                                        MiniReact.createElement("p", { style: { margin: "0", "white-space": "normal"} }, "Adresse : " + spot.address),
+                                        MiniReact.createElement("br", null ),
+                                        MiniReact.createElement(
+                                            "div",
+                                            {
+                                                dangerouslySetInnerHTML: {
+                                                    __html: "<p>Installation disponible :" + this.formatInstallation(spot.installation) + "</p>"
+                                                }
+                                            }
+                                        ),
+                                        MiniReact.createElement("br", null ),
+                                        MiniReact.createElement(
+                                            "span",
+                                            {
+                                                dangerouslySetInnerHTML: {
+                                                    __html: "<p>Heures d'influence : " + this.formatHeure(spot.influence_hours) + "</p>"
+                                                }
+                                            }
+                                        ),
+                                        MiniReact.createElement(Button, {
+                                            type: "button",
+                                            title: "Afficher le spot la carte",
+                                            class: "btn btn-primary w-100",
+                                            onClick: () => this.AddPoint(spot.latitude, spot.longitude, spot.name, "Spots : " + spot.description, "../assets/img/pointer_spot.png", [100, 100], 13)
+                                        }),
+                                        MiniReact.createElement(
+                                            "a",
+                                            {
+                                                href: "https://www.google.com/maps/dir/" + this.mylatitude + "," + this.mylongitude + "/" + spot.latitude + "," + spot.longitude,
+                                                target:"_blank",
+                                                style: {"display": "flex"}
+                                            },
+                                            "Afficher les itinéraires du spot"
+                                        ),
+                                    )
+                                ))
+                            ),
+                    ),  
+                ),
+            
             ),
             MiniReact.createElement(Footer)
         );

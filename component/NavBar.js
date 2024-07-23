@@ -5,13 +5,14 @@ import { Image } from "/component/ReactComponent.js";
 const NavBarComponent = (props) => {
     return MiniReact.createElement(
         "nav",
-        { class: "navbar navbar-expand-lg navbar-light bg-light" },
+        { class: "navbar navbar-expand-lg navbar-light bg-ligh  t" },
         MiniReact.createElement(
             "div",
             {
                 class: "container-fluid",
                 style: {
                     "flex-wrap": "nowrap !important",
+                    "padding": "0rem 2rem",
                 },
             },
             MiniReact.createElement(
@@ -21,7 +22,7 @@ const NavBarComponent = (props) => {
                     src: "./assets/img/logo.svg",
                     alt: "Paris 2024 Logo",
                     style: {
-                        width: "60%"
+                        width: "50%"
                     }
                 })
             ),
@@ -41,15 +42,6 @@ const NavBarComponent = (props) => {
                 MiniReact.createElement(
                     "ul",
                     { class: "navbar-nav ms-auto" },
-                    MiniReact.createElement(
-                        "li",
-                        { class: "nav-item" },
-                        MiniReact.createElement(
-                            "a",
-                            { class: "nav-link" + (props.activePage === "/" ? " active" : ""), "aria-current": "page", href: "/" },
-                            "Accueil"
-                        )
-                    ),
                     MiniReact.createElement(
                         "li",
                         { class: "nav-item" },
@@ -92,6 +84,18 @@ class NavBar extends Component {
         this.activePage = window.location.pathname;
     }
 
+    document.getElementById('menu-icon').addEventListener('click', function() {
+        var navLinks = document.getElementById('nav-links');
+        var mainContent = document.getElementById('main-content');
+        
+        if (navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        mainContent.style.paddingTop = '80px';
+        } else {
+        navLinks.classList.add('active');
+        mainContent.style.paddingTop = (80 + navLinks.offsetHeight) + 'px';
+        }
+    });
 
     openNavBarMobile = () => {
         this.setState({

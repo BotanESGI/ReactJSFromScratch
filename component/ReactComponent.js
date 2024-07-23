@@ -49,6 +49,30 @@ const Header = () => {
     return MiniReact.createElement('header', null, MiniReact.createElement(NavBar));
 };
 
+const Card = (props) => {
+    return MiniReact.createElement(
+      "div",
+        { class: `card eventCard rouded-lg` },
+        MiniReact.createElement(Image,
+            {
+                src: `/../assets/img/${props.category}.jpg`,
+                alt: "sport_img",
+                class: "cardImage",
+            }),
+        MiniReact.createElement("p", null, props.category),
+        MiniReact.createElement("h3", null, props.title),
+        MiniReact.createElement(
+        "button",
+          {
+            events: { click: props.buttonOnClick },
+            class: props.buttonClass
+          },
+            props.buttonTxt,
+        
+      )
+    );
+}
+
 
 const Footer = () => {
     return MiniReact.createElement(
@@ -99,4 +123,4 @@ const Footer = () => {
     );
 };
 
-export { Header, Footer, Carousel, Image, Button};
+export { Header, Footer, Carousel, Image, Button, Card};

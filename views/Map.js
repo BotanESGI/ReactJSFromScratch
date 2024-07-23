@@ -200,55 +200,59 @@ class Map extends Component {
                 "div", {id: "MapPage"},
                 MiniReact.createElement(Header),
                 MiniReact.createElement(
-                    "main", null,
+                    "main", {style: {paddingTop: '8rem'}},
                     MiniReact.createElement(
                         "section",
                         {
                             id: "places_map",
-                            style: {display: "flex"}
+                            style: {}
                         },
                         MiniReact.createElement(
-                            "div",
+                            "small",
                             {
-                                id: "places",
-                                style: {overflow: "auto", height: "602px", width: "20rem"}
+
                             },
-                            MiniReact.createElement(
-                                "small",
-                                {
-
-                                },
-                                "Trier automatiquement par distance (km)"
-                            ),
-                            ...this.state.places.map(place => (
-                                MiniReact.createElement(
-                                    "div",
-                                    {
-                                        class: "card"
-                                    },
-                                    MiniReact.createElement(
-                                        "div",
-                                        {class: "card-body"},
-                                        MiniReact.createElement(
-                                            "h5",
-                                            {class: "card-title"},
-                                            place.name + " (" + place.distance.toFixed(2) + " km)"
-                                        ),
-                                        MiniReact.createElement(Button, {
-                                            type: "button",
-                                            title: "Afficher sur la carte",
-                                            class: "btn btn-primary w-100",
-                                            onClick: () => this.AddCurrentPointInMap(place.location.latitude, place.location.longitude, place.name, place.description, place.image, place.location, place.sports, place.bestspots)
-                                        }),
-
-                                    )
-                                )
-                            ))
+                            "Trier automatiquement par distance (km)"
                         ),
                         MiniReact.createElement(
-                            "div",
-                            {id: "map"}
-                        )
+                            'div',
+                            {class: "", style: {display: 'flex'}},
+                            MiniReact.createElement(
+                                "div",
+                                {
+                                    id: "places",
+                                    style: {overflow: "auto", height: "602px", width: "20rem"}
+                                },
+                                ...this.state.places.map(place => (
+                                    MiniReact.createElement(
+                                        "div",
+                                        {
+                                            class: "card"
+                                        },
+                                        MiniReact.createElement(
+                                            "div",
+                                            {class: "card-body"},
+                                            MiniReact.createElement(
+                                                "h5",
+                                                {class: "card-title"},
+                                                place.name + " (" + place.distance.toFixed(2) + " km)"
+                                            ),
+                                            MiniReact.createElement(Button, {
+                                                type: "button",
+                                                title: "Afficher sur la carte",
+                                                class: "btn btn-primary w-100",
+                                                onClick: () => this.AddCurrentPointInMap(place.location.latitude, place.location.longitude, place.name, place.description, place.image, place.location, place.sports, place.bestspots)
+                                            }),
+
+                                        )
+                                    )
+                                ))
+                            ),
+                            MiniReact.createElement(
+                                "div",
+                                {id: "map"}
+                            )
+                        ),
                     ),
                     MiniReact.createElement(Button, {
                         type: "button",

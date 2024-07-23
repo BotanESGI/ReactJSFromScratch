@@ -99,7 +99,7 @@ class Home extends Component {
             "div", { id: "HomePage" },
             MiniReact.createElement(Header),
             MiniReact.createElement(
-                "main", null,
+                "main", {style: {paddingTop: '8rem'}},
                 MiniReact.createElement(
                     "section",
                     { id: "carousel" },
@@ -121,7 +121,8 @@ class Home extends Component {
                 ),
                 MiniReact.createElement(
                     "section",
-                    { id: "TableContent" },
+                    { id: "TableContent", style: {overflow: "scroll"}},
+                     
                     MiniReact.createElement(
                         "h2", { id: "TableLegende", style: {
                                 "text-align": "center", "margin":"2% 0%", "text-decoration":"underline"

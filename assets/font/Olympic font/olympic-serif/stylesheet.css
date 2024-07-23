@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Olympic Serif';
+    src: url('OlympicSerif-BoldItalic.eot');
+    src: local('Olympic Serif Bold Italic'), local('OlympicSerif-BoldItalic'),
+        url('OlympicSerif-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('OlympicSerif-BoldItalic.woff2') format('woff2'),
+        url('OlympicSerif-BoldItalic.woff') format('woff'),
+        url('OlympicSerif-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Olympic Serif';
+    src: url('OlympicSerif-Bold.eot');
+    src: local('Olympic Serif Bold'), local('OlympicSerif-Bold'),
+        url('OlympicSerif-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OlympicSerif-Bold.woff2') format('woff2'),
+        url('OlympicSerif-Bold.woff') format('woff'),
+        url('OlympicSerif-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Olympic Serif';
+    src: url('OlympicSerif-MediumItalic.eot');
+    src: local('Olympic Serif Medium Italic'), local('OlympicSerif-MediumItalic'),
+        url('OlympicSerif-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('OlympicSerif-MediumItalic.woff2') format('woff2'),
+        url('OlympicSerif-MediumItalic.woff') format('woff'),
+        url('OlympicSerif-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Olympic Serif';
+    src: url('OlympicSerif-Italic.eot');
+    src: local('Olympic Serif Italic'), local('OlympicSerif-Italic'),
+        url('OlympicSerif-Italic.eot?#iefix') format('embedded-opentype'),
+        url('OlympicSerif-Italic.woff2') format('woff2'),
+        url('OlympicSerif-Italic.woff') format('woff'),
+        url('OlympicSerif-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Olympic Serif';
+    src: url('OlympicSerif-Medium.eot');
+    src: local('Olympic Serif Medium'), local('OlympicSerif-Medium'),
+        url('OlympicSerif-Medium.eot?#iefix') format('embedded-opentype'),
+        url('OlympicSerif-Medium.woff2') format('woff2'),
+        url('OlympicSerif-Medium.woff') format('woff'),
+        url('OlympicSerif-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Olympic Serif';
+    src: url('OlympicSerif.eot');
+    src: local('Olympic Serif'), local('OlympicSerif'),
+        url('OlympicSerif.eot?#iefix') format('embedded-opentype'),
+        url('OlympicSerif.woff2') format('woff2'),
+        url('OlympicSerif.woff') format('woff'),
+        url('OlympicSerif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

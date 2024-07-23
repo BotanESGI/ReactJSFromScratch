@@ -1,6 +1,6 @@
 import { MiniReact } from "../core/MiniReact.js";
 import Component from "../core/Component.js";
-import { Header, Footer, Image, Button } from "../component/ReactComponent.js";
+import { Header, Footer, Image, Button, Card } from "../component/ReactComponent.js";
 
 class Event extends Component {
     constructor(props) {
@@ -76,11 +76,12 @@ class Event extends Component {
             eventPairs.push(filteredEvents.slice(i, i + 2));
         }
 
+
         const element = MiniReact.createElement(
             "div", { id: "EventPage" },
             MiniReact.createElement(Header),
             MiniReact.createElement(
-                "main", null,
+                "main", {style: {paddingTop: '8rem'}},
                 MiniReact.createElement(
                     "section",
                     {
@@ -89,157 +90,131 @@ class Event extends Component {
                     },
                     MiniReact.createElement(
                         "h2",
-                        null,
+                        {class: "titleEvent"},
                         "Évènements"
                     ),
                     MiniReact.createElement(
                         "div",
-                        null,
+                        {class: "filter-container"},
                         MiniReact.createElement(
-                            "label",
-                            { for: "sport-select", style: { "margin-right": "10px" } },
-                            "Sport : "
-                        ),
-                        MiniReact.createElement(
-                            "select",
-                            {
-                                id: "sport-select",
-                                value: this.state.selectedSport,
-                                events: {
-                                    change: (e) => {
-                                        this.handleSportChange(e.target.value);
+                            'div',
+                            {},
+                            MiniReact.createElement(
+                                "label",
+                                { for: "sport-select", style: { "margin-right": "10px" } },
+                                "Sport : "
+                            ),
+                            MiniReact.createElement(
+                                "select",
+                                {
+                                    id: "sport-select",
+                                    value: this.state.selectedSport,
+                                    events: {
+                                        change: (e) => {
+                                            this.handleSportChange(e.target.value);
+                                        },
                                     },
                                 },
-                            },
-                            MiniReact.createElement(
-                                "option",
-                                this.state.selectedSport === ""
-                                    ? { value: "", selected: true }
-                                    : { value: "" },
-                                "Tous"
-                            ),
-                            ...uniqueSports.map(sport => (
                                 MiniReact.createElement(
                                     "option",
-                                    this.state.selectedSport === sport
-                                        ? { value: sport, selected: true }
-                                        : { value: sport },
-                                    sport
-                                )
-                            ))
-                        ),
-                        MiniReact.createElement(
-                            "label",
-                            { for: "spot-type-select", style: { "margin-left": "10px", "margin-right": "10px" } },
-                            "Type de spot : "
-                        ),
-                        MiniReact.createElement(
-                            "select",
-                            {
-                                id: "spot-type-select",
-                                value: this.state.selectedSpotType,
-                                events: {
-                                    change: (e) => {
-                                        this.handleSpotTypeChange(e.target.value);
-                                    },
-                                },
-                            },
-                            MiniReact.createElement(
-                                "option",
-                                this.state.selectedSpotType === ""
-                                    ? { value: "", selected: true }
-                                    : { value: "" },
-                                "Tous"
+                                    this.state.selectedSport === ""
+                                        ? { value: "", selected: true }
+                                        : { value: "" },
+                                    "Tous"
+                                ),
+                                ...uniqueSports.map(sport => (
+                                    MiniReact.createElement(
+                                        "option",
+                                        this.state.selectedSport === sport
+                                            ? { value: sport, selected: true }
+                                            : { value: sport },
+                                        sport
+                                    )
+                                ))
                             ),
-                            ...uniqueSpotTypes.map(spotType => (
-                                MiniReact.createElement(
-                                    "option",
-                                    this.state.selectedSpotType === spotType
-                                        ? { value: spotType, selected: true }
-                                        : { value: spotType },
-                                    spotType
-                                )
-                            ))
                         ),
-                        MiniReact.createElement(
-                            "label",
-                            { for: "date-select", style: { "margin-left": "10px", "margin-right": "3px" } },
-                            "Date : "
-                        ),
-                        MiniReact.createElement(
-                            "input",
-                            {
-                                id:"date-select",
-                                type: "date",
-                                value: this.state.selectedDate,
-                                events: {
-                                    change: (e) => {
-                                        this.handleDateChange(e.target.value);
-                                    },
-                                },
-                                style: { "margin-left": "10px" }
-                            }
-                        )
-                    ),
-                    ...eventPairs.map(pair => (
                         MiniReact.createElement(
                             "div",
-                            {
-                                style: { display: "flex", justifyContent: "space-around", width: "100%", marginBottom: "20px" }
-                            },
-                            ...pair.map(event => (
-                                MiniReact.createElement(
-                                    "div",
-                                    {
-                                        class: "card",
-                                        style: { margin: "10px", padding: "10px", border: "1px solid #ccc", borderRadius: "5px", width: "35%" }
+                            {},
+                            MiniReact.createElement(
+                                "label",
+                                { for: "spot-type-select", style: { "margin-left": "10px", "margin-right": "10px" } },
+                                "Type de spot : "
+                            ),
+                            MiniReact.createElement(
+                                "select",
+                                {
+                                    id: "spot-type-select",
+                                    value: this.state.selectedSpotType,
+                                    events: {
+                                        change: (e) => {
+                                            this.handleSpotTypeChange(e.target.value);
+                                        },
                                     },
+                                },
+                                MiniReact.createElement(
+                                    "option",
+                                    this.state.selectedSpotType === ""
+                                        ? { value: "", selected: true }
+                                        : { value: "" },
+                                    "Tous"
+                                ),
+                                ...uniqueSpotTypes.map(spotType => (
                                     MiniReact.createElement(
-                                        "div",
-                                        { class: "card-body" },
-                                        MiniReact.createElement(Image, {
-                                            src: event.image,
-                                            alt: "Evenement Logo",
-                                            style: {
-                                                width: "100%"
-                                            }
-                                        }),
-                                        MiniReact.createElement(
-                                            "h5",
-                                            { class: "card-title" },
-                                            event.name, " - ", event.heure
-                                        ),
-                                        MiniReact.createElement(
-                                            "p",
-                                            { class: "card-text" },
-                                            event.description
-                                        ),
-                                        MiniReact.createElement(
-                                            "p",
-                                            { class: "card-text" , style: { "margin": "0px"}},
-                                            "Date: " + event.date
-                                        ),
-                                        MiniReact.createElement(
-                                            "p",
-                                            { class: "card-text" , style: { "margin-bottom": "5px"}},
-                                            "Adresse : " + event.address
-                                        ),
-                                        MiniReact.createElement(
-                                            "p",
-                                            { class: "card-text" , style: { "margin-bottom": "1px"}},
-                                            "Sport : " + event.type_de_sport
-                                        ),
-                                        MiniReact.createElement(Button, {
-                                            type: "button",
-                                            title: "Afficher plus de détail",
-                                            class: "btn btn-primary w-100",
-                                            onClick: () => this.ShowEvent(event)
-                                        }),
+                                        "option",
+                                        this.state.selectedSpotType === spotType
+                                            ? { value: spotType, selected: true }
+                                            : { value: spotType },
+                                        spotType
                                     )
+                                ))
+                            ),
+                        ),
+                        MiniReact.createElement(
+                            "div",
+                            {},
+                            MiniReact.createElement(
+                                "label",
+                                { for: "date-select", style: { "margin-left": "10px", "margin-right": "3px" } },
+                                "Date : "
+                            ),
+                            MiniReact.createElement(
+                                "input",
+                                {
+                                    id: "date-select",
+                                    type: "date",
+                                    value: this.state.selectedDate,
+                                    events: {
+                                        change: (e) => {
+                                            this.handleDateChange(e.target.value);
+                                        },
+                                    },
+                                    style: { "margin-left": "10px" }
+                                }
+                            )
+                        ),
+                    ),
+                    MiniReact.createElement(
+                            "div",
+                            {
+                                class: "card-grid",
+
+                            },
+                            ...eventPairs.flat().map((event, index) => (
+                                MiniReact.createElement(
+                                    Card,
+                                    {
+                                        key: index,
+                                        title: event.name,
+                                        class: event.type_de_sport,
+                                        category: event.type_de_sport,
+                                        buttonTxt: "En savoir plus",
+                                        buttonClass: "event-button",
+                                        buttonOnClick: () => this.ShowEvent(event)
+                                    }
                                 )
                             ))
                         )
-                    ))
                 )
             ),
             MiniReact.createElement(Footer)

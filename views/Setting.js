@@ -28,7 +28,7 @@ class Setting extends Component {
             "div", { id: "SettingPage" },
             MiniReact.createElement(Header),
             MiniReact.createElement(
-                "main", null,
+                "main", {style: {paddingTop: '8rem'}},
                 MiniReact.createElement(
                     "div",
                     { class: "row justify-content-center", style: "" },
