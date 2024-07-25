@@ -7,36 +7,20 @@ class EventDetail extends Component {
         super(props);
         const event = JSON.parse(sessionStorage.getItem('selectedEvent'));
 
-        this.mylatitude = 0;
-        this.mylongitude = 0;
-
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(
-                position => {
-                    const { latitude, longitude } = position.coords;
-                    this.mylatitude = latitude;
-                    this.mylongitude = longitude;
-                },
-                error => {
-                    console.error('Error getting current position:', error);
-                }
-            );
-        } else {
-            alert("Geolocation is not supported by this browser.");
-        }
-
         this.state = {
             event: event || {},
+            myLatitude: event.userLatitude || 0,
+            myLongitude: event.userLongitude || 0,
             placeDistance: this.CalculeTheCurrentDistance(event.latitude, event.longitude).toFixed(2) + " km",
         };
     }
 
     CalculeTheCurrentDistance(lat, lon) {
         const R = 6371;
-        const dLat = (lat - this.mylatitude) * Math.PI / 180;
-        const dLon = (lon - this.mylongitude) * Math.PI / 180;
+        const dLat = (lat - this.state.myLatitude) * Math.PI / 180;
+        const dLon = (lon - this.state.myLongitude) * Math.PI / 180;
         const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-            Math.cos(this.mylatitude * Math.PI / 180) * Math.cos(lat * Math.PI / 180) *
+            Math.cos(this.state.myLatitude * Math.PI / 180) * Math.cos(lat * Math.PI / 180) *
             Math.sin(dLon/2) * Math.sin(dLon/2);
         const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
         const distance = R * c;
@@ -52,7 +36,6 @@ class EventDetail extends Component {
     formatInstallation(installation) {
         return installation.replace(/-/g, '<br>-');
     }
-
 
     formatHeure(heure) {
         let colorMap = ['green', 'orange', 'red'];
@@ -81,7 +64,7 @@ class EventDetail extends Component {
             .bindPopup(this.state.event.name)
             .openPopup();
     }
-    
+
     dateTranslate(date) {
         const dateString = date;
         const [day, month, year] = dateString.split('/');
@@ -91,8 +74,8 @@ class EventDetail extends Component {
 
         // Tableau des noms de mois en français
         const monthNames = [
-        "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
-        "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
+            "Janvier", "Février", "Mars", "Avril", "Mai", "Juin",
+            "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"
         ];
 
         // Construire la chaîne formatée
@@ -193,6 +176,15 @@ class EventDetail extends Component {
                             },
                             event.description
                         ),
+                        MiniReact.createElement(
+                            "a",
+                            {
+                                href: "https://www.google.com/maps/dir/" + this.state.myLatitude + "," + this.state.myLongitude + "/" + this.state.event.latitude + "," + this.state.event.longitude,
+                                target:"_blank",
+                                style: {"justify-content": "center", "display": "flex"}
+                            },
+                            "Afficher les itinéraires (Voiture, Transports, Pied, Vélo, Avion)"
+                        ),
                 
                     ),
                     MiniReact.createElement(
@@ -258,7 +250,7 @@ class EventDetail extends Component {
                                         MiniReact.createElement(
                                             "a",
                                             {
-                                                href: "https://www.google.com/maps/dir/" + this.mylatitude + "," + this.mylongitude + "/" + spot.latitude + "," + spot.longitude,
+                                                href: "https://www.google.com/maps/dir/" + this.state.myLatitude + "," + this.state.myLongitude + "/" + spot.latitude + "," + spot.longitude,
                                                 target:"_blank",
                                                 style: {"display": "flex"}
                                             },

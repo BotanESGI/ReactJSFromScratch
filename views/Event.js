@@ -9,10 +9,13 @@ class Event extends Component {
             events: [],
             selectedSport: "",
             selectedDate: "",
-            selectedSpotType: ""
+            selectedSpotType: "",
+            myLatitude: null,
+            myLongitude: null
         };
         this.getAllEvents();
         this.ShowEvent = this.ShowEvent.bind(this);
+        this.getCurrentPosition();
     }
 
     getAllEvents() {
@@ -29,6 +32,24 @@ class Event extends Component {
             .catch(error => {
                 console.error('Error fetching events:', error);
             });
+    }
+
+    getCurrentPosition() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                position => {
+                    const { latitude, longitude } = position.coords;
+                    this.setState({ myLatitude: latitude, myLongitude: longitude });
+                },
+                error => {
+                    console.error('Error getting current position:', error);
+                    this.setState({ myLatitude: 0, myLongitude: 0 });
+                }
+            );
+        } else {
+            alert("Geolocation is not supported by this browser.");
+            this.setState({ myLatitude: 0, myLongitude: 0 });
+        }
     }
 
     handleSportChange(sport) {
@@ -52,7 +73,9 @@ class Event extends Component {
         const eventWithGeo = {
             ...event,
             latitude: event.latitude,
-            longitude: event.longitude
+            longitude: event.longitude,
+            userLatitude: this.state.myLatitude,
+            userLongitude: this.state.myLongitude
         };
         sessionStorage.setItem('selectedEvent', JSON.stringify(eventWithGeo));
         window.location.href = '/event-detail';
@@ -75,7 +98,6 @@ class Event extends Component {
         for (let i = 0; i < filteredEvents.length; i += 2) {
             eventPairs.push(filteredEvents.slice(i, i + 2));
         }
-
 
         const element = MiniReact.createElement(
             "div", { id: "EventPage" },
@@ -195,27 +217,26 @@ class Event extends Component {
                         ),
                     ),
                     MiniReact.createElement(
-                            "div",
-                            {
-                                class: "card-grid",
-
-                            },
-                            ...eventPairs.flat().map((event, index) => (
-                                MiniReact.createElement(
-                                    Card,
-                                    {
-                                        key: index,
-                                        title: event.name,
-                                        class: event.type_de_sport,
-                                        category: event.type_de_sport,
-                                        date: event.date,
-                                        buttonTxt: "En savoir plus",
-                                        buttonClass: "event-button",
-                                        buttonOnClick: () => this.ShowEvent(event)
-                                    }
-                                )
-                            ))
-                        )
+                        "div",
+                        {
+                            class: "card-grid",
+                        },
+                        ...eventPairs.flat().map((event, index) => (
+                            MiniReact.createElement(
+                                Card,
+                                {
+                                    key: index,
+                                    title: event.name,
+                                    class: event.type_de_sport,
+                                    category: event.type_de_sport,
+                                    date: event.date,
+                                    buttonTxt: "En savoir plus",
+                                    buttonClass: "event-button",
+                                    buttonOnClick: () => this.ShowEvent(event)
+                                }
+                            )
+                        ))
+                    )
                 )
             ),
             MiniReact.createElement(Footer)
