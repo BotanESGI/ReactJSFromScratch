@@ -257,7 +257,7 @@ class Map extends Component {
                     MiniReact.createElement(Button, {
                         type: "button",
                         title: "Afficher tous les lieux et spots les plus proches de ma géolocalisation",
-                        class: "btn btn-info w-100 mt-1",
+                        class: "btn btn-info mt-1 mx-auto d-flex",
                         onClick: this.AddAllPointsClosestToYou
                     }),
 

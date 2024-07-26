@@ -1,6 +1,6 @@
 import { MiniReact } from "../core/MiniReact.js";
 import Component from "../core/Component.js";
-import { Header, Footer, Image, Button } from "../component/ReactComponent.js";
+import { Header, Footer, Image, Button, backButton } from "../component/ReactComponent.js";
 
 class EventDetail extends Component {
     constructor(props) {
@@ -120,6 +120,11 @@ class EventDetail extends Component {
                         id: "events_info",
                         style: {background: "mintcream", padding: "5%"}
                     },
+                    MiniReact.createElement(backButton, {
+                        title: "Revenir",
+                        class: "backButton",
+                        onClick: () => window.location.href = '/event'
+                    }),
                     MiniReact.createElement(
                         'div',
                         { class: "title-details" },

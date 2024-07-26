@@ -99,24 +99,18 @@ class Home extends Component {
             "div", { id: "HomePage" },
             MiniReact.createElement(Header),
             MiniReact.createElement(
-                "main", {style: {paddingTop: '8rem'}},
+                "main", {style: {paddingTop: '5rem'}},
                 MiniReact.createElement(
                     "section",
                     { id: "carousel" },
                     MiniReact.createElement(Carousel, { images: [
-                            { src: "./assets/img/carousel01.png", alt: "JO 2024 Home" },
-                            { src: "./assets/img/carousel02.png", alt: "JO 2024 Football" },
-                            { src: "./assets/img/carousel03.png", alt: "JO 2024 Escalade" },
-                            { src: "./assets/img/carousel04.png", alt: "JO 2024 Natation" },
-                            { src: "./assets/img/carousel05.png", alt: "JO 2024 Natation Seine" },
-                            { src: "./assets/img/carousel06.png", alt: "JO 2024 Home2" },
-                            { src: "./assets/img/carousel07.png", alt: "JO 2024 Home3" },
-                            { src: "./assets/img/carousel08.png", alt: "JO 2024 Home4" },
-                            { src: "./assets/img/carousel09.png", alt: "JO 2024 Home5" },
-                            { src: "./assets/img/carousel10.png", alt: "JO 2024 Home6" },
-                            { src: "./assets/img/carousel11.png", alt: "JO 2024 Home7" },
-                            { src: "./assets/img/carousel12.png", alt: "JO 2024 Mascotte" },
-                            { src: "./assets/img/carousel13.png", alt: "JO 2024 Home8" }
+                            { src: "./assets/img/carousel01.jpg", alt: "JO 2024 Home" },
+                            { src: "./assets/img/carousel02.jpg", alt: "JO 2024 Football" },
+                            { src: "./assets/img/carousel03.jpg", alt: "JO 2024 Escalade" },
+                            { src: "./assets/img/carousel04.jpg", alt: "JO 2024 Natation" },
+                            { src: "./assets/img/carousel05.jpg", alt: "JO 2024 Natation Seine" },
+                            { src: "./assets/img/carousel06.jpg", alt: "JO 2024 Home2" },
+                            { src: "./assets/img/carousel07.jpg", alt: "JO 2024 Home3" },
                         ]}),
                 ),
                 MiniReact.createElement(

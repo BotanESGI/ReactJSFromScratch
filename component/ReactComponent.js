@@ -89,56 +89,163 @@ const Card = (props) => {
 }
 
 
+const backButton = (props) => {
+    return MiniReact.createElement(
+        "div",
+        { class: "backButtonContainer", events: {click : props.onClick}},
+        MiniReact.createElement(
+            'i',
+            { class: "bi bi-arrow-left"},    
+        ),
+        MiniReact.createElement(
+            "span",
+            {class: `${props.class}`},
+            props.title
+        )
+    )
+}
 
 
 
 const Footer = () => {
     return MiniReact.createElement(
         "footer",
-        { class: "bg-body-tertiary text-center text-lg-start", style: {
-                "background-color": "rgba(0, 0, 0, 0.05)",
-            },},
+        {},
         MiniReact.createElement(
             "div",
-            { class: "container p-4" },
+            { class: "footer_container" },
             MiniReact.createElement(
                 "div",
-                { class: "row" },
+                { class: "first_row" },
+                MiniReact.createElement(Image, {
+                    src: "./assets/img/logo2.png",
+                    alt: "Paris 2024 Logo",
+                    style: {
+                        width: "5rem"
+                    }
+                }),
                 MiniReact.createElement(
-                    "div",
-                    { class: "col-lg-6 col-md-12 mb-4 mb-md-0" },
-                    MiniReact.createElement("h5", { class: "text-uppercase" }, "React JS From Scratch"),
-                    MiniReact.createElement(
-                        "p",
-                        null,
-                        "Projet d'école ESGI pour le second semestre. Mini Framework React intégralement développé en JavaScript from Scratch."
-                    )
+                    "span",
+                    { class: "footer_span" },
+                    "Paris Jeux Olympics 2024"
                 ),
                 MiniReact.createElement(
                     "div",
-                    { class: "col-lg-6 col-md-12 mb-4 mb-md-0" },
-                    MiniReact.createElement("h5", { class: "text-uppercase" }, "JO 2024"),
-                    MiniReact.createElement(
-                        "p",
-                        null,
-                        "Projet portant sur les Jeux Olympiques de 2024 avec une map interactive pour les lieux et les événements."
-                    )
+                    { class: "social_media_links" },
+                    MiniReact.createElement(Image, {
+                        src: "./assets/img/youtube.svg",
+                        alt: "youtube Logo",
+                        style: {
+                            width: "2.5rem"
+                        }
+                    }),
+                    MiniReact.createElement(Image, {
+                        src: "./assets/img/twitter.svg",
+                        alt: "twitter Logo",
+                        style: {
+                            width: "2.5rem"
+                        }
+                    }),
+                    MiniReact.createElement(Image, {
+                        src: "./assets/img/instagram.svg",
+                        alt: "instagram Logo",
+                        style: {
+                            width: "2.5rem"
+                        }
+                    }),
                 )
-            )
-        ),
-        MiniReact.createElement(
-            "div",
-            {
-                class: "text-center p-3"
-            },
-            "© 2024 Copyright - ",
+            ),
             MiniReact.createElement(
-                "a",
-                { class: "text-body", href: "http://localhost:8080/" },
-                "localhost"
+                "div",
+                { class: "second_row" },
+                MiniReact.createElement(
+                    "div",
+                    { class: "first_column" },
+                    MiniReact.createElement(
+                        'a',
+                        {
+                            class: "footer_link",
+                            href: "/"
+                        },
+                        "link 1"
+                    ),
+                    MiniReact.createElement(
+                        'a',
+                        {
+                            class: "footer_link",
+                            href: "/"
+                        },
+                        "link 2"
+                    ),
+                    MiniReact.createElement(
+                        'a',
+                        {
+                            class: "footer_link",
+                            href: "/"
+                        },
+                        "link 3"
+                    ),
+                ),
+
+                MiniReact.createElement(
+                    "div",
+                    { class: "second_column" },
+                    MiniReact.createElement(
+                        'a',
+                        {
+                            class: "footer_link",
+                            href: "/"
+                        },
+                        "link 1"
+                    ),
+                    MiniReact.createElement(
+                        'a',
+                        {
+                            class: "footer_link",
+                            href: "/"
+                        },
+                        "link 2"
+                    ),
+                    MiniReact.createElement(
+                        'a',
+                        {
+                            class: "footer_link",
+                            href: "/"
+                        },
+                        "link 3"
+                    ),
+                ),
+                MiniReact.createElement(
+                    "div",
+                    { class: "third_column" },
+                    MiniReact.createElement(
+                        'a',
+                        {
+                            class: "footer_link",
+                            href: "/"
+                        },
+                        "link 1"
+                    ),
+                    MiniReact.createElement(
+                        'a',
+                        {
+                            class: "footer_link",
+                            href: "/"
+                        },
+                        "link 2"
+                    ),
+                    MiniReact.createElement(
+                        'a',
+                        {
+                            class: "footer_link",
+                            href: "/"
+                        },
+                        "link 3"
+                    ),
+                ),
             )
         )
-    );
+    )
 };
 
-export { Header, Footer, Carousel, Image, Button, Card};
+export { Header, Footer, Carousel, Image, Button, Card, backButton};

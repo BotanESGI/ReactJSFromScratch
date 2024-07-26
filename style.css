@@ -1,19 +1,13 @@
 /* -------------------------- Font -------------------------- */
 
 
-@font-face {
-    font-family: 'Paris2024-Variable';
-    src: url('/assets/font/Paris2024-Variable.ttf') format('truetype');
-}
-
 
 @font-face {
     font-family: 'OlympicHeadline';
-    src: url('/assets/font/font/Olympic font/OlympicHeadline-Regular.eot');
-    src: url('/assets/font/font/Olympic font/OlympicHeadline-Regular.eot?#iefix') format('embedded-opentype'),
-         url('/assets/font/font/Olympic font/OlympicHeadline-Regular.woff2') format('woff2'),
-         url('/assets/font/font/Olympic font/OlympicHeadline-Regular.woff') format('woff'),
-         url('/assets/font/font/Olympic font/OlympicHeadline-Regular.ttf') format('truetype');
+    src: url('/assets/font/Olympic font/olympic-headline/OlympicHeadline-Regular.eot');
+    src: url('/assets/font/Olympic font/olympic-headline/OlympicHeadline-Regular.eot?#iefix') format('embedded-opentype'),
+         url('/assets/font/Olympic font/olympic-headline/OlympicHeadline-Regular.woff') format('woff'),
+         url('/assets/font/Olympic font/olympic-headline/OlympicHeadline-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -49,54 +43,58 @@
 
 .titleEvent{
     margin-top: 4rem;
-    font-family: "Olympic Headline";
+    font-family: "OlympicHeadline";
     font-size: 88px;
     text-align: center;
 }
 
+.title_event, #place_title{
+    font-weight: 800;
+}
+
 @media (min-width: 1200px) {
-    .titleEvent, .title_event {
+    .titleEvent, .title_event, #place_title {
         font-size: 88px; /* Taille spécifique pour les écrans de 1200px et plus */
     }
 }
 
 /* Responsive pour les écrans larges */
 @media (max-width: 1200px) {
-    .titleEvent, .title_event{
+    .titleEvent, .title_event, #place_title{
         font-size: 72px;
     }
 }
 
 /* Responsive pour les écrans moyens (tablettes) */
 @media (max-width: 992px) {
-    .titleEvent, .title_event{
+    .titleEvent, .title_event, #place_title{
         font-size: 60px;
     }
 }
 
 /* Responsive pour les petits écrans (smartphones en mode paysage) */
 @media (max-width: 768px) {
-    .titleEvent, .title_event{
+    .titleEvent, .title_event, #place_title{
         font-size: 48px;
     }
 }
 
 /* Responsive pour les très petits écrans (smartphones en mode portrait) */
 @media (max-width: 480px) {
-    .titleEvent, .title_event{
+    .titleEvent, .title_event, #place_title{
         font-size: 36px;
     }
 }
 
 /* Responsive pour les très très petits écrans */
 @media (max-width: 320px) {
-    .titleEvent, .title_event{
+    .titleEvent, .title_event, #place_title{
         font-size: 28px;
     }
 }
 
-main {
-    font-family: 'Paris2024-Variable', sans-serif;
+body {
+    font-family: 'OlympicSans', sans-serif;
 }
 
 swiper-container {
@@ -137,15 +135,35 @@ body {
     top: 0px !important;
 }
 
+/* -------------------------- Header -------------------------- */
+
 
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  padding: 0rem 2rem;
   background-color: #fff; /* Couleur de fond pour le header */
   z-index: 9999;/* Assurez-vous que le header reste au-dessus des autres éléments */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajoutez une ombre pour un effet visuel */
+}
+
+.navbar-nav{
+    gap: 2rem;
+}
+
+
+/* -------------------------- Page d'acceuil -------------------------- */
+
+#carousel{
+    height: 88vh;
+}
+
+#TableLegende{
+    font-family: "OlympicHeadline";
+    font-size: 48px;
+    font-style: normal;
 }
 
 .goog-te-combo {
@@ -832,7 +850,9 @@ header {
 }
 
 .eventCard h3 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  font-family: "OlympicSans";
+  font-weight: 800;
   margin-right: 1rem;
   text-align: left;
   font-size: 25px;
@@ -923,7 +943,7 @@ header {
 }
 
 .titleEvent{
-    font-family: 'Paris2024-Variable';
+    font-family: "OlympicHeadline";
     margin: 2rem 0rem;
     text-align: left;
 }
@@ -945,6 +965,28 @@ header {
     text-transform: uppercase;
     align-self: flex-start; /* Aligne l'élément p à gauche */
     text-align: left;
+}
+
+.backButtonContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+    margin: 2rem 0rem 3rem 0rem;
+    transition: color 0.3s ease, gap 0.3s ease;
+    cursor: pointer;
+}
+
+.backButtonContainer:hover{
+    gap: .4rem;
+    color: var(--primary-grey);
+}
+
+.backButton{
+    font-family: "OlympicSans";
+    font-weight: 800;
+    text-decoration: underline;
 }
 
 
@@ -975,4 +1017,65 @@ header {
     padding: 0rem 1rem;
     gap: 1rem;
   }
+}
+
+
+/* ------------------------------- Footer ------------------------------- */
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 7.5rem 0rem;
+    background-color: var(--primary-black);
+}
+
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1152px;
+}
+
+.first_row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: .1rem solid var(--primary-grey);
+}
+
+
+
+.first_row span{
+    color: var(--primary-white)
+}
+
+.second_row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem 5rem 0rem 5rem;
+
+}
+
+.second_row div{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
+}
+
+.second_row div a{
+    color: var(--primary-white);
+}
+
+@media (max-width: 620px) {
+    .first_row, .second_row{
+        flex-direction: column;
+        gap: 3rem;
+    }
 }

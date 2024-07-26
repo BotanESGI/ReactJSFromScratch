@@ -22,7 +22,7 @@ const NavBarComponent = (props) => {
                     src: "./assets/img/logo.svg",
                     alt: "Paris 2024 Logo",
                     style: {
-                        width: "50%"
+                        width: "5rem"
                     }
                 })
             ),

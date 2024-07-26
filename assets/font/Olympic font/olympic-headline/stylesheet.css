@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Olympic Headline';
+    src: url('OlympicHeadline-Regular.eot');
+    src: local('Olympic Headline'), local('OlympicHeadline-Regular'),
+        url('OlympicHeadline-Regular.eot?#iefix') format('embedded-opentype'),
+        url('OlympicHeadline-Regular.woff2') format('woff2'),
+        url('OlympicHeadline-Regular.woff') format('woff'),
+        url('OlympicHeadline-Regular.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Olympic Headline';
+    src: url('OlympicHeadline-RegularItalic.eot');
+    src: local('Olympic Headline Regular Italic'), local('OlympicHeadline-RegularItalic'),
+        url('OlympicHeadline-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('OlympicHeadline-RegularItalic.woff2') format('woff2'),
+        url('OlympicHeadline-RegularItalic.woff') format('woff'),
+        url('OlympicHeadline-RegularItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
